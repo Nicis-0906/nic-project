@@ -1,8 +1,11 @@
 ;(function($){
     
     $.fn.bannerP = function(options){
+
         this.obj  = {};
+
         var that  = this.obj;
+
         that.imgBox    = options.imgBox;
 
         that.leftBtn   = options.left;
@@ -31,7 +34,6 @@
             }).siblings("li").css({
                 left:that.width
             })
-
         })();
         
         // autoPlay
