@@ -199,7 +199,9 @@ var Utils = (function(){
             options = options || {};
             // 有效期设置为-1,表示删除
             options.expires = -1;
-            this.setCookie(key,options)
+
+            val = this.getCookie(key);
+            this.setCookie(key,val,options);
         },
 
         getCookie : function(key){
