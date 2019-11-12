@@ -1,0 +1,335 @@
+.scTable {
+    width: 100%
+}
+
+.scTable_th {
+    border: 1px solid #e9e9e9
+}
+
+.scTable_th>tr>th {
+    background: #f3f3f3;
+    font-weight: 400;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 8px
+}
+
+.scTable_th>tr>th.text-left {
+    text-align: left
+}
+
+.scSupHd_tag {
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 15px;
+    display: inline-block;
+    border-radius: 3px;
+    line-height: 1;
+    padding: 5px 6px;
+    background: #0b75be
+}
+
+.scSupHd_tag.is-hw {
+    background: #ff7900
+}
+
+.scTable_tb {
+    width: 100%;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    font-size: 12px
+}
+
+.scTable_tb>tr>td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 16px 8px;
+    border-bottom: 1px solid #e9e9e9;
+    line-height: 26px
+}
+
+.scTable_tb>tr>td.text-left {
+    text-align: left
+}
+
+.scTable_tb>tr.scSupHd>td {
+    line-height: 52px;
+    padding: 0 12px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 2px solid #aaa;
+    text-align: left
+}
+
+.scTable_tb>tr.scSupHd>td:hover {
+    background: #fff
+}
+
+.scTable_tb>tr.is-checked>td {
+    background: #fff4e8
+}
+
+.scTable_tb .iconfont {
+    color: #999
+}
+
+.scTable_tb .iconfont:hover {
+    color: #0b75be
+}
+
+.scPro_Img {
+    height: 68px;
+    width: 68px;
+    text-align: center;
+    line-height: 68px;
+    display: block
+}
+
+.scPro_Img>img {
+    display: inline;
+    max-width: 100%;
+    max-height: 100%
+}
+
+.scPro_inp {
+    height: 30px;
+    width: 164px;
+    position: relative;
+    display: inline-block
+}
+
+.scPro_inp>input {
+    border: 1px solid #e2e2e2;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+    padding: 0 32px
+}
+
+.scPro_inp>input:active,
+.scPro_inp>input:focus {
+    border-color: #0b75be
+}
+
+.scPro_inp>button {
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    top: 1px;
+    text-align: center;
+    line-height: 26px;
+    background: #f1f1f1;
+    border: 0;
+    font-size: 18px;
+    color: #999
+}
+
+.scPro_inp>button:hover {
+    background: #ddd
+}
+
+.scPro_inp>button.is-add {
+    line-height: 20px;
+    right: 1px
+}
+
+.scPro_inp>button.is-minus {
+    left: 1px
+}
+
+.scPro_code {
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 148px
+}
+
+.scPro_pri {
+    position: relative
+}
+
+.scPro_pri:hover>table {
+    display: block
+}
+
+.scPro_pri:hover .iconfont {
+    color: #0b75be
+}
+
+.scPro_pri:hover .scPro_priLst {
+    display: block
+}
+
+.scPro_priLst {
+    z-index: 3;
+    background: #fff;
+    white-space: nowrap;
+    position: absolute;
+    top: 100%;
+    padding: 6px 6px 4px;
+    display: none;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, .1);
+    left: 50px;
+    margin-top: 3px
+}
+
+.scPro_priLst .caret--top {
+    position: absolute;
+    top: -11px;
+    left: 34px;
+    border-bottom: 5px solid #e9e9e9;
+    border-bottom: 5px dashed #e9e9e9\9
+}
+
+.scPro_priLst td,
+.scPro_priLst th {
+    color: #666;
+    padding: 0 4px;
+    text-align: left;
+    line-height: 20px;
+    font-weight: 400
+}
+
+.scPro_priLst th {
+    color: #999;
+    text-indent: 8px
+}
+
+.scPro_priLst .text-right {
+    text-align: right !important
+}
+
+.scPro_ed {
+    color: #999
+}
+
+.scPro_ed.is-edited {
+    color: #333
+}
+
+.scPro_ed.is-editing>input {
+    display: inline-block
+}
+
+.scPro_ed.is-editing>span {
+    display: none
+}
+
+.scPro_ed .iconfont {
+    color: #999;
+    vertical-align: middle
+}
+
+.scPro_ed>input {
+    color: #333;
+    display: none;
+    width: 124px;
+    padding: 0 5px;
+    line-height: 20px
+}
+
+.scOpbar {
+    border: 1px solid #e9e9e9;
+    line-height: 60px;
+    position: relative;
+    height: 62px;
+    padding: 0 156px 0 12px;
+    margin-top: 30px;
+    font-size: 12px;
+    background: #fff;
+    z-index: 2
+}
+
+.scOpbar>p {
+    height: 60px;
+    line-height: 60px
+}
+
+.scOpbar .scSubBtn {
+    position: absolute;
+    right: -1px;
+    bottom: -1px
+}
+
+.scOpbar .line {
+    height: 20px;
+    width: 0;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 1px solid #e9e9e9;
+    margin-left: 30px
+}
+
+.scOpbar>a {
+    vertical-align: middle;
+    margin-left: 28px
+}
+
+.scOpbar.is-fixed {
+    position: fixed;
+    bottom: 0
+}
+
+.scSubBtn {
+    border-radius: 0;
+    font-size: 20px;
+    height: 62px;
+    line-height: 60px;
+    padding: 0 36px
+}
+
+.scCost {
+    color: #ff7900;
+    font-size: 22px
+}
+
+.scEmpty {
+    text-align: center;
+    padding: 30px
+}
+
+.scEmpty .icon-cartEmpty {
+    font-size: 80px;
+    height: 100px;
+    line-height: 100px;
+    color: #999
+}
+
+.scEmpty .icon-cartEmpty,
+.scEmpty_wrd {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.scEmpty_wrd {
+    line-height: 30px;
+    margin-left: 34px;
+    text-align: left;
+    color: #666
+}
+
+.scPro-lost {
+    color: #999
+}
+
+.scOplink {
+    color: #777;
+    float: right;
+    margin-right: 30px
+}
+
+.scOplink>.iconfont,
+.scOplink>span {
+    vertical-align: middle
+}
+
+.scOplink>.iconfont {
+    color: #0b75be;
+    margin-right: 5px;
+    font-size: 18px
+}

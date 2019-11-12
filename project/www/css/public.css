@@ -1,0 +1,40 @@
+/* 加快加载速度,针对性的去除padding和margin */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,dl,dd,fieldset,legend,input,textarea,select{margin: 0;padding: 0;}
+body{font: 12px "宋体";word-wrap: word;}
+/* 恢复默认 */
+a,u,s,del{text-decoration: none;color: #666;}
+/* a标签的后代img在ie中会有边框 */
+a img,fieldset,.bor0{border: 0;}
+/* table合并边框*/
+table{border-collapse: collapse;}
+/* li是list-item类型,不是block类型 */
+li{list-style: none;}
+/* 图片下方会有3px到5px的空隙bug 通过vertical去除*/
+img{vertical-align: middle;}
+/* mark自带背景颜色 */
+mark{background: none;}
+/* figure独立快元素自带margin */
+figure{margin: 0;}
+i,em,b{font-style: normal;font-weight: 100;}
+
+textarea{resize: none;}
+
+
+
+/* 首行缩进class */
+.ind2{text-indent: 2em;}
+
+
+/* 图片在父元素居中 */
+.ver-align{text-align: center;}
+.ver-align img{vertical-align: middle;}
+.ver-align:after{content:"";display: inline-block;vertical-align: middle;height: 100%;}
+
+/* 文字超出省略号 */
+.txt-overflow{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+
+/* margin-top的传递问题 */
+.clear:before{content: ""; display:table;}
+/* 浮动导致高度塌陷问题 */
+.clear:after{content: ""; display:block;clear: both;}

@@ -1,0 +1,13 @@
+$(function(){
+    (function(){
+        $("#registerIcn").on("click",function(){
+            Utils.ajaxPost("http://127.0.0.1:81/ajax",{
+                type:"register",
+                user:$("#phone").val(),
+                pass:$("#regiter-password").val()
+            }).then(function(data){
+                console.log(data);
+            })
+        })
+    })()
+})

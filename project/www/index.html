@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="css/public.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="libs/Utils.js"></script>
+        <script src="libs/compatibility.js"></script>
+        <script src="libs/jquery-3.4.1.min.js"></script>
+        <script src="libs/jquery.banner_position-1.0.1.js"></script>
+        <script src="libs/jquery.banner_breathe-1.0.1.js"></script>
+        <script src="libs/jquery.brand-1.0.1.js"></script>
+        <script src="libs/jquery.aside-1.0.1.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+
+        <aside>
+            <i class="aside-icon x"></i>
+            <dl>
+                <dt>
+                   <a href="#">
+                        <i class="aside-icon qq"></i>
+                        <i class="aside-icon head"></i>
+                        <span>客服资讯</span>
+                   </a>
+                </dt>
+                <dd>
+                    <a href="#">
+                        <i class="aside-icon car"></i>
+                        <span>购物车</span>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#">
+                        <i class="aside-icon per"></i>
+                        <span>会员中心</span>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#">
+                        <i class="aside-icon star"></i>
+                        <span>我的收藏</span>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#">
+                        <i class="aside-icon clock"></i>
+                        <span>浏览历史</span>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#">
+                        <i class="aside-icon pen"></i>
+                        <span>意见反馈</span>
+                    </a>
+                </dd>
+                <dt>
+                    <a href="javascript:void(0)" class="last">
+                        <i class="aside-icon rocket"></i>
+                    </a>
+                </dt>
+            </dl>
+        </aside>
+
+        <div id="topBar">
+            <div class="m-wrap clear">
+                <div class="topBar_l fl">
+                    <span>您好！欢迎来到唯样商城！</span>
+                    <a href="/login.html" class="text-primary">登录</a>
+                    <span class="line"></span>
+                    <a href="/register.html" >注册</a>
+                    <a href="#" class="text-orange">BOM 批量导入 型号</a>
+                </div>
+
+                <div class="topBar_r fr">
+                    <a href="#">我的订单</a>
+                    <span class="line"></span>
+                    <a href="#">消息 (<em>0</em>) </a>
+                    <span class="line"></span>
+                    
+                    <div class="topBox">
+                        <h4 class="topDBox_hd">
+                            <a href="#">会员中心</a>
+                            <i class="caret"></i>
+                        </h4>
+                        <div class="topDBox_hd is-nav">
+                            <ul class="topBox_nav">
+                                <li><a href="#">我的优惠券</a></li>
+                                <li><a href="#">我的样品</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                                <li><a href="#">我的料号</a></li>
+                                <li><a href="#">我的BOM</a></li>
+                                <li><a href="#">我的积分</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="line"></span>
+
+                    <div class="topBox">
+                        <h4 class="topDBox_hd">
+                            <a href="#">联系客服</a>
+                            <i class="caret"></i>
+                        </h4>
+                        <div class="topDBox_con">
+                            <div>
+                                    <em>电话: </em> 400-870-9968
+                            </div>
+                            <div class="clear">
+                                <em class="fl text-bold">时间: </em>
+                                <div class="fl">
+                                    周一至周六
+                                </br>
+                                    <span class="text-primary">8:30-17:30</span>
+                                </div>
+                            </div>
+                            <a href="#" class="connect-btn">联系客服</a>
+                        </div>
+                    </div>
+
+                    <span class="line"></span>
+
+                    <div class="topBox">
+                        <h4 class="topDBox_hd">
+                            <a href="#">行业QQ群</a>
+                            <i class="caret"></i>
+                        </h4>
+                        <div class="topDBox_con">
+                            <p><img src="https://staticcdn.oneyac.com/static/www/images/qq-group-eb029cfc6259e69c581a201750033faf.png" alt="">开发版交流qq群
+                            <a href="#">32132131321</a></p>
+                            <p><img src="https://staticcdn.oneyac.com/static/www/images/qq-group-eb029cfc6259e69c581a201750033faf.png" alt="">元器件交流qq群
+                                <a href="#">32132131321</a></p>
+                            <img src="https://staticcdn.oneyac.com/static/www/images/wxatt-xwj-b64b672facb63484531cb3c2050d3150.jpg" alt="">
+                            <p class="text-muted">关注微信送福利</p>
+                        </div>
+                    </div>
+                    
+                    <span class="line"></span>
+                    <a href="#" target="_blank">English</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="header">
+            <div class="m-wrap clear">
+                <div class="header-top clear">
+                    <div class="top-l">
+                        <a href="/index.html">
+                            <img src="img/header-logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="top-c">
+                        <div class="form">
+                            <input type="text" class="txt" placeholder="请输入型号,参数,搜索全站库存数据"><input type="button" class="btn" value="搜索">
+                            <i class="icon1 search"></i>
+                            <i class="icon1 excel" ></i>
+                        </div>
+                        <div class="top-c-b">
+                            <a href="#" class="text-primary">积分商城</a>
+                            <a href="#" class="text-orange">MLCC大集合</a>
+                            <a href="#" class="text-second">HCP0805X7R104K500PT</a>
+                            <a href="#" class="text-second">HC40DSA40DS4K5FDA40SF00LL</a>
+                        </div>
+                    </div>
+                    
+                    <div class="top-r">
+                        <a href="/shopcart.html">
+                            <i class="icon1 car"></i>
+                            <b class="count">0</b>
+                            <span>我的购物车</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-nav">
+                    <dl>
+                        <dt>
+                            <a href="#">产品分类</a>
+                        </dt>
+                        <dd class="active">
+                            <a href="/index.html" class="text-primary">首页</a>
+                        </dd>
+                        <dd>
+                            <a href="/product.html">商品目录</a>
+                        </dd>
+                        <dd>
+                            <a href="#">品牌专区</a>
+                        </dd>
+                        <dd>
+                            <a href="#">开发板</a>
+                        </dd>
+                        <dd class="hot">
+                            <a href="#">BOM配单</a>
+                            <b>HOT</b>
+                        </dd>
+                        <dd>
+                            <a href="#">授权代理</a>
+                        </dd>
+                        
+                        
+                    </dl>
+                </div>
+            </div>
+        </div>
+        
+        <div id="banner">
+            <div class="m-wrap">
+
+                <dl class="b-nav">
+                    <dd>
+                        <a href="#">电阻</a>
+                        <a href="#">电容</a>
+                        <div class="b-show">
+                            <dl>
+                                <dt>电阻<b>></b></dt>
+                                <dd><a href="#">压敏电阻</a></dd>
+                                <dd><a href="#">可调电阻</a></dd>
+                                <dd><a href="#">热线电阻</a></dd>
+                                <dd><a href="#">绕线电阻</a></dd>
+                                <dd><a href="#">跳线电阻</a></dd>
+                                <dd><a href="#">压敏电阻</a></dd>
+                                <dd><a href="#">压敏电阻</a></dd>
+                                <dd><a href="#">压敏电阻</a></dd>
+                                <dd><a href="#">压敏电阻</a></dd>
+                                <dd><a href="#">压敏电阻</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>电容<b>></b></dt>
+                                <dd><a href="#">贴片电容(MLCC)</a></dd>
+                                <dd><a href="#">铝电解电容</a></dd>
+                                <dd><a href="#">钽电容</a></dd>
+
+                            </dl>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#">电感/变压器</a>
+                        <a href="#">滤波器</a>
+                        <div class="b-show">
+                            <dl>
+                                <dt>电感/变压器<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>滤波器<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#">分立半导体</a>
+                        <a href="#">集成电路</a>
+                        <div class="b-show">
+                            <dl>
+                                <dt>分立半导体<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>集成电路<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#">晶振</a>
+                        <a href="#">连接器</a>
+                        <div class="b-show">
+                            <dl>
+                                <dt>晶振<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>连接器<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#">电路保护</a>
+                        <a href="#">机电产品</a>
+                        <div class="b-show">
+                            <dl>
+                                <dt>电路保护<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>机电产品<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#">传感器</a>
+                        <a href="#">光电子产品</a>
+                        <div class="b-show">
+                            <dl>
+                                <dt>传感器<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>光电子产品<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#">开关/继电器</a>
+                        <a href="#">开发板/套件</a>
+                        <div class="b-show">
+                            <dl>
+                                <dt>开关/继电器<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>开发板/套件<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#">电源</a>
+                        <a href="#">无线射频</a>
+                        <div class="b-show">
+                            <dl>
+                                <dt>电源<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>无线射频<b>></b></dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </dd>
+                    <dt class="more">
+                        <a href="#">查看全部分类</a>
+                    </dt>
+                </dl>
+
+                <ul class="loop">
+                    <li>
+                        <a href="#">
+                            <img src="https://uploadcdn.oneyac.com/upload/custom_resource/1571650595644_5507.jpg?x-oss-process=image/resize,m_lfit,h_370,w_687" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://uploadcdn.oneyac.com/upload/custom_resource/1570775906263_2235.jpg?x-oss-process=image/resize,m_lfit,h_370,w_687" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://uploadcdn.oneyac.com/upload/custom_resource/1570775901447_8065.jpg?x-oss-process=image/resize,m_lfit,h_370,w_687" alt="">
+                        </a>
+                    </li>
+                    <div class="left"><</div>
+                    <div class="right">></div>
+                </ul>
+
+                <div class="b-right">
+                    <div class="right-t">
+                        <div class="head">
+                            <i class="icon1 head"></i>
+                            <span>Hi~你好!</span>
+                        </div>
+                        <div class="log-re">
+                            <a href="http://127.0.0.1:81/login.html" class="login">登录</a>
+                            <a href="http://127.0.0.1:81/register.html" class="register">注册</a>
+                        </div>
+
+                        <a class="recommend" href="#">
+                            <i class="icon1 gift"></i>
+                            新人注册199.9厚礼已备></a>
+                    </div>
+                    <div class="right-c">
+                        <div class="c-top clear">
+                            <h3>新闻动态</h3>
+                            <a href="#" class="more">更多</a>
+                        </div>
+                        <ul class="c-list">
+                            <li>
+                                <a href="#">
+                                    <i class="tra"></i>
+                                    ROHM 集团推出内置噪声过滤功能的加速度传感器
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="tra"></i>
+                                    唯样受邀参加KEMET INSTITUTE OF TECHNOLOGY 2019
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="tra"></i>
+                                    Seeed：种下一颗种子，长出一片创意森林
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="tra"></i>
+                                    唯样获功率半导体及芯片供应商AOS官方代理授权！
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="tra"></i>
+                                    10月直播｜罗姆车载LED驱动器/电机驱动技术基础研讨会
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="right-b">
+                        <li>
+                            <a href="#">
+                                <i class="icon1 bag"></i>
+                                <span>积分商城</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon1 book"></i>
+                                <span>PCB/SMT</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon1 d-box"></i>
+                                <span>品牌资源</span>
+                                <b class="new">NEW</b>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="main">
+            <div class="m-wrap clear">
+                <div class="brand">
+                    <div class="brand-top">
+                        <a href="#" class="top-tit">授权代理品牌</a>
+                        <a href="#" class="top-more">查看更多</a>
+                    </div>
+                    <ul class="brand-loop">
+                        <!-- <li>
+                            <a href="#">
+                                <div class="brand-img">
+                                    <div></div>
+                                </div>
+                                <div class="brand-logo">
+                                    <img src="img/brand1.png" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="brand-img">
+                                    <div></div>
+                                </div>
+                                <div class="brand-logo">
+                                    <img src="img/brand2.png" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="brand-img">
+                                    <div></div>
+                                </div>
+                                <div class="brand-logo">
+                                    <img src="img/brand3.png" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="brand-img">
+                                    <div></div>
+                                </div>
+                                <div class="brand-logo">
+                                    <img src="img/brand4.png" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="brand-img">
+                                    <div></div>
+                                </div>
+                                <div class="brand-logo">
+                                    <img src="img/brand5.png" alt="">
+                                </div>
+                            </a>
+                        </li> -->
+
+                        <div class="left"><</div>
+                        <div class="right">></div>
+                    </ul>
+                </div>
+
+                <div class="technology">
+                    <div class="technology-top">
+                        <a href="#" class="top-tit">技术中心</a>
+                    </div>
+
+                    <div class="technology-main">
+                        <div class="main-l">
+                            <ul class="list clear">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/tech1.jpg" alt="">
+                                        <p>Seeed GAPUINO GAP8 开发套件</p>
+                                        <span>与大多数 Arduino 扩展板兼容，适合用途广泛的设计</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/tech2.png" alt="">
+                                        <p>Murata BLM系列片状铁氧体磁珠</p>
+                                        <span>非常适合驱动电机控制逆变器应用中使用的功率IGBT和MOSFET</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/tech3.png" alt="">
+                                        <p>111111111111111111111</p>
+                                        <span>22222222222222</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/tech4.jpg" alt="">
+                                        <p>111111111111111111111</p>
+                                        <span>22222222222222</span>
+                                    </a>
+                                </li>
+                                <div class="left"><</div>
+                                <div class="right">></div>
+                            </ul>
+                        </div>
+
+                        <div class="main-r">
+                            <div class="r-l">
+                                <h3>功能应用</h3>
+                                <a href="#" class="r-img">
+                                    <img src="img/tech-r-1.jpg" alt="">
+                                </a>
+                                <a href="#" class="r-txt">DC/DC电压转换器</a>
+                            </div>
+                            <div class="r-r">
+                                <h3>功能应用</h3>
+                                <a href="#" class="r-img">
+                                    <img src="img/tech-r-2.jpg" alt="">
+                                </a>
+                                <a href="#" class="r-txt">DC/DC电压转换器</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="recommend">
+                    <div class="recommend-top">
+                        <a href="#" class="top-tit">推荐类别</a>
+                    </div>
+
+                    <ul class="list">
+                        <li>
+                            <a href="#">
+                                <p>贴片电阻</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>车规电阻</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>插件电阻</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>贴片电容</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>薄膜电阻</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>贴片电感</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>分立半导体</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>集成电路</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>振荡器(有源)</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>光电子产品</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>连接器</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>电路保护</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>滤波器</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>开关继电器</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>传感器</p>
+                                <span class="count">0</span>
+                                <i class="r-icon">></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="news">
+                    <div class="news-top">
+                        <a href="#" class="top-tit">授权代理品牌</a>
+                        <a href="#" class="top-more">更多</a>
+                    </div>
+
+
+                    <div class="news-main">
+                        <ul class="main-l">
+                            <li>
+                                <a href="#">【官方活动】  2019中国（成都）电子信息博览会</a>
+                                <span>2019/07/08</span>
+                            </li>
+                            <li>
+                                <a href="#">【官方活动】  第19届电源管理论坛——快充和新功率器件技术（电动汽车）</a>
+                                <span>2019/04/17</span>
+                            </li>
+                            <li>
+                                <a href="#">【新品技术】  Luminar激光雷达接收器成本降至3美元 未来或被批量应用</a>
+                                <span>2019/07/17</span>
+                            </li>
+                            <li>
+                                <a href="#">【方案运用】  树莓派桌面保护套DIY图解</a>
+                                <span>2019/10/19</span>
+                            </li>
+                            <li>
+                                <a href="#">【电路图纸】  3nW高敏感度光电接收器-光电电路</a>
+                                <span>2019/08/28</span>
+                            </li>
+                            <li>
+                                <a href="#">【方案运用】  半导体技术、工艺和封装，合力应对工业市场四大挑战！</a>
+                                <span>2019/10/19</span>
+                            </li>
+                            <li>
+                                <a href="#">【方案运用】  如何制作发光有机玻璃标牌</a>
+                                <span>2019/10/19</span>
+                            </li>
+                        </ul>
+
+                        <div class="main-r">
+                            <a href="#" class="r-l">
+                                <img src="img/news-main1.jpg" alt="">
+                                <h4>华为芯片齐发 台积电、京元电等台厂受惠</h4>
+                                <p>华为上周在全联接大会中宣布将加快推出芯片提升自给率，并加强与中国台湾半导体生产链合作，除了稳坐晶圆代工龙头台积电先进制程第二大客户，测试大厂京元电亦直接受惠，明年再拿下华为海思后段测试大单。</p>
+                            </a>
+                            <a href="#" class="r-r">
+                                <img src="img/news-main2.jpg" alt="">
+                                <h4>英特尔智能研发中心每天累计超50TB数据</h4>
+                                <p>随着5G网络的发展，我们每个人产生的数据量越来越多，在企业端也是一样。近期，英特尔公布了其最新的高效开发中心，该中心名叫PTK1，占地约</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="service">
+            <div class="m-wrap clear">
+
+                <div class="service-top">
+                    <div>
+                        <i class="ser-icon c1"></i>
+                        <p>品质保障</p>
+                    </div>
+                    <div>
+                        <i class="ser-icon c2"></i>
+                        <p>一站采购</p>
+                    </div>
+                    <div>
+                        <i class="ser-icon c3"></i>
+                        <p>极速物流</p>
+                    </div>
+                    <div>
+                        <i class="ser-icon c4"></i>
+                        <p>会员权益</p>
+                    </div>
+                </div>
+
+                <div class="service-bottom">
+                    <div class="bottom-l">
+                        <img src="img/ser-bottom-log.png" alt="">
+                        <p>电子元器件线上授权代理开拓者</p>
+                    </div>
+
+                    <div class="bottom-c">
+                        <div class="list">
+                            <h4>商城介绍</h4>
+                            <a href="#">关于唯样</a>
+                            <a href="#">企业文化</a>
+                            <a href="#">联系我们</a>
+                        </div>
+                        <div class="list">
+                            <h4>新手指南</h4>
+                            <a href="#">注册登录</a>
+                            <a href="#">隐私协议</a>
+                            <a href="#">发票须知</a>
+                        </div>
+                        <div class="list">
+                            <h4>支付方式</h4>
+                            <a href="#">支付安全</a>
+                            <a href="#">银行转账</a>
+                        </div>
+                        <div class="list">
+                            <h4>售后服务</h4>
+                            <a href="#">在线客服</a>
+                        </div>
+                    </div>
+
+                    <div class="bottom-r">
+                        <div class="r-l">
+                            <img src="img/ser-b-listen.png" alt="">
+                            <h4>400-870-9968</h4>
+                            <p>服务时间: 8:30-17:30</p>
+                            <a href="#">在线客服</a>
+                        </div>
+                        <div class="r-r">
+                            <img src="img/ser-bottom-erwei.jpg" alt="">
+                            <p>关注唯样公众号</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="friend">
+            <div class="m-wrap">
+
+                <div class="friend-top">
+                    <h4 class="top-l">友情链接:</h4>
+                    <div class="top-r clear">
+                        <a href="#">信和达</a>
+                        <a href="#">电源网</a>
+                        <a href="#">B2B平台</a>
+                        <a href="#">芯片丝印反查网</a>
+                        <a href="#">深圳电子展</a>
+                        <a href="#">上海电子展</a>
+                        <a href="#">易捷晶振网</a>
+                        <a href="#" class="last">[友链QQ：1050337120]</a>
+                    </div>
+                </div>
+
+                <div class="friend-bottom">
+                    <a href="#" class="bottom-l">字符索引:</a>
+                    <div class="bottom-r clear">
+                        <a href="#">A</a>
+                        <a href="#">B</a>
+                        <a href="#">C</a>
+                        <a href="#">D</a>
+                        <a href="#">E</a>
+                        <a href="#">F</a>
+                        <a href="#">G</a>
+                        <a href="#">H</a>
+                        <a href="#">I</a>
+                        <a href="#">J</a>
+                        <a href="#">K</a>
+                        <a href="#">L</a>
+                        <a href="#">M</a>
+                        <a href="#">N</a>
+                        <a href="#">O</a>
+                        <a href="#">P</a>
+                        <a href="#">Q</a>
+                        <a href="#">R</a>
+                        <a href="#">S</a>
+                        <a href="#">T</a>
+                        <a href="#">U</a>
+                        <a href="#">V</a>
+                        <a href="#">W</a>
+                        <a href="#">X</a>
+                        <a href="#">Y</a>
+                        <a href="#">Z</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="m-wrap">
+                <div class="footer-btm">
+                    <a href="/help/1.html" target="_blank" rel="nofollow">新手上路</a>
+                    <em>|</em>
+                    <a href="/help/3.html" target="_blank" rel="nofollow">免责声明</a>
+                    <em>|</em>
+                    <a href="/help/13.html" target="_blank" rel="nofollow">销售条款</a>
+                    <em>|</em>
+                    <a href="/help/16.html" target="_blank" rel="nofollow">联系我们</a>
+                    <em>|</em>
+                    <a href="http://tech.oneyac.com" target="_blank">唯样资讯</a>
+                    <br>
+                    <span class="footer-cpr">Copyright © 2019 厦门唯样科技有限公司&nbsp;&nbsp;闽ICP备17005748号-1</span>
+                </div>
+                <div class="footer-logo">
+                    <a>
+                        <img src="img/foot-logo1.png">
+                    </a>
+                    <a>
+                        <img src="img/footer-logo2.png">
+                    </a>
+                    <a>
+                        <img src="img/footer-logo3.png">
+                    </a>
+                    <a>
+                        <img src="img/footer-logo4.png">
+                    </a>
+                    <a>
+                        <img src="img/footer-logo5.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

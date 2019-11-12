@@ -1,0 +1,123 @@
+body,
+html {
+    min-width: auto;
+    background: #f9f9f9
+}
+
+.l-wraper {
+    min-width: 960px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.header-lg {
+    height: 80px;
+    width: 100%;
+    background: #f9f9f9
+}
+
+.logo-4wrd {
+    display: block;
+    text-indent: -9999px;
+    height: 50px;
+    width: 215px;
+    background: url(../img/common//logo.png) no-repeat 50%;
+    float: left;
+    margin: 15px 0
+}
+
+.login {
+    background: #f3f6f7
+}
+
+.loginInner {
+    position: relative;
+    background: url(../img/common//main-logo.png) no-repeat 10%;
+    height: 530px
+}
+
+.loginMain {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    margin-top: -195px;
+    height: 390px;
+    width: 360px;
+    background-color: #fff
+}
+
+.loginMain .c-login_frm {
+    padding-top: 19px
+}
+
+.loginMain .c-login_btm {
+    margin-top: 5px
+}
+
+.loginErrTip {
+    display: none;
+    position: absolute;
+    background: #ffebeb;
+    color: #ff0105;
+    font-size: 12px;
+    border: 1px solid #faccc6;
+    height: 24px;
+    line-height: 22px;
+    padding: 0 10px 0 36px;
+    width: 308px;
+    left: 25px;
+    top: 56px
+}
+
+.loginErrTip:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 12px;
+    top: 3px;
+    background: url(../img/login/common-mbg-57006358f5a01592c63300d85ec667b0.png) no-repeat -60px 0;
+}
+
+.footer-sim {
+    background: #f9f9f9;
+    padding: 8px 0;
+    width: 100%;
+    font-size: 12px;
+    height: 110px
+}
+
+.footer_map {
+    text-align: center;
+    line-height: 24px
+}
+
+.footer_map>a {
+    color: #999
+}
+
+.footer_map>em {
+    font-size: 10px;
+    margin-top: -2px;
+    padding: 0 18px;
+    color: #999
+}
+
+.footer_cpr {
+    color: #999
+}
+
+.footer_logos {
+    padding: 8px 0 5px;
+    text-align: center
+}
+
+.footer_logos>a {
+    margin: 0 16px;
+    height: 33px
+}
+
+.footer_logos>a>img {
+    height: 33px
+}

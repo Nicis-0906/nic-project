@@ -1,0 +1,8 @@
+;(function(){
+    class Brand{
+        
+    }
+
+
+
+})()

@@ -1,0 +1,14 @@
+[
+    {"id":1,"img":"./img/brand1.jpg","logo":"./img/brand1.png"},
+    {"id":2,"img":"./img/brand2.jpg","logo":"./img/brand2.png"},
+    {"id":3,"img":"./img/brand3.jpg","logo":"./img/brand3.png"},
+    {"id":4,"img":"./img/brand4.jpg","logo":"./img/brand4.png"},
+    {"id":5,"img":"./img/brand5.jpg","logo":"./img/brand5.png"},
+    {"id":6,"img":"./img/brand6.jpg","logo":"./img/brand6.png"},
+    {"id":7,"img":"./img/brand7.jpg","logo":"./img/brand7.png"},
+    {"id":8,"img":"./img/brand8.jpg","logo":"./img/brand8.png"},
+    {"id":9,"img":"./img/brand9.jpg","logo":"./img/brand9.png"},
+    {"id":10,"img":"./img/brand10.jpg","logo":"./img/brand10.png"},
+    {"id":11,"img":"./img/brand11.jpg","logo":"./img/brand11.png"},
+    {"id":12,"img":"./img/brand12.jpg","logo":"./img/brand12.png"}
+]
