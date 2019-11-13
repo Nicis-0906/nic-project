@@ -70,7 +70,5 @@ $(function () {
         autoPlay:true,
         delayTime:6666
     })
-    
-
 
 });

@@ -18,7 +18,6 @@ http.createServer( (req,res) => {
     console.log("成功");
 });
 
-
 let msgArr = [];
 
 function ajax(req,res) {  
