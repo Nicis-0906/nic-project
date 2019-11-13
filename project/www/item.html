@@ -1,0 +1,3040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main-public.css">
+    <link rel="stylesheet" href="css/layer.css">
+    <link rel="stylesheet" href="css/item.css">
+
+    <style type="text/css">
+        #login_afs_with_password * {
+            box-sizing: content-box;
+        }
+
+        #login_afs_with_password .nc_scale span {
+            height: 40px;
+            line-height: 40px;
+        }
+
+        #login_afs_with_password div.nc_scale {
+            height: 42px;
+        }
+
+        .allNav-lv2{
+            top:0
+        }
+
+    </style>
+    <style>
+        .nc-container div#nc-loading-circle {
+            background: transparent;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle
+        }
+
+        .nc-container div#nc-loading-circle .sk-circle {
+            background: transparent;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0
+        }
+
+        .nc-container #nc-loading-circle .sk-circle:before {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            width: 15%;
+            height: 15%;
+            background-color: #818181;
+            border-radius: 100%;
+            -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+            animation: sk-circleFadeDelay 1.2s infinite ease-in-out both
+        }
+
+        .nc-container #nc-loading-circle .sk-circle2 {
+            -webkit-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            transform: rotate(30deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle3 {
+            -webkit-transform: rotate(60deg);
+            -ms-transform: rotate(60deg);
+            transform: rotate(60deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle4 {
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle5 {
+            -webkit-transform: rotate(120deg);
+            -ms-transform: rotate(120deg);
+            transform: rotate(120deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle6 {
+            -webkit-transform: rotate(150deg);
+            -ms-transform: rotate(150deg);
+            transform: rotate(150deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle7 {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle8 {
+            -webkit-transform: rotate(210deg);
+            -ms-transform: rotate(210deg);
+            transform: rotate(210deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle9 {
+            -webkit-transform: rotate(240deg);
+            -ms-transform: rotate(240deg);
+            transform: rotate(240deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle10 {
+            -webkit-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            transform: rotate(270deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle11 {
+            -webkit-transform: rotate(300deg);
+            -ms-transform: rotate(300deg);
+            transform: rotate(300deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle12 {
+            -webkit-transform: rotate(330deg);
+            -ms-transform: rotate(330deg);
+            transform: rotate(330deg)
+        }
+
+        .nc-container #nc-loading-circle .sk-circle2:before {
+            -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle3:before {
+            -webkit-animation-delay: -1s;
+            animation-delay: -1s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle4:before {
+            -webkit-animation-delay: -.9s;
+            animation-delay: -.9s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle5:before {
+            -webkit-animation-delay: -.8s;
+            animation-delay: -.8s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle6:before {
+            -webkit-animation-delay: -.7s;
+            animation-delay: -.7s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle7:before {
+            -webkit-animation-delay: -.6s;
+            animation-delay: -.6s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle8:before {
+            -webkit-animation-delay: -.5s;
+            animation-delay: -.5s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle9:before {
+            -webkit-animation-delay: -.4s;
+            animation-delay: -.4s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle10:before {
+            -webkit-animation-delay: -.3s;
+            animation-delay: -.3s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle11:before {
+            -webkit-animation-delay: -.2s;
+            animation-delay: -.2s
+        }
+
+        .nc-container #nc-loading-circle .sk-circle12:before {
+            -webkit-animation-delay: -.1s;
+            animation-delay: -.1s
+        }
+
+        @-webkit-keyframes sk-circleFadeDelay {
+
+            0%,
+            39%,
+            100% {
+                opacity: 0
+            }
+
+            40% {
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes sk-circleFadeDelay {
+
+            0%,
+            39%,
+            100% {
+                opacity: 0
+            }
+
+            40% {
+                opacity: 1
+            }
+        }
+
+        @keyframes sk-circleFadeDelay {
+
+            0%,
+            39%,
+            100% {
+                opacity: 0
+            }
+
+            40% {
+                opacity: 1
+            }
+        }
+
+        .nc-container .scale_text2 #nc-loading-circle .sk-circle:before {
+            background-color: #fff
+        }
+
+        .nc_iconfont {
+            font-family: "nc_iconfont";
+            color: #ff3f08;
+            font-size: 16px;
+            font-style: normal
+        }
+
+        .ncpc_iconfont {
+            font-family: "ncpc_iconfont";
+            color: #ff3f08;
+            font-size: 16px;
+            font-style: normal
+        }
+
+        .captcha-error .icon_ban {
+            float: left;
+            font-size: 16px;
+            padding-right: 5px;
+            line-height: 14px
+        }
+
+        .clickCaptcha_text .btn_refresh {
+            font-style: normal;
+            cursor: pointer;
+            background: #fff;
+            color: #737383
+        }
+
+        .imgCaptcha .btn_refresh {
+            font-size: 20px;
+            cursor: pointer;
+            background: #fff;
+            color: #737383
+        }
+
+        .nc_voice {
+            display: none;
+            position: relative;
+            margin-top: -34px;
+            z-index: 99;
+            width: auto;
+            height: 34px;
+            background: #fff
+        }
+
+        .omeo-code-img,
+        .omeo-code-audio {
+            font-size: 0;
+            text-align: left
+        }
+
+        .omeo-code-audiobox,
+        .omeo-code-img a,
+        .omeo-code-audio a,
+        .omeo-code-state {
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            height: 32px;
+            vertical-align: top;
+            font-size: 12px
+        }
+
+        .omeo-code .omeo-code-refresh {
+            background: transparent;
+            width: 32px;
+            height: 32px;
+            font-size: 20px;
+            color: #888;
+            text-align: center;
+            text-decoration: none;
+            padding-left: 4px;
+            line-height: 32px
+        }
+
+        .omeo-code .omeo-switch {
+            display: none;
+            width: 32px;
+            height: 32px;
+            border-left: 1px solid #e1e1e1;
+            background-repeat: no-repeat
+        }
+
+        .omeo-img-active .omeo-code-img {
+            display: block
+        }
+
+        .omeo-img-active .omeo-code-audio {
+            display: none
+        }
+
+        .omeo-code-img img {
+            border: 1px solid #cdcdcd;
+            cursor: pointer
+        }
+
+        .omeo-code-img .omeo-switch {
+            background-position: 9px -41px
+        }
+
+        .omeo-audio-active .omeo-code-audio {
+            display: block
+        }
+
+        .omeo-audio-active .omeo-code-img {
+            display: none
+        }
+
+        .omeo-code-refresh {
+            position: relative;
+            left: 95px
+        }
+
+        .omeo-code-audiobox {
+            position: relative;
+            height: 30px;
+            line-height: 32px;
+            border: 1px solid #e1e1e1;
+            text-align: center;
+            overflow: hidden;
+            left: 100px;
+            top: 1px;
+            width: 45%;
+            min-width: 80px;
+            background-color: #eee
+        }
+
+        .omeo-code-audiobox a {
+            display: block;
+            text-decoration: none;
+            color: #06c
+        }
+
+        .omeo-code-audiobox-playing a {
+            visibility: hidden
+        }
+
+        .omeo-code-audiobox span,
+        .omeo-code-audiobox b {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 30px;
+            font-weight: 100;
+            overflow: hidden
+        }
+
+        .omeo-code-audiobox-playing span,
+        .omeo-code-audiobox-playing b {
+            visibility: visible
+        }
+
+        .omeo-code-audiobox span {
+            z-index: 0;
+            width: 0;
+            background: #186bca
+        }
+
+        .omeo-code-audiobox b {
+            width: 100%;
+            z-index: 1;
+            text-align: left;
+            text-indent: 30px;
+            color: #999;
+            background: url("//g.alicdn.com/sd/ncpc/images/checkcode.png") no-repeat 14px -89px
+        }
+
+        .omeo-code-audio .omeo-switch {
+            background-position: 5px 10px
+        }
+
+        input[type=text]::-ms-clear {
+            display: none
+        }
+
+        .omeo-box {
+            position: relative;
+            background-color: #fff
+        }
+
+        .omeo-code-echo {
+            position: absolute;
+            top: 2px;
+            left: 2px
+        }
+
+        .omeo-code-echo input {
+            padding: 5px;
+            height: 18px;
+            line-height: 18px;
+            border: 1px solid #ddd;
+            width: 80px;
+            outline: 0
+        }
+
+        .omeo-code-state {
+            height: 30px;
+            line-height: 30px;
+            text-indent: 25px;
+            white-space: nowrap;
+            background-image: url("//g.alicdn.com/sd/ncpc/images/checkcode.png");
+            background-repeat: no-repeat;
+            background-position: 100px 100px
+        }
+
+        .omeo-code-echo .omeo-code-state-error {
+            width: auto;
+            background-position: 7px -193px
+        }
+
+        .omeo-code-echo .omeo-code-state-success {
+            position: absolute;
+            width: 30px;
+            background-position: 7px -243px
+        }
+
+        .omeo-code-state {
+            position: absolute;
+            left: 0;
+            top: 28px
+        }
+
+        .nc_voice_close {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            left: 95px;
+            top: 0;
+            border-left: #ddd 2px solid;
+            padding: 0 0 0 7px;
+            background-color: #fff;
+            font-size: 20px;
+            color: #888;
+            line-height: 32px
+        }
+
+        .nc_help {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 99999
+        }
+
+        .nc_help .mask {
+            background-color: #000;
+            opacity: .5;
+            filter: alpha(opacity=50);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0
+        }
+
+        .nc_btn_close {
+            position: absolute;
+            height: 20px;
+            left: 500px;
+            border-radius: 20px;
+            padding: 10px 30px;
+            background-color: #aaa;
+            color: #fff;
+            cursor: pointer;
+            z-index: 10
+        }
+
+        .nc_btn_close:hover {
+            background-color: #afafaf
+        }
+
+        .nc_hand {
+            position: absolute;
+            width: 68px;
+            height: 53px;
+            z-index: 3
+        }
+
+        .nc_slide_bg {
+            z-index: 3;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            line-height: 34px
+        }
+
+        .nc_voicebtn {
+            position: absolute;
+            padding: 0;
+            right: -25px;
+            font-size: 23px;
+            color: #888;
+            cursor: pointer;
+            line-height: 34px
+        }
+
+        .nc_helpbtn {
+            position: absolute;
+            cursor: pointer;
+            right: -95px;
+            top: 4px;
+            font-size: 12px;
+            background-color: #ffb668;
+            color: #fff;
+            padding: 4px;
+            border-radius: 2px;
+            line-height: 18px;
+            display: none
+        }
+
+        .nc_helpbtn:before {
+            width: 0;
+            height: 0;
+            content: "";
+            position: absolute;
+            left: -2px;
+            top: 6px;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-right: 4px solid #ffb668
+        }
+
+        .nc-container .errloading {
+            border: #faf1d5 1px solid;
+            text-indent: 3px;
+            background-image: none;
+            font-size: 12px;
+            width: 290px;
+            line-height: 20px;
+            padding: 7px 5px 8px 5px;
+            color: #ef9f06;
+        }
+
+        .nc-container .errloading a {
+            color: #30a7fc
+        }
+
+        .nc_captcha_text .nc_err {
+            float: left;
+            text-indent: 0
+        }
+
+        .button_move {
+            transition: left .5s;
+            -moz-transition: left .5s;
+            -webkit-transition: left .5s;
+            -o-transition: left .5s
+        }
+
+        .bg_move {
+            transition: width .5s;
+            -moz-transition: width .5s;
+            -webkit-transition: width .5s;
+            -o-transition: width .5s
+        }
+
+        .nc_slide_box {
+            position: absolute
+        }
+
+        .nc_captcha_text {
+            height: auto;
+            line-height: 20px;
+            visibility: hidden;
+            font-size: 12px;
+            color: #999;
+            font-weight: normal
+        }
+
+        .nc-container .nc_captcha_img_text {
+            width: auto;
+            height: auto;
+            line-height: 20px;
+            visibility: hidden;
+            font-size: 12px;
+            color: #999;
+            font-weight: normal;
+            display: none;
+            padding: 0 0 10px 0;
+            background-position: 0 0;
+        }
+
+        .nc-container .nc_captcha_img_text span.nc-lang-cnt {
+            line-height: inherit
+        }
+
+        .nc-container .imgCaptcha .nc_captcha_img_text {
+            width: auto
+        }
+
+        .nc_captcha_img_text {
+            height: auto;
+            line-height: 20px;
+            visibility: hidden;
+            font-size: 12px;
+            color: #999;
+            font-weight: normal;
+            display: none;
+            padding: 0 0 10px 3px;
+            background-position: 0 0
+        }
+
+        .nc-container .nc_wrapper {
+            width: auto
+        }
+
+        .nc_scale {
+            width: auto;
+            height: 34px;
+            background: #e8e8e8;
+            position: relative;
+            margin: 0;
+            padding: 0
+        }
+
+        .nc_scale.is_audio {
+            margin-right: 25px
+        }
+
+        .nc-container .nc_scale div {
+            height: auto
+        }
+
+        .nc-container .nc_scale ul {
+            list-style: none
+        }
+
+        .nc-container .nc_scale .btn_slide {
+            color: #737383;
+            background-image: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        .nc-container .nc_scale span {
+            text-align: center;
+            width: 40px;
+            height: 32px;
+            line-height: 32px;
+            border: 1px solid #ccc;
+            position: absolute;
+            left: 0;
+            cursor: move;
+            background: #fff;
+            z-index: 2
+        }
+
+        .nc-container .nc_scale span.nc-lang-cnt {
+            *line-height: 34px;
+            float: none;
+            width: auto;
+            height: auto;
+            *height: 34px;
+            border: none;
+            position: static;
+            cursor: inherit;
+            background: none;
+            z-index: 0;
+            display: inline
+        }
+
+        .nc_slide_button {
+            width: 40px;
+            height: 32px;
+            border: 1px solid #ccc;
+            position: absolute;
+            left: 0;
+            cursor: move;
+            z-index: 2
+        }
+
+        @media screen and (-ms-high-contrast:active),
+        (-ms-high-contrast:none) {
+            .nc_scale span {
+                height: 32px
+            }
+        }
+
+        .nc-container .nc_scale .btnok {
+            cursor: default;
+            z-index: 3
+        }
+
+        .nc-container .nc_scale .btnok2 {
+            cursor: default;
+            font-size: 20px;
+            z-index: 3
+        }
+
+        .nc-container .nc_scale .btn_warn {
+            cursor: default;
+            color: #ff3f08;
+            line-height: 34px;
+            text-align: center;
+            font-size: 20px;
+            background: #fff;
+            z-index: 3
+        }
+
+        .nc-container .clickCaptcha_text .btn_refresh {
+            font-size: 20px
+        }
+
+        .nc-container .clickCaptcha_text .icon_close {
+            line-height: 30px;
+            margin-left: 8px;
+            cursor: default;
+            color: #ff3f08;
+            font-size: 16px;
+            float: left;
+            margin-right: 2px;
+            background: transparent;
+            z-index: 3
+        }
+
+        .nc-container .nc_captcha_img_text .icon_close {
+            cursor: default;
+            color: #ff3f08;
+            font-size: 16px;
+            float: left;
+            margin-right: 4px;
+            background: transparent;
+            z-index: 3;
+            line-height: 18px
+        }
+
+        .nc-container .errloading .icon_warn {
+            cursor: default;
+            color: #ff3f08;
+            font-size: 18px;
+            float: left;
+            background: transparent;
+            z-index: 3
+        }
+
+        .nc-container .nc_scale .btn_ok {
+            cursor: default;
+            line-height: 34px;
+            text-align: center;
+            font-size: 20px;
+            background: #fff;
+            z-index: 3;
+            color: #76c61d
+        }
+
+        .nc-container .nc_scale .nc_ok,
+        .nc-container .nc_scale .nc_bg {
+            background: #7ac23c
+        }
+
+        .nc-container .nc_scale .nc_bg {
+            position: absolute;
+            height: 100%;
+            _height: 34px;
+            left: 0;
+            width: 10px
+        }
+
+        .nc-container .nc_scale div.redbar {
+            background: #fc461e;
+            opacity: .5;
+            filter: alpha(opacity=50)
+        }
+
+        .nc-container .nc_scale div.orange {
+            background: #f00
+        }
+
+        .nc-container .nc_scale .scale_text {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            position: absolute;
+            z-index: 1;
+            background: transparent;
+            color: #9c9c9c;
+            line-height: 34px;
+            font-size: 12px;
+            cursor: pointer
+        }
+
+        .nc-container .nc_scale .scale_text2 {
+            text-align: left;
+            color: #fff;
+            font-size: 12px;
+            text-indent: 10px
+        }
+
+        .nc-container .nc_scale .scale_text2 b {
+            padding-left: 0;
+            font-weight: normal
+        }
+
+        .nc-container .nc_scale .scale_text.scale_loading_text {
+            text-align: center
+        }
+
+        .nc-container .nc_scale .imgCaptcha,
+        .nc-container .nc_scale .clickCaptcha {
+            display: none;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background: #fff;
+            z-index: 20000;
+        }
+
+        .nc-container .nc_scale .imgCaptcha p.error span,
+        .nc-container .nc_scale .clickCaptcha p.error span {
+            line-height: normal
+        }
+
+        .nc-container .nc_scale .imgCaptcha {
+            height: auto
+        }
+
+        .nc-container .nc_scale .clickCaptcha {
+            position: absolute;
+            left: 0;
+            top: 35px;
+            height: 270px;
+            background: #fff;
+            display: none;
+        }
+
+        .nc-container .nc_scale .clickCaptcha p.error i {
+            color: #ff3f08;
+            font-style: normal
+        }
+
+        .nc-container .nc_scale .clickCaptcha div {
+            position: static;
+            clear: both;
+            width: 100%;
+            background: #fff;
+            height: auto
+        }
+
+        .nc-container .nc_scale .clickCaptcha .clickCaptcha_text {
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .nc-container .nc_scale .clickCaptcha .clickCaptcha_text b {
+            font-weight: normal
+        }
+
+        .nc_btn_2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            margin: 2px 9px 0 0
+        }
+
+        .nc_iconfont.nc_btn_2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer
+        }
+
+        .nc_iconfont.nc_btn_1 {
+            position: absolute;
+            top: 10px;
+            right: 5px
+        }
+
+        .nc_btn_1 {
+            top: 10px;
+            right: 10px
+        }
+
+        .scale_text i {
+            font-style: normal;
+            border: none;
+            position: static;
+            cursor: default;
+            color: #fffc00;
+            background: none;
+            display: inline;
+            width: 100%
+        }
+
+        .nc-container .clickCaptcha .clickCaptcha_img {
+            margin: 0 auto;
+            clear: both;
+            position: relative;
+        }
+
+        .nc-container .clickCaptcha .clickCaptcha_img img {
+            width: 230px;
+            height: 230px;
+            margin-left: 10px;
+            margin-top: 5px
+        }
+
+        .nc-container .clickCaptcha .clickCaptcha_btn {
+            margin: 10px 0 0 15px;
+            position: relative;
+            text-align: left;
+        }
+
+        .nc-container .clickCaptcha .clickCaptcha_btn img {
+            cursor: pointer
+        }
+
+        .nc-container .imgCaptcha {
+            position: absolute;
+            left: 0;
+            top: 35px;
+            height: auto;
+            padding-bottom: 15px;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+
+        .nc-container .imgCaptcha div {
+            position: static;
+            width: 90%;
+            background-color: #fff
+        }
+
+        .nc-container .imgCaptcha,
+        .nc-container .clickCaptcha {
+            text-align: left;
+        }
+
+        .nc-container .imgCaptcha a,
+        .nc-container .clickCaptcha a {
+            color: #ff3f08
+        }
+
+        .nc-container .imgCaptcha .imgCaptcha_text {
+            height: 42px;
+            line-height: 42px;
+            width: 120px;
+            background: #fff;
+            font-size: 14px;
+            text-align: left;
+            color: #747474;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .nc-container .imgCaptcha .imgCaptcha_text input {
+            margin-top: 5px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            width: 90px;
+            background: #fff
+        }
+
+        .nc-container .imgCaptcha .imgCaptcha_text input:focus {
+            outline: none;
+            color: #bbb
+        }
+
+        .nc-container .imgCaptcha .imgCaptcha_btn {
+            margin: 0 0 0 12px;
+            *margin-left: 0;
+            clear: both;
+            padding-top: 5px;
+            width: 90%;
+        }
+
+        .nc-container .imgCaptcha .imgCaptcha_btn img {
+            cursor: pointer
+        }
+
+        .nc-container .imgCaptcha .nc_scale_submit {
+            margin: 0 auto;
+            cursor: pointer;
+            background-color: #fc461e;
+            width: 120px;
+            height: 32px;
+            line-height: 32px;
+            color: #fff;
+            text-align: center
+        }
+
+        .nc-container .imgCaptcha .imgCaptcha_img {
+            margin: 4px 0 0 100px;
+            height: 40px;
+            width: 130px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .nc-container .imgCaptcha .imgCaptcha_img img {
+            width: 130px
+        }
+
+        .nc-container .imgCaptcha .imgCaptcha_img input {
+            border: solid 1px #ccc
+        }
+
+        .nc-lang-ar_MA,
+        .nc-lang-ar_SA,
+        .nc-lang-iw_HE,
+        .nc-lang-iw_IL {
+            text-align: right;
+            *text-align: left;
+        }
+
+        .nc-lang-ar_MA .nc_scale .scale_text2,
+        .nc-lang-ar_SA .nc_scale .scale_text2,
+        .nc-lang-iw_HE .nc_scale .scale_text2,
+        .nc-lang-iw_IL .nc_scale .scale_text2 {
+            text-align: right;
+        }
+
+        .nc-lang-ar_MA .nc_scale .scale_text2 span,
+        .nc-lang-ar_SA .nc_scale .scale_text2 span,
+        .nc-lang-iw_HE .nc_scale .scale_text2 span,
+        .nc-lang-iw_IL .nc_scale .scale_text2 span {
+            *display: inline-block;
+            padding: 0 56px 0 0
+        }
+
+        .nc-lang-ar_MA .nc_captcha_img_text,
+        .nc-lang-ar_SA .nc_captcha_img_text,
+        .nc-lang-iw_HE .nc_captcha_img_text,
+        .nc-lang-iw_IL .nc_captcha_img_text {
+            *text-align: right
+        }
+
+        .nc-lang-ar_MA span.nc-lang-cnt,
+        .nc-lang-ar_SA span.nc-lang-cnt,
+        .nc-lang-iw_HE span.nc-lang-cnt,
+        .nc-lang-iw_IL span.nc-lang-cnt {
+            text-align: right;
+            direction: rtl
+        }
+
+        .nocaptcha span.nc-lang-cnt {
+            float: none;
+            height: auto;
+            line-height: 30px
+        }
+
+        .nc-container {
+            font-size: 12px;
+            -ms-touch-action: none;
+            touch-action: none;
+        }
+
+        .nc-container p {
+            margin: 0;
+            padding: 0;
+            display: inline
+        }
+
+        .nc-container .scale_text.scale_text span[data-nc-lang="_startTEXT"] {
+            display: inline-block;
+            width: 100%
+        }
+
+        .nc-container .scale_text.scale_text.slidetounlock span[data-nc-lang="_startTEXT"] {
+            background: -webkit-gradient(linear, left top, right top, color-stop(0, #4d4d4d), color-stop(.4, #4d4d4d), color-stop(.5, #fff), color-stop(.6, #4d4d4d), color-stop(1, #4d4d4d));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: slidetounlock 3s infinite;
+            -webkit-text-size-adjust: none
+        }
+
+        .nc-container .nc_scale .nc-align-center.scale_text2 {
+            text-align: center;
+            text-indent: -42px
+        }
+
+        @-webkit-keyframes slidetounlock {
+            0% {
+                background-position: -200px 0
+            }
+
+            100% {
+                background-position: 200px 0
+            }
+        }
+
+        .nc-container.tb-login .clickCaptcha_text .icon_close {
+            line-height: 30px;
+            margin-left: 0;
+            cursor: default;
+            color: #ff3f08;
+            font-size: 16px;
+            float: left;
+            margin-right: 0;
+            background: transparent;
+            z-index: 3
+        }
+
+        .nc-container.tb-login {
+            position: relative;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .nc-container.tb-login .nc_scale {
+            width: auto;
+        }
+
+        .nc-container.tb-login .nc_scale .scale_text2 {
+            text-indent: -42px;
+            text-align: center;
+        }
+
+        .nc-container.tb-login .nc_scale .scale_text2 b {
+            padding: 0
+        }
+
+        .nc-container.tb-login .nc_scale.nc_err div.scale_text {
+            background: #f79977
+        }
+
+        .nc-container.tb-login .errloading {
+            width: auto
+        }
+
+        .nc-container.tb-login .imgCaptcha,
+        .nc-container.tb-login .clickCaptcha {
+            width: 252px;
+            *width: 256px;
+            border: 0;
+            *height: 300px;
+            min-height: 300px;
+            max-height: inherit !important;
+        }
+
+        .nc-container.tb-login .imgCaptcha div.login-msg.error,
+        .nc-container.tb-login .clickCaptcha div.login-msg.error {
+            background: #fff2f2
+        }
+
+        .nc-container.tb-login .imgCaptcha .captcha-error,
+        .nc-container.tb-login .clickCaptcha .captcha-error {
+            position: absolute;
+            top: 0;
+            width: 244px;
+            height: auto;
+            margin-bottom: 15px;
+            padding: 3px;
+            border: solid 1px #ff8e8e;
+            line-height: 18px
+        }
+
+        .nc-container.tb-login .imgCaptcha .captcha-inform,
+        .nc-container.tb-login .clickCaptcha .captcha-inform {
+            font-size: 110%;
+            margin-left: 20px
+        }
+
+        .nc-container.tb-login .imgCaptcha {
+            padding-top: 66px;
+        }
+
+        .nc-container.tb-login .imgCaptcha .imgCaptcha_text {
+            width: 100px;
+            margin-left: 0;
+        }
+
+        .nc-container.tb-login .imgCaptcha .imgCaptcha_text input:focus {
+            color: #000
+        }
+
+        .nc-container.tb-login .imgCaptcha .imgCaptcha_img {
+            width: 120px;
+            _width: 100px
+        }
+
+        .nc-container.tb-login .imgCaptcha .imgCaptcha_btn {
+            width: 100%;
+            margin-left: 0
+        }
+
+        .nc-container.tb-login .imgCaptcha .nc_scale_submit {
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            margin-top: 20px;
+            margin-left: 0;
+            border-radius: 3px;
+            font-size: 16px;
+            font-family: Tahoma, Helvetica, Arial, sans-serif;
+            background: #ff3f08
+        }
+
+        .nc-container.tb-login .clickCaptcha {
+            padding-top: 40px;
+        }
+
+        .nc-container.tb-login .clickCaptcha .clickCaptcha_text {
+            text-indent: 4px
+        }
+
+        .nc-container.tb-login .clickCaptcha .clickCaptcha_img img {
+            margin-left: 10px
+        }
+
+        .nc-container.tb-login .nc_btn_1 {
+            top: 77px;
+            _top: 57px
+        }
+
+        .nc-container.tb-login .nc_btn_2 {
+            top: 36px
+        }
+
+        .login .nc-container.tb-login .login-msg p,
+        .login-box .nc-container.tb-login .login-msg p {
+            width: auto;
+            float: left
+        }
+
+        .nc-container.tb-login.nc-old-login {
+            margin: 20px 0 10px 0;
+            width: 250px;
+        }
+
+        .nc-container.tb-login.nc-old-login .nc_wrapper {
+            width: 250px
+        }
+
+        .nc-container.tb-login.nc-old-login .imgCaptcha,
+        .nc-container.tb-login.nc-old-login .clickCaptcha {
+            width: 250px;
+            min-height: auto;
+        }
+
+        .nc-container.tb-login.nc-old-login .imgCaptcha .captcha-error,
+        .nc-container.tb-login.nc-old-login .clickCaptcha .captcha-error {
+            line-height: 16px
+        }
+
+        .nc-container.tb-login.nc-old-login .clickCaptcha {
+            padding-top: 28px;
+        }
+
+        .nc-container.tb-login.nc-old-login .clickCaptcha .clickCaptcha_img img {
+            width: 200px;
+            height: 200px
+        }
+
+        .nc-container.nc-old-login.show-click-captcha {
+            padding-bottom: 60px
+        }
+
+        .nc-container.nc-old-login.show-click-captcha.nc-tm-min-fix {
+            padding-bottom: 40px
+        }
+
+        .nc-container.tb-login.nc-tm-min-fix .clickCaptcha {
+            max-height: 340px !important
+        }
+
+        #content .login-box .bd .nc-container.tb-login .login-msg {
+            margin: 10px auto 15px auto
+        }
+
+        #content .login-box .bd .nc-container.tb-login.nc-old-login.show-click-captcha .login-msg {
+            margin: 2px 0 0 0
+        }
+
+        .nc-container .nc_scale .nc-cc {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 35px;
+            z-index: 20000;
+            width: 360px;
+            height: 570px;
+            border: 1px solid #5eaef1;
+            border-radius: 4px;
+            background: #fff;
+            font-size: 14px;
+            line-height: 18px;
+            color: #333;
+        }
+
+        .nc-container .nc_scale .nc-cc.nc-cc-status-loading .nc-cc-btn,
+        .nc-container .nc_scale .nc-cc.nc-cc-status-verifing .nc-cc-btn {
+            background-color: #90c1eb
+        }
+
+        .nc-container .nc_scale .nc-cc.nc-cc-status-loading .nc-cc-btn,
+        .nc-container .nc_scale .nc-cc.nc-cc-status-verifing .nc-cc-btn,
+        .nc-container .nc_scale .nc-cc.nc-cc-status-loading .nc-cc-refresh,
+        .nc-container .nc_scale .nc-cc.nc-cc-status-verifing .nc-cc-refresh {
+            cursor: default
+        }
+
+        .nc-container .nc_scale .nc-cc.nc-cc-status-loading .nc-cc-refresh,
+        .nc-container .nc_scale .nc-cc.nc-cc-status-verifing .nc-cc-refresh {
+            color: #999
+        }
+
+        .nc-container .nc_scale .nc-cc a {
+            color: #3199f4;
+            text-decoration: none
+        }
+
+        .nc-container .nc_scale .nc-cc .nc_iconfont {
+            vertical-align: top;
+            margin-right: 8px
+        }
+
+        .nc-container .nc_scale .nc-cc-btn {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: top;
+            letter-spacing: normal;
+            word-spacing: normal;
+            width: 100px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #3199f4;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .nc-container .nc_scale .nc-cc-btn.nc-cc-disabled {
+            background-color: #90c1eb;
+            cursor: default
+        }
+
+        .nc-container .nc_scale .nc-cc-btn .nc-lang-cnt {
+            line-height: 18px
+        }
+
+        .nc-container .nc_scale .nc-cc-header {
+            padding: 20px 20px 19px 20px;
+            height: 100px;
+            background: #f4f8fa;
+            border-bottom: 1px solid #ccc
+        }
+
+        .nc-container .nc_scale .nc-cc-img1-box {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-right: 16px
+        }
+
+        .nc-container .nc_scale .nc-cc-txt {
+            overflow: hidden;
+            *zoom: 1;
+            line-height: 30px;
+            padding-top: 11px
+        }
+
+        .nc-container .nc_scale .nc-cc-img2-box {
+            position: relative;
+            padding: 0 20px;
+            margin-top: 20px
+        }
+
+        .nc-container .nc_scale .nc-cc-items {
+            position: absolute;
+            left: 20px;
+            _left: 0;
+            top: 0;
+            width: 320px;
+            overflow: hidden
+        }
+
+        .nc-container .nc_scale .nc-cc-items-inner {
+            margin-right: -20px
+        }
+
+        .nc-container .nc_scale .nc-cc-item {
+            position: relative;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: top;
+            letter-spacing: normal;
+            word-spacing: normal;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            width: 98px;
+            height: 98px;
+        }
+
+        .nc-container .nc_scale .nc-cc-item:hover {
+            border-color: #3199f4
+        }
+
+        .nc-container .nc_scale .nc-cc-item .nc_iconfont {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: #3199f4;
+            font-size: 22px;
+            margin-right: 0
+        }
+
+        .nc-container .nc_scale .nc-cc-item.nc-cc-selected .nc_iconfont {
+            display: block
+        }
+
+        .nc-container .nc_scale .nc-cc-tip {
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: 60px;
+            width: 360px;
+            line-height: 18px;
+            text-align: center;
+            color: #eb4f38;
+        }
+
+        .nc-container .nc_scale .nc-cc-tip span {
+            line-height: normal
+        }
+
+        .nc-container .nc_scale .nc-cc-footer {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            width: 360px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .nc-container .nc_scale .nc-cc-footer .nc_iconfont {
+            color: #c4cbd0
+        }
+
+        .nc-container .nc_scale .nc-cc-refresh,
+        .nc-container .nc_scale .nc-cc-wait {
+            position: absolute;
+            left: 20px;
+            top: 0;
+            color: #3199f4;
+            cursor: pointer
+        }
+
+        .nc-container .nc_scale .nc-cc-wait {
+            display: none
+        }
+
+        .nc-container .nc_scale .nc-cc-cancel {
+            position: absolute;
+            right: 20px;
+            top: 0;
+            color: #3199f4;
+            cursor: pointer;
+        }
+
+        .nc-container .nc_scale .nc-cc-cancel .nc_iconfont {
+            position: relative;
+            top: -1px
+        }
+
+        .nc-container .nc_scale .nc-cc-loading {
+            margin-top: 247px;
+            text-align: center;
+            line-height: 14px
+        }
+
+        .nc-container .nc_scale .nc-cc-loading-img {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: top;
+            letter-spacing: normal;
+            word-spacing: normal;
+            vertical-align: middle;
+            width: 14px;
+            height: 14px;
+            position: relative;
+            top: -1px;
+            margin-right: 9px
+        }
+
+        .nc-container .nc_scale .nc-cc-fail {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 320px;
+            height: 180px;
+            margin-left: -160px;
+            margin-top: -90px;
+            background: #fff;
+            border-radius: 4px
+        }
+
+        .nc-container .nc_scale .nc-cc-fail-inner {
+            text-align: center;
+            padding: 55px 10px 10px
+        }
+
+        .nc-container .nc_scale .nc-cc-fail-action {
+            margin: 28px 0 18px;
+        }
+
+        .nc-container .nc_scale .nc-cc-fail-action a {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: top;
+            letter-spacing: normal;
+            word-spacing: normal;
+            line-height: 30px;
+            margin-left: 16px
+        }
+
+        .nc-container .nc_scale .nc-cc-contact {
+            text-align: right;
+            color: #666;
+            padding-right: 9px
+        }
+
+        .nc-container .nc_scale .nc-cc-mask {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 360px;
+            height: 570px;
+            background: rgba(0, 0, 0, 0.3);
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#4C000000', endColorstr='#4C000000');
+        }
+
+        :root .nc-container .nc_scale .nc-cc-mask {
+            -webkit-filter: none;
+            filter: none
+        }
+
+        .nc-container .nc_scale .nc-cc-arrow-1,
+        .nc-container .nc_scale .nc-cc-arrow-2 {
+            display: none;
+            position: absolute;
+            top: 340px;
+            border: solid transparent;
+            height: 0;
+            width: 0
+        }
+
+        .nc-container .nc_scale .nc-cc-arrow-1 {
+            border-width: 16px;
+            margin-top: -1px
+        }
+
+        .nc-container .nc_scale .nc-cc-arrow-2 {
+            border-width: 15px
+        }
+
+        .nc-container .nc_scale .nc-cc-right .nc-cc-arrow-1,
+        .nc-container .nc_scale .nc-cc-left .nc-cc-arrow-1,
+        .nc-container .nc_scale .nc-cc-right .nc-cc-arrow-2,
+        .nc-container .nc_scale .nc-cc-left .nc-cc-arrow-2 {
+            display: block;
+            _display: none
+        }
+
+        .nc-container .nc_scale .nc-cc-right {
+            left: 180px;
+            top: -339px;
+        }
+
+        .nc-container .nc_scale .nc-cc-right .nc-cc-arrow-1 {
+            border-right-color: #5eaef1;
+            left: -32px
+        }
+
+        .nc-container .nc_scale .nc-cc-right .nc-cc-arrow-2 {
+            border-right-color: #fff;
+            left: -30px
+        }
+
+        .nc-container .nc_scale .nc-cc-left {
+            left: -335px;
+            top: -339px;
+        }
+
+        .nc-container .nc_scale .nc-cc-left .nc-cc-arrow-1 {
+            border-left-color: #5eaef1;
+            right: -32px
+        }
+
+        .nc-container .nc_scale .nc-cc-left .nc-cc-arrow-2 {
+            border-left-color: #fff;
+            right: -30px
+        }
+    </style>
+
+    <script src="libs/Utils.js"></script>
+    <script src="libs/compatibility.js"></script>
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="libs/jquery.goTop-1.0.1.js"></script>
+    <script src="libs/jquery,autoLogin-1.0.1.js"></script>
+    <script src="js/item.js"></script>
+
+</head>
+
+<body>
+    <div class="topBar">
+        <div class="m-wrap clearfix">
+            <div class="topBar_l fl">
+                <span>您好！欢迎来到唯样商城！</span>
+                <a href="/login.html?returnUrl=%2Fproduct%2F846362.html" class="text-primary" top-bar-login-user=""
+                    rel="nofollow">登录</a>
+                <span class="line"></span>
+                <a href="/register.html" top-bar-register-user="" rel="nofollow">注册</a>
+                <a class="text-warning" href="/bom/copy.html" rel="nofollow">BOM 批量导入型号</a>
+            </div>
+            <div class="topBar_r fr">
+                <a href="#" rel="nofollow">我的订单</a>
+                <span class="line"></span>
+                <a href="#" rel="nofollow">
+                    消息（<em>0</em>）
+                </a>
+                <div class="topDBox">
+                    <h2 class="topDBox_hd">
+                        <a href="/account/index.html">会员中心</a>
+                        <i class="caret"></i>
+                    </h2>
+                    <div class="topDBox_con is-nav" style="width: 172px;">
+                        <ul style="width: 160px;" class="topDBox_nav clearfix">
+                            <li><a href="/account/coupon/list.html">我的优惠券</a></li>
+                            <li><a href="/account/sample/order/list.html">我的样品</a></li>
+                            <li><a href="/account/product_user_note/favorite_list.html">我的收藏</a></li>
+                            <li><a href="/account/product_custom_code/list.html">我的料号</a></li>
+                            <li><a href="/account/bom/list.html">我的BOM</a></li>
+                            <li><a href="/account/point/list.html">我的积分</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="topDBox">
+                    <h2 class="topDBox_hd">
+                        <i class="iconfont icon-qq-fill"></i>
+                        <span>联系客服</span>
+                        <i class="caret"></i>
+                    </h2>
+                    <div class="topDBox_con" style="text-align: left;">
+                        <div>
+                            <em class="fl text-bold">电话：</em>
+                            400-870-9968
+                        </div>
+                        <div class="clearfix">
+                            <em class="fl text-bold">时间：</em>
+                            <div class="fl">
+                                周一至周六<br>
+                                <span class="text-primary">8:30-17:30</span>
+                            </div>
+                        </div>
+                        <p><a class="topDBox_qq" target="_blank" href="#"><i class="iconfont icon-qq-fill"></i>在线客服</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="topDBox">
+                    <h2 class="topDBox_hd">
+                        <span>行业QQ群</span>
+                        <i class="caret"></i>
+                    </h2>
+                    <div class="topDBox_con">
+                        <p><img alt="qq群" height="15" width="15"
+                                src="/img/common/qq-group-eb029cfc6259e69c581a201750033faf.png"> 开发板交流qq群：<a
+                                href="https://jq.qq.com/?_wv=1027&amp;k=5eI2YV1" target="_blank"
+                                rel="nofollow">721857085</a></p>
+                        <p><img alt="qq群" height="15" width="15"
+                                src="/img/common/qq-group-eb029cfc6259e69c581a201750033faf.png"> 元器件交流qq群：<a
+                                href="https://jq.qq.com/?_wv=1027&amp;k=5TSiVpk" target="_blank"
+                                rel="nofollow">720658185</a></p>
+                        <img alt="小唯君" height="94" width="94"
+                            src="/img/common/wxatt-xwj-b64b672facb63484531cb3c2050d3150.jpg">
+                        <p class="text-muted">关注微信送福利</p>
+                    </div>
+                </div>
+                <span class="line"></span>
+                <a href="http://www.oneyac.net" target="_blank" rel="nofollow">English</a>
+            </div>
+        </div>
+    </div>
+    <div id="fixedHeader" class="is-fixTop header is-login"></div>
+    <div class="headerPos" id="header_pos">
+        <div class="headerWrp is-unlogin is-fixed" id="header">
+            <div class="m-wrap header">
+                <a href="/" title="唯样商城" class="logo-new"></a>
+                <div class="searh">
+                    <form id="headSrhFrm" action="/search.html">
+                        <div class="searhFrm">
+                            <div class="searhTip">
+                                <div class="searhTip_inner">
+                                    您可以试试用参数（例如：<span>0402 100v</span>）组合搜索！
+                                    <i class="iconfont icon-x-bold" title="不再显示"></i>
+                                </div>
+                            </div>
+                            <input class="searhFrm_inp fl" id="nav-keyword" value="" name="keyword" autocomplete="off"
+                                placeholder="请输入型号、参数，搜索全站库存数据" type="text">
+                            <button class="searhFrm_sub" type="submit"><i
+                                    class="iconfont icon-sou"></i><span>&nbsp;搜索</span></button>
+                            <a class="searh_bomIcn iconfont icon-excel" c-open-bom="" href="javascript:void(0);"></a>
+                            <div id="srhSugges" class="searchSug">
+                                <div id="c-srhHisHd" class="srhHis_hd" style="display: none;">最近搜过<em
+                                        id="c-clearSrhHis">清除</em></div>
+                                <ul id="c-srh_sugges_list"></ul>
+                                <div class="searchSug_ftr">
+                                    <a class="searchSug_bom" c-open-bom="" href="javascript:void(0);">
+                                        <i class="iconfont icon-excel"></i>点击上传BOM文件进行匹配型号
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="searchKys">
+                            <a style="display: none" href="/coupon/list.html" class="text-warning">优惠券</a>
+                            <a class="text-primary" href="/point_mall/list.html">积分商城</a>
+                            <a class="text-warning" href="/page/mlcc.html">MLCC大集合</a>
+                            <a href="javascript:void(0)" class="searchKeyword"
+                                keyword="HCP0805X7R104K500PT">HCP0805X7R104K500PT</a>
+                            <a href="javascript:void(0)" class="searchKeyword"
+                                keyword="CGA5L2C0G1H104JT0Y0N">CGA5L2C0G1H104JT0Y0N</a>
+                        </div>
+                    </form>
+                    <div style="display: none">
+                        <form action="/search.html" id="search-log-form">
+                            <input name="keyword">
+                        </form>
+                    </div>
+                </div>
+                <div class="lgBtns">
+                    <a class="btn btn-primary" href="/login.html">登录</a>
+                    <a class="btn btn-default" href="/register.html">注册</a>
+                </div>
+                <a href="/cart.html" class="cart-hd">
+                    <i class="iconfont icon-gouwuche"></i>
+                    <em>我的购物车</em>
+                    <span id="shopCartNum" style="">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 三级菜单 -->
+    <div class="navWrp">
+        <div class="nav m-wrap">
+            <div id="allNav" class="allNav fl">
+                <h3 class="allNav__cap">
+                    <i class="iconfont icon-menu"></i>
+                    产品分类
+                </h3>
+                <div class="allNav__con" style="height: auto;">
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1208" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1208"></i>
+                            电阻(121384)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1046">压敏电阻</a></li>
+                                <li><a href="/product?categoryId=1227">可调电阻</a></li>
+                                <li><a href="/product?categoryId=1232">热敏电阻</a></li>
+                                <li><a href="/product?categoryId=1247">绕线电阻</a></li>
+                                <li><a href="/product?categoryId=1327">跳线电阻</a></li>
+                                <li><a href="/product?categoryId=1228">贴片电阻</a></li>
+                                <li><a href="/product?categoryId=1564">车规电阻</a></li>
+                                <li><a href="/product?categoryId=1248">插件电阻</a></li>
+                                <li><a href="/product?categoryId=1343">排阻</a></li>
+                                <li><a href="/product?categoryId=1249">其他电阻</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1207" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1207"></i>
+                            电容(274469)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1223">贴片电容(MLCC)</a></li>
+                                <li><a href="/product?categoryId=1219">钽电容</a></li>
+                                <li><a href="/product?categoryId=1220">铝电解电容</a></li>
+                                <li><a href="/product?categoryId=1221">陶瓷电容</a></li>
+                                <li><a href="/product?categoryId=1222">薄膜电容</a></li>
+                                <li><a href="/product?categoryId=1225">其他电容</a></li>
+                                <li><a href="/product?categoryId=1226">超级电容</a></li>
+                                <li><a href="/product?categoryId=1326">超高压电容</a></li>
+                                <li><a href="/product?categoryId=1511">铌氧化物电容器</a></li>
+                                <li><a href="/product?categoryId=1776">馈通电容</a></li>
+                                <li><a href="/product?categoryId=1778">可变电容</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1450" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1450"></i>
+                            电感/变压器(15648)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1800">变压器</a></li>
+                                <li><a href="/product?categoryId=1451">耦合电感</a></li>
+                                <li><a href="/product?categoryId=1452">固定电感</a></li>
+                                <li><a href="/product?categoryId=1216">贴片电感</a></li>
+                                <li><a href="/product?categoryId=1218">其他电感</a></li>
+                                <li><a href="/product?categoryId=1781">共模电感</a></li>
+                                <li><a href="/product?categoryId=1782">功率电感</a></li>
+                                <li><a href="/product?categoryId=1783">车规电感</a></li>
+                                <li><a href="/product?categoryId=1784">高频电感</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=954" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-954"></i>
+                            滤波器(7960)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1206">磁性元件</a></li>
+                                <li><a href="/product?categoryId=1295">双工器</a></li>
+                                <li><a href="/product?categoryId=1306">车规滤波器</a></li>
+                                <li><a href="/product?categoryId=1353">EMI/RFI滤波器</a></li>
+                                <li><a href="/product?categoryId=1781">共模电感</a></li>
+                                <li><a href="/product?categoryId=1491">EMI滤波连接器</a></li>
+                                <li><a href="/product?categoryId=981">陶瓷滤波器</a></li>
+                                <li><a href="/product?categoryId=993">滤波器</a></li>
+                                <li><a href="/product?categoryId=1776">馈通电容</a></li>
+                                <li><a href="/product?categoryId=1514">体声波滤波器</a></li>
+                                <li><a href="/product?categoryId=1771">EMI滤波器</a></li>
+                                <li><a href="/product?categoryId=1772">RF滤波器</a></li>
+                                <li><a href="/product?categoryId=1517">声表面滤波器</a></li>
+                                <li><a href="/product?categoryId=1773">低通滤波器</a></li>
+                                <li><a href="/product?categoryId=1774">带通滤波器</a></li>
+                                <li><a href="/product?categoryId=1775">电抗器与输出滤波器</a></li>
+                                <li><a href="/product?categoryId=1801">其他</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1205" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1205"></i>
+                            分立半导体(55200)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=970">IGBT</a></li>
+                                <li><a href="/product?categoryId=1214">MOSFET</a></li>
+                                <li><a href="/product?categoryId=1562">二极管</a></li>
+                                <li><a href="/product?categoryId=1007">晶闸管</a></li>
+                                <li><a href="/product?categoryId=1014">RF晶体管</a></li>
+                                <li><a href="/product?categoryId=1210">三极管/双极型晶体管</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1000" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1000"></i>
+                            集成电路(43271)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1024">IC</a></li>
+                                <li><a href="/product?categoryId=1019">放大器IC</a></li>
+                                <li><a href="/product?categoryId=1022">电源管理IC</a></li>
+                                <li><a href="/product?categoryId=1246">存储器IC</a></li>
+                                <li><a href="/product?categoryId=1293">传感器IC</a></li>
+                                <li><a href="/product?categoryId=1571">驱动器IC</a></li>
+                                <li><a href="/product?categoryId=1829">均衡器</a></li>
+                                <li><a href="/product?categoryId=2087">蓝牙芯片</a></li>
+                                <li><a href="/product?categoryId=1832">嵌入式处理器和控制器</a></li>
+                                <li><a href="/product?categoryId=2088">计数器</a></li>
+                                <li><a href="/product?categoryId=2091">通信及网络IC</a></li>
+                                <li><a href="/product?categoryId=1839">时钟和计时器IC</a></li>
+                                <li><a href="/product?categoryId=2097">逻辑电路IC</a></li>
+                                <li><a href="/product?categoryId=1855">WIFI集成电路</a></li>
+                                <li><a href="/product?categoryId=1607">其他</a></li>
+                                <li><a href="/product?categoryId=1471">开关IC</a></li>
+                                <li><a href="/product?categoryId=1474">多媒体IC</a></li>
+                                <li><a href="/product?categoryId=1255">MCU</a></li>
+                                <li><a href="/product?categoryId=1005">数据转换IC</a></li>
+                                <li><a href="/product?categoryId=1271">接口IC</a></li>
+                                <li><a href="/product?categoryId=1278">专用IC</a></li>
+                                <li><a href="/product?categoryId=1031">LED驱动器</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1209" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1209"></i>
+                            晶振(136491)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1410">晶体(无源)</a></li>
+                                <li><a href="/product?categoryId=1234">振荡器(有源)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1102" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1102"></i>
+                            连接器(11382)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1298">接插件</a></li>
+                                <li><a href="/product?categoryId=1813">I/O连接器</a></li>
+                                <li><a href="/product?categoryId=1817">其他</a></li>
+                                <li><a href="/product?categoryId=1821">矩形连接器</a></li>
+                                <li><a href="/product?categoryId=1567">汽车连接器</a></li>
+                                <li><a href="/product?categoryId=1319">以太网连接器</a></li>
+                                <li><a href="/product?categoryId=1334">光纤连接器</a></li>
+                                <li><a href="/product?categoryId=1338">分路器</a></li>
+                                <li><a href="/product?categoryId=1348">卡类连接器</a></li>
+                                <li><a href="/product?categoryId=1104">端子及附件</a></li>
+                                <li><a href="/product?categoryId=1369">太阳能/光伏连接器</a></li>
+                                <li><a href="/product?categoryId=1371">D-Sub连接器</a></li>
+                                <li><a href="/product?categoryId=1375">USB连接器</a></li>
+                                <li><a href="/product?categoryId=1376">圆形连接器</a></li>
+                                <li><a href="/product?categoryId=1378">电源连接器</a></li>
+                                <li><a href="/product?categoryId=1383">集管和线壳</a></li>
+                                <li><a href="/product?categoryId=1150">接口</a></li>
+                                <li><a href="/product?categoryId=1961">PCB连接器</a></li>
+                                <li><a href="/product?categoryId=1491">EMI滤波连接器</a></li>
+                                <li><a href="/product?categoryId=1493">射频同轴连接器</a></li>
+                                <li><a href="/product?categoryId=1260">照明连接器</a></li>
+                                <li><a href="/product?categoryId=1519">音频和视频连接器</a></li>
+                                <li><a href="/product?categoryId=1103">板对板与夹层连接器</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1097" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1097"></i>
+                            电路保护(14467)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1796">电涌保护器及配件</a></li>
+                                <li><a href="/product?categoryId=1006">TVS二极管/ESD抑制器</a></li>
+                                <li><a href="/product?categoryId=1300">放电管</a></li>
+                                <li><a href="/product?categoryId=1302">断路器</a></li>
+                                <li><a href="/product?categoryId=1309">熔断器</a></li>
+                                <li><a href="/product?categoryId=1332">静电防护元件</a></li>
+                                <li><a href="/product?categoryId=1099">保险丝</a></li>
+                                <li><a href="/product?categoryId=1100">保险丝座</a></li>
+                                <li><a href="/product?categoryId=1046">压敏电阻</a></li>
+                                <li><a href="/product?categoryId=1232">热敏电阻</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1127" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1127"></i>
+                            机电产品(292)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=2566">WiFi诊断工具</a></li>
+                                <li><a href="/product?categoryId=2567">其它</a></li>
+                                <li><a href="/product?categoryId=2568">智能输入控制器</a></li>
+                                <li><a href="/product?categoryId=2573">激光扫描仪</a></li>
+                                <li><a href="/product?categoryId=1090">压电设备</a></li>
+                                <li><a href="/product?categoryId=1350">平衡器</a></li>
+                                <li><a href="/product?categoryId=1448">编码器</a></li>
+                                <li><a href="/product?categoryId=1735">其他</a></li>
+                                <li><a href="/product?categoryId=1495">音频产品</a></li>
+                                <li><a href="/product?categoryId=1751">解码器</a></li>
+                                <li><a href="/product?categoryId=1252">接触器</a></li>
+                                <li><a href="/product?categoryId=998">隔离器</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=958" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-958"></i>
+                            传感器(1459)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1593">其他传感器</a></li>
+                                <li><a href="/product?categoryId=1594">压电传感器</a></li>
+                                <li><a href="/product?categoryId=1611">角速度传感器/陀螺仪</a></li>
+                                <li><a href="/product?categoryId=1107">IR红外线传感器</a></li>
+                                <li><a href="/product?categoryId=1109">颜色传感器</a></li>
+                                <li><a href="/product?categoryId=1112">光电传感器</a></li>
+                                <li><a href="/product?categoryId=1113">灰尘传感器</a></li>
+                                <li><a href="/product?categoryId=1115">力传感器</a></li>
+                                <li><a href="/product?categoryId=1116">图像传感器</a></li>
+                                <li><a href="/product?categoryId=2660">手势感应器</a></li>
+                                <li><a href="/product?categoryId=959">温度传感器</a></li>
+                                <li><a href="/product?categoryId=960">电流传感器</a></li>
+                                <li><a href="/product?categoryId=961">磁性传感器</a></li>
+                                <li><a href="/product?categoryId=962">运动与定位传感器</a></li>
+                                <li><a href="/product?categoryId=985">配件</a></li>
+                                <li><a href="/product?categoryId=1242">热传感器</a></li>
+                                <li><a href="/product?categoryId=1253">压力传感器</a></li>
+                                <li><a href="/product?categoryId=2026">加速度传感器</a></li>
+                                <li><a href="/product?categoryId=2027">接近传感器</a></li>
+                                <li><a href="/product?categoryId=2030">角度传感器</a></li>
+                                <li><a href="/product?categoryId=1276">音频传感器</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=965" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-965"></i>
+                            光电子产品(15507)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1120">显示器</a></li>
+                                <li><a href="/product?categoryId=1537">光耦</a></li>
+                                <li><a href="/product?categoryId=1551">其它</a></li>
+                                <li><a href="/product?categoryId=1559">驱动器/镇流器</a></li>
+                                <li><a href="/product?categoryId=1112">光电传感器</a></li>
+                                <li><a href="/product?categoryId=1622">光纤</a></li>
+                                <li><a href="/product?categoryId=1629">激光</a></li>
+                                <li><a href="/product?categoryId=1632">红外通信</a></li>
+                                <li><a href="/product?categoryId=2145">物联网通信模块</a></li>
+                                <li><a href="/product?categoryId=2146">net10more系统组件</a></li>
+                                <li><a href="/product?categoryId=2416">EL显示</a></li>
+                                <li><a href="/product?categoryId=2417">EL panel</a></li>
+                                <li><a href="/product?categoryId=2420">LED指示</a></li>
+                                <li><a href="/product?categoryId=2421">LED条和阵列</a></li>
+                                <li><a href="/product?categoryId=1525">LED发射器</a></li>
+                                <li><a href="/product?categoryId=1533">LED照明</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1566" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1566"></i>
+                            开关/继电器(2385)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1030">继电器</a></li>
+                                <li><a href="/product?categoryId=1570">工业继电器</a></li>
+                                <li><a href="/product?categoryId=1572">键锁开关</a></li>
+                                <li><a href="/product?categoryId=1573">固态继电器</a></li>
+                                <li><a href="/product?categoryId=1359">DIP开关/SIP开关</a></li>
+                                <li><a href="/product?categoryId=1362">基本/快动开关</a></li>
+                                <li><a href="/product?categoryId=1364">开关配件</a></li>
+                                <li><a href="/product?categoryId=1621">车用继电器</a></li>
+                                <li><a href="/product?categoryId=1366">触觉开关</a></li>
+                                <li><a href="/product?categoryId=1623">通用继电器</a></li>
+                                <li><a href="/product?categoryId=1625">高压直流继电器</a></li>
+                                <li><a href="/product?categoryId=1626">编码式波段开关</a></li>
+                                <li><a href="/product?categoryId=2207">RF射频开关</a></li>
+                                <li><a href="/product?categoryId=1721">信号继电器</a></li>
+                                <li><a href="/product?categoryId=1722">其他开关</a></li>
+                                <li><a href="/product?categoryId=1723">功率继电器</a></li>
+                                <li><a href="/product?categoryId=1727">检测开关</a></li>
+                                <li><a href="/product?categoryId=1729">电源开关</a></li>
+                                <li><a href="/product?categoryId=1730">继电器配件</a></li>
+                                <li><a href="/product?categoryId=1732">高频/射频继电器</a></li>
+                                <li><a href="/product?categoryId=1497">微动开关</a></li>
+                                <li><a href="/product?categoryId=1498">滑动开关</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1243" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1243"></i>
+                            开发板/套件(1439)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1244">开发板</a></li>
+                                <li><a href="/product?categoryId=2310">开源硬件</a></li>
+                                <li><a href="/product?categoryId=2311">CAN-BUS Shield V2</a></li>
+                                <li><a href="/product?categoryId=2322">树莓派</a></li>
+                                <li><a href="/product?categoryId=2323">开发套件</a></li>
+                                <li><a href="/product?categoryId=1390">显示开发工具</a></li>
+                                <li><a href="/product?categoryId=1486">NB-IoT模块</a></li>
+                                <li><a href="/product?categoryId=2261">其它</a></li>
+                                <li><a href="/product?categoryId=2262">开发套件</a></li>
+                                <li><a href="/product?categoryId=2263">Arduino Engineering Kit</a></li>
+                                <li><a href="/product?categoryId=2271">开发平台</a></li>
+                                <li><a href="/product?categoryId=2272">AI开发平台</a></li>
+                                <li><a href="/product?categoryId=2273">GAPUINO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1089" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1089"></i>
+                            电源(786)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1310">电源模块</a></li>
+                                <li><a href="/product?categoryId=1336">电源供应器</a></li>
+                                <li><a href="/product?categoryId=1091">电池</a></li>
+                                <li><a href="/product?categoryId=1094">电源管理</a></li>
+                                <li><a href="/product?categoryId=1096">逆变器及其配件</a></li>
+                                <li><a href="/product?categoryId=2638">电源转换器</a></li>
+                                <li><a href="/product?categoryId=2639">电源适配器</a></li>
+                                <li><a href="/product?categoryId=1147">电池座</a></li>
+                                <li><a href="/product?categoryId=1785">电池供应器</a></li>
+                                <li><a href="/product?categoryId=1786">电池充电器</a></li>
+                                <li><a href="/product?categoryId=1787">电源控制器</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=953" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-953"></i>
+                            无线射频(1730)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=2050">RF调制器</a></li>
+                                <li><a href="/product?categoryId=2051">倍频器</a></li>
+                                <li><a href="/product?categoryId=2052">变频器</a></li>
+                                <li><a href="/product?categoryId=2053">射频接收器</a></li>
+                                <li><a href="/product?categoryId=2565">RF探测器</a></li>
+                                <li><a href="/product?categoryId=2054">射频检测器</a></li>
+                                <li><a href="/product?categoryId=2055">射频混合器</a></li>
+                                <li><a href="/product?categoryId=2056">数字移相器</a></li>
+                                <li><a href="/product?categoryId=1047">天线</a></li>
+                                <li><a href="/product?categoryId=2225">RF开关IC</a></li>
+                                <li><a href="/product?categoryId=1823">功分器</a></li>
+                                <li><a href="/product?categoryId=1824">射频耦合器</a></li>
+                                <li><a href="/product?categoryId=1825">射频隔离器</a></li>
+                                <li><a href="/product?categoryId=1826">衰减器</a></li>
+                                <li><a href="/product?categoryId=1585">RFID应答器</a></li>
+                                <li><a href="/product?categoryId=1586">监控 IC</a></li>
+                                <li><a href="/product?categoryId=1860">其他</a></li>
+                                <li><a href="/product?categoryId=2207">RF射频开关</a></li>
+                                <li><a href="/product?categoryId=956">多层混合耦合器</a></li>
+                                <li><a href="/product?categoryId=957">RF定向耦合器</a></li>
+                                <li><a href="/product?categoryId=1476">锁相环-PLL</a></li>
+                                <li><a href="/product?categoryId=1733">RF射频耦合器</a></li>
+                                <li><a href="/product?categoryId=966">射频多路复用器</a></li>
+                                <li><a href="/product?categoryId=2224">平衡-不平衡变压器</a></li>
+                                <li><a href="/product?categoryId=1257">射频开关</a></li>
+                                <li><a href="/product?categoryId=1002">射频放大器</a></li>
+                                <li><a href="/product?categoryId=1015">射频发射器</a></li>
+                                <li><a href="/product?categoryId=1016">射频收发器</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1245" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1245"></i>
+                            模块(1840)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1286">PLC模块</a></li>
+                                <li><a href="/product?categoryId=2577">传感器模块</a></li>
+                                <li><a href="/product?categoryId=2578">IR红外线传感器</a></li>
+                                <li><a href="/product?categoryId=2579">人体感应器</a></li>
+                                <li><a href="/product?categoryId=2339">执行器模块</a></li>
+                                <li><a href="/product?categoryId=2340">speakers</a></li>
+                                <li><a href="/product?categoryId=2350">扩充板模块</a></li>
+                                <li><a href="/product?categoryId=2351">for Arduino</a></li>
+                                <li><a href="/product?categoryId=1328">可变流半导体模块</a></li>
+                                <li><a href="/product?categoryId=2359">无线和IoT模块</a></li>
+                                <li><a href="/product?categoryId=2360">BlueStack Micro</a></li>
+                                <li><a href="/product?categoryId=2616">其他模块</a></li>
+                                <li><a href="/product?categoryId=2617">LiPo Rider模块</a></li>
+                                <li><a href="/product?categoryId=2387">显示器开发模块</a></li>
+                                <li><a href="/product?categoryId=2393">机器人套件</a></li>
+                                <li><a href="/product?categoryId=2394">全向轮</a></li>
+                                <li><a href="/product?categoryId=2408">飞行控制器模块</a></li>
+                                <li><a href="/product?categoryId=2409">Crazyflie</a></li>
+                                <li><a href="/product?categoryId=1403">可调电阻模块</a></li>
+                                <li><a href="/product?categoryId=2701">核心板</a></li>
+                                <li><a href="/product?categoryId=969">GSM模块</a></li>
+                                <li><a href="/product?categoryId=1752">LED模块</a></li>
+                                <li><a href="/product?categoryId=1753">功能模块</a></li>
+                                <li><a href="/product?categoryId=1762">感应器模块</a></li>
+                                <li><a href="/product?categoryId=1763">集成电路模块</a></li>
+                                <li><a href="/product?categoryId=1764">分立半导体模块</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=1613" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-1613"></i>
+                            工具/附件(1811)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=1033">手工工具</a></li>
+                                <li><a href="/product?categoryId=1614">识别装置</a></li>
+                                <li><a href="/product?categoryId=1117">编程器，仿真器和调试器</a></li>
+                                <li><a href="/product?categoryId=1144">工具</a></li>
+                                <li><a href="/product?categoryId=1685">TE工具</a></li>
+                                <li><a href="/product?categoryId=1687">夹具</a></li>
+                                <li><a href="/product?categoryId=1690">开发工具</a></li>
+                                <li><a href="/product?categoryId=1697">散热材料</a></li>
+                                <li><a href="/product?categoryId=1953">热缩管及附件</a></li>
+                                <li><a href="/product?categoryId=1701">测试/测量</a></li>
+                                <li><a href="/product?categoryId=1707">线缆/线束</a></li>
+                                <li><a href="/product?categoryId=1716">视频工具</a></li>
+                                <li><a href="/product?categoryId=1718">附件</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="allNav-lv1">
+                        <a href="/product?categoryId=967" class="allNav-lv1__cap">
+                            <i class="proIcn proIcn-967"></i>
+                            其他(10917)
+                        </a>
+                        <div class="allNav-lv2">
+                            <ul class="allNav-lv2__ul">
+                                <li><a href="/product?categoryId=988">样品册</a></li>
+                                <li><a href="/product?categoryId=1637">光纤配线盒</a></li>
+                                <li><a href="/product?categoryId=1646">热敏打印头</a></li>
+                                <li><a href="/product?categoryId=1105">未分类</a></li>
+                                <li><a href="/product?categoryId=2643">玩具遥控器</a></li>
+                                <li><a href="/product?categoryId=2644">联轴器套件</a></li>
+                                <li><a href="/product?categoryId=1663">碳带</a></li>
+                                <li><a href="/product?categoryId=1676">麦克风</a></li>
+                                <li><a href="/product?categoryId=1087">.....</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="allNav-more" href="/search/product_category.html">查看全部分类&nbsp;&nbsp;<i
+                            class="iconfont icon-triangle--rgtBd"></i></a>
+                </div>
+            </div>
+            <ul menu-itm-active-class="" class="navList fl">
+                <li><a class="navItem" href="/">首页</a></li>
+                <li><a class="navItem" href="/search/product_category.html">商品目录</a></li>
+                <li><a class="navItem" href="/brand/list.html">品牌专区</a></li>
+                <li><a class="navItem" href="/channel/board/index.html">开发板</a></li>
+                <li><a class="navItem" href="/bom/copy.html" rel="nofollow">BOM配单<span class="c-hotTag"></span></a></li>
+                <li><a class="navItem" href="/page/sqdl.html">授权代理</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="com-diaBg" id="c-bom" style="display: none;">
+        <div class="bomReImDia">
+            <a href="javascript:void(0);" id="c-bom_close" class="com-diaClose icon-close iconfont"></a>
+            <h1>导入BOM<span id="c-bom_dragTip"
+                    style="color: #999; font-weight: normal; font-size: 12px;">&nbsp;&nbsp;（<em
+                        class="text-warning">可将文件拖拽到此框</em>）</span></h1>
+            <div class="bomReImDia_con" id="c-bom_dragBox">
+                <form action="/bom/match" method="post" id="c-bom_copyForm">
+                    <div class="bomImCp-dia">
+                        <textarea id="c-bom_copyTxt" name="matchInfo" placeholder="将型号和数量复制到此处，支持多行"></textarea>
+                        <button type="submit">开始处理</button>
+                    </div>
+                </form>
+                <div class="bomImDemo-dia">示例：AC0201FR-0710KL&nbsp;&nbsp;2500</div>
+                <div class="bomImDia_p">或</div>
+                <form action="/bom/excel_match" id="c-bom_excelFrom" enctype="multipart/form-data" method="post">
+                    <label class="bomImEx-dia" style="cursor: pointer;">
+                        <input id="c-bom_subfile" type="file" name="file" accept=".xls,.xlsx,.csv"
+                            class="bomImEx-dia_inp">
+                        <div class="bomImEx-dia_btn"><i class="iconfont icon-export"></i><span>点击上传BOM</span></div>
+                        <p class="text-mutedEr">支持csv/xls/xlsx格式文件, <a href="/static/www/images/BomTemplate.xlsx"
+                                class="text-primary">下载BOM模板</a></p>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="bomLoad" style="display: none;">
+            <div class="bomLoad_wrd"><img src="/static/www/images/loading.gif">&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>数据加载中...</span>
+            </div>
+        </div>
+    </div>
+   
+    <div class="m-wrap">
+
+        <div class="crumb">
+            <a href="/index.html">首页</a>
+            <span>&gt;</span>
+            <a href="/product_category.html">商品目录</a>
+            <span>&gt;</span>
+            <div class="crumbNav">
+                <div class="crumbNav_hd">
+                    <a href="/product.html?categoryId=1208">电阻<i class="iconfont icon-arr-d"></i></a>
+                </div>
+                <ul class="clearfix crumbNav_lst">
+                    <li><a href="/product.html?categoryId=1207">电容</a></li>
+                    <li><a href="/product.html?categoryId=1450">电感/变压器</a></li>
+                    <li><a href="/product.html?categoryId=954">滤波器</a></li>
+                    <li><a href="/product.html?categoryId=1205">分立半导体</a></li>
+                    <li><a href="/product.html?categoryId=1000">集成电路</a></li>
+                    <li><a href="/product.html?categoryId=1209">晶振</a></li>
+                    <li><a href="/product.html?categoryId=1102">连接器</a></li>
+                    <li><a href="/product.html?categoryId=1097">电路保护</a></li>
+                    <li><a href="/product.html?categoryId=1127">机电产品</a></li>
+                    <li><a href="/product.html?categoryId=958">传感器</a></li>
+                    <li><a href="/product.html?categoryId=965">光电子产品</a></li>
+                    <li><a href="/product.html?categoryId=1566">开关/继电器</a></li>
+                    <li><a href="/product.html?categoryId=1243">开发板/套件</a></li>
+                    <li><a href="/product.html?categoryId=1089">电源</a></li>
+                    <li><a href="/product.html?categoryId=953">无线射频</a></li>
+                    <li><a href="/product.html?categoryId=1245">模块</a></li>
+                    <li><a href="/product.html?categoryId=1613">工具/附件</a></li>
+                    <li><a href="/product.html?categoryId=967">其他</a></li>
+                </ul>
+            </div>
+            <span>&gt;</span>
+            <div class="crumbNav">
+                <div class="crumbNav_hd">
+                    <a href="/product.html?categoryId=1247">绕线电阻<i class="iconfont icon-arr-d"></i></a>
+                </div>
+                <ul class="clearfix crumbNav_lst">
+                    <li><a href="/product.html?categoryId=1046">压敏电阻</a></li>
+                    <li><a href="/product.html?categoryId=1227">可调电阻</a></li>
+                    <li><a href="/product.html?categoryId=1232">热敏电阻</a></li>
+                    <li><a href="/product.html?categoryId=1327">跳线电阻</a></li>
+                    <li><a href="/product.html?categoryId=1228">贴片电阻</a></li>
+                    <li><a href="/product.html?categoryId=1564">车规电阻</a></li>
+                    <li><a href="/product.html?categoryId=1248">插件电阻</a></li>
+                    <li><a href="/product.html?categoryId=1343">排阻</a></li>
+                    <li><a href="/product.html?categoryId=1249">其他电阻</a></li>
+                </ul>
+            </div>
+            <span>&gt;</span>
+            <div class="crumbNav">
+                <div class="crumbNav_hd">
+                    <a href="/product.html?categoryId=2214">绕线电阻<i class="iconfont icon-arr-d"></i></a>
+                </div>
+                <ul class="clearfix crumbNav_lst">
+                    <li><a href="/product.html?categoryId=1256">底架安装</a></li>
+                    <li><a href="/product.html?categoryId=1513">插件绕线电阻</a></li>
+                </ul>
+            </div>
+            <span>&gt;</span>
+            <a href="javascriprt:;">WSC6927180R0JEA</a>
+        </div>
+
+        <div class="detail clearfix">
+            <div class="detailMn">
+                <div class="detailSec" style="margin-bottom: 0;">
+                    <h1 class="detailHd">
+                        <span class="detailHd_cap">绕线电阻 &nbsp;&nbsp;180Ohms ±5% 17.5mm 6927 无 ±20PPM/℃ </span>
+                        <a class="detailHd_link" href="/user_invite.html" target="_blank">新人注册199.9厚礼已备</a>
+                    </h1>
+
+                    <!-- 产品信息 -->
+                    <div class="detailInfo">
+                        <div class="detailImg">
+                            <img onclick="wyComponent.showBigPic(this);"
+                                src="https://uploadcdn.oneyac.com/attachments/files/38/BF/WSC6927180R0JEA.jpg"
+                                id="product-img" alt="产品图片">
+                            <p>图像仅供参考 请参阅产品规格</p>
+                        </div>
+                        <div class="detailKys">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th width="190">制造商编号</th>
+                                        <td>
+                                            <span class="preText">WSC6927180R0JEA</span>
+                                            <span class="ml10 text-warning fs-12" style="display: none"><i
+                                                    style="font-size: 14px;" class="iconfont icon-warning-s fs-14"></i>
+                                                该型号已停产！</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="190">制&nbsp;造&nbsp;商</th>
+                                        <td>
+                                            <a href="/brand/922.html" class="text-muted">Vishay</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="190">唯样编号</th>
+                                        <td>A-WSC6927180R0JEA</td>
+                                    </tr>
+                                    <tr>
+                                        <th width="190">供货</th>
+                                        <td>唯样自营
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="190">无铅情况/RoHs</th>
+                                        <td>否</td>
+                                    </tr>
+                                    <tr>
+                                        <th width="190">描述</th>
+                                        <td>
+                                            <div style="word-break: break-word;min-height: 48px;"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="detailShare clearfix">
+                    <!-- 分享异步加载-->
+                    <div style="position: fixed;top: -9999px;left: -9999px;" class="bdsharebuttonbox"
+                        data-tag="share_1">
+                        <span>分享：&nbsp;</span>
+                        <a class="bds_weixin" data-cmd="weixin"></a>
+                        <a class="bds_tsina" data-cmd="tsina"></a>
+                        <a class="bds_qzone" data-cmd="qzone"></a>
+                        <a class="bds_sqq" data-cmd="sqq"></a>
+                        <a class="bds_more" id="detail_openSh" data-cmd="more"></a>
+                    </div>
+                    <div style="cursor: pointer;" class="fl ml10" id="detail_getSh">
+                        <i class="valign-mid iconfont icon-share text-primary"></i>
+                        <span class="valign-mid">&nbsp;分享</span>
+                    </div>
+                    <a id="showRecommend" href="javascript:void(0);" class="detailShare_lBtn btn btn-primary">推荐给采购</a>
+                    <a id="addCompare" href="javascript:void(0);" class="detailShare_rIcn">
+                        <i class="iconfont icon-compare"></i>
+                        <span>&nbsp;加入对比</span>
+                    </a>
+                    <a id="cancelCollectBtn" style="display: none;" href="javascript:void(0);" class="detailShare_rIcn">
+                        <i class="text-primary iconfont icon-collect-fill"></i>
+                        <span>&nbsp;已收藏</span>
+                    </a>
+                    <a id="collectBtn" style="" href="javascript:void(0);" class="detailShare_rIcn">
+                        <i class="text-primary iconfont icon-collect"></i>
+                        <span>&nbsp;收藏</span>
+                    </a>
+                </div>
+
+                <div id="remarkDiv" style="display:none;" class="detailMark">
+                    <span class="detailMark_lab">商品备注：</span>
+                    <div class="detailMark_con">
+                        <span id="noteTxt" class="fl">暂无内容</span>
+                        <a id="editNote" class="text-primary ml20" href="javascript:void(0);"
+                            style="font-size:13px;text-decoration: underline;">修改</a>
+                    </div>
+                    <div id="noteConDia" style="display: none;" class="padding20">
+                        <div class="mt10">
+                            商品备注：<textarea style="width: 380px;display: inline-block;vertical-align: middle;"
+                                placeholder="请填写备注" id="noteContent" class="form-control" rows="1"></textarea>
+                        </div>
+                        <div class="mt10 text-center">
+                            <button id="addNote" class="tipDia--sus__sub">保存</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detailSec">
+                    <h1 class="detailHd">
+                        <span class="detailHd_cap">文档与媒体</span>
+                    </h1>
+                    <div class="detailMedia">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th width="178">
+                                        数据列表
+                                    </th>
+                                    <td>
+                                        <p class="text-mutedEr text-center" style="line-height: 40px;font-size: 12px;">
+                                            暂无数据</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="detail_tabSec" class="detailSec">
+                    <h1 class="detailHd-tab">
+                        <a data-index="0" href="javascript:;" class="is-active detailHd_cap">规格信息</a>
+                        <a data-index="2" href="javascript:;" class="detailHd_cap">常见问题</a>
+                    </h1>
+                    <div class="detailTab">
+                        <div data-section="0" id="detailSpec" class="detailSpec detailTab_itm is-active">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th width="240" style="text-align: right; padding-right: 40px;">属性</th>
+                                        <th style="padding-left: 40px;">属性值</th>
+                                        <th width="80" style="text-align: center;">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="text-align: right;white-space: nowrap;padding-right: 40px;">商品目录</th>
+                                        <td style="padding-left: 40px;">绕线电阻</td>
+                                        <td style="text-align: center;">
+                                            <label class="m-checkbox is-checked">
+                                                <input disabled="" checked="" type="checkbox" value="绕线电阻">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">系列</th>
+                                        <td style="padding-left: 40px;">WSC</td>
+                                        <td style="text-align: center;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">电阻</th>
+                                        <td style="padding-left: 40px;">180 Ohms</td>
+                                        <td style="text-align: center;">
+                                            <label class="m-checkbox">
+                                                <input detail-spec-check="" data-attr="电阻" type="checkbox"
+                                                    value="180 Ohms">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">功率（W）
+                                        </th>
+                                        <td style="padding-left: 40px;">3W</td>
+                                        <td style="text-align: center;">
+                                            <label class="m-checkbox">
+                                                <input detail-spec-check="" data-attr="功率（W）" type="checkbox"
+                                                    value="3W">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">偏差</th>
+                                        <td style="padding-left: 40px;">±5%</td>
+                                        <td style="text-align: center;">
+                                            <label class="m-checkbox">
+                                                <input detail-spec-check="" data-attr="偏差" type="checkbox" value="±5%">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">工作温度</th>
+                                        <td style="padding-left: 40px;">-65°C ~ 275°C</td>
+                                        <td style="text-align: center;">
+                                            <label class="m-checkbox">
+                                                <input detail-spec-check="" data-attr="工作温度" type="checkbox"
+                                                    value="-65°C ~ 275°C">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">长度</th>
+                                        <td style="padding-left: 40px;">17.5mm</td>
+                                        <td style="text-align: center;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">宽度</th>
+                                        <td style="padding-left: 40px;">7mm</td>
+                                        <td style="text-align: center;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">高度</th>
+                                        <td style="padding-left: 40px;">2.54mm</td>
+                                        <td style="text-align: center;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">特点</th>
+                                        <td style="padding-left: 40px;">MoldedResistors</td>
+                                        <td style="text-align: center;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">封装/外壳
+                                        </th>
+                                        <td style="padding-left: 40px;">6927</td>
+                                        <td style="text-align: center;">
+                                            <label class="m-checkbox">
+                                                <input detail-spec-check="" data-attr="封装/外壳" type="checkbox"
+                                                    value="6927">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">电压</th>
+                                        <td style="padding-left: 40px;">无</td>
+                                        <td style="text-align: center;">
+                                            <label class="m-checkbox">
+                                                <input detail-spec-check="" data-attr="电压" type="checkbox" value="无">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="text-align: right;padding-right: 40px;white-space: nowrap;">温度系数</th>
+                                        <td style="padding-left: 40px;">±20PPM/℃</td>
+                                        <td style="text-align: center;">
+                                            <label class="m-checkbox">
+                                                <input detail-spec-check="" data-attr="温度系数" type="checkbox"
+                                                    value="±20PPM/℃">
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="detailSpec_op">
+                                <span>找到类似商品：</span>
+                                <em class="text-warning" id="totalNum">135</em>
+                                <button id="detail-srhSim" type="button" class="btn btn-primary">查看相似商品</button>
+                            </div>
+                        </div>
+                        <div data-section="2" class="detailQues detailTab_itm">
+                            <h3 class="PD-qus-hd">Q : 平台上的商品都是正品吗？</h3>
+                            <p class="PD-qus-con">A : 请您放心,唯样商城所售卖的商品均为原装正品，我们是国内外知名品牌厂商的电子元件授权经销商，从源头保证品质。</p>
+                            <h3 class="PD-qus-hd">Q : 可以提供原厂代理资质证明吗？</h3>
+                            <p class="PD-qus-con">A :
+                                唯样自营精选品牌获得原厂授权代理资质，可以提供代理证书。部分商品数据来源于合作伙伴（如信和达、富昌电子、RS电子），我们对产品都进行了严格的资质审核，拥有原厂标签和相关票据以供查验。
+                            </p>
+                            <h3 class="PD-qus-hd">Q : 可以进行线下交易吗？</h3>
+                            <p class="PD-qus-con">A : 我们提供线下付款服务，方便公司的采购与财务对接，具体操作流程可在线咨询客服。</p>
+                            <h3 class="PD-qus-hd">Q : 可以退货吗？</h3>
+                            <p class="PD-qus-con">A :
+                                下单前请仔细核对产品型号信息，如因自身原因造成的误订错订，唯样将不接受退换货要求。如果产品出现数量不对、型号不符、产品质量问题时，请务必保留原包装和标签，并在两周内联系我们申请退货。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detailSide">
+                <div class="detailSec">
+                    <h1 class="detailHd">
+                        <span class="detailHd_sdCap">库存&nbsp;:&nbsp;</span>
+                        <span class="fl" style="font-weight:bold;font-size: 18px;" id="stockSpan">
+                            18950
+                        </span>
+                    </h1>
+                    <div class="detilHuoqi">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>货期</th>
+                                    <td>
+                                        3天-5天
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>最小包装</th>
+                                    <td>
+                                        725
+                                        &nbsp;
+                                        <div class="detailTip">
+                                            <i class="iconfont icon-question"></i>
+                                            <div style="width: 148px;top: -174px;left: -26px;" class="c-toolTip">
+                                                <div class="c-toolTip_con">
+                                                    制造商那里获得的最小包装数。由于唯样提供增值服务，因此最低起购数量可能会比制造商的最小包装数量少
+                                                    ，如果要购买整盘，建议购买这个数量的整数倍</div>
+                                                <i class="caret is-empty"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label class="m-checkbox-sm"><input id="detail_tray_chk" name="tray-check"
+                                                value="314810" type="checkbox">&nbsp;&nbsp;料盘7寸</label>
+                                        <input type="hidden" class="tray-id" value="314810">
+                                    </th>
+                                    <td>
+                                        <span style="vertical-align: middle;" class="text-warning">￥2</span>
+                                        &nbsp;
+                                        <div class="detailTip">
+                                            <i class="iconfont icon-question"></i>
+                                            <div style="width: 148px;top: -62px;left: -26px;" class="c-toolTip">
+                                                <div class="c-toolTip_con">若购买整盘会自带料盘无需额外购买料盘</div>
+                                                <i class="caret is-empty"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="detailAdd" id="detailAdd_hasPrice" style="display: block">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="detailAdd_box">
+                                            <input id="productNum" name="currentNum" value="1" type="text"
+                                                class="detailAdd_num">
+                                            <button type="button" class="detailAdd_add">+</button>
+                                            <button type="button" class="detailAdd_minus">-</button>
+                                            <button id="addToCart" type="button" class="detailAdd_buy">
+                                                <i class="iconfont icon-cart-sp"></i>
+                                                <span>购买</span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="detailAdd_ky">
+                                            <p>最少：<span id="orderMinNum">1</span></p>
+                                            <p>倍数：<span id="orderStepNum">1</span></p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="detailAdd_ftr clearfix" id="imputedShow">
+                            <div class="fl">
+                                <em class="text-muted">单价：</em><span class="text-warning">￥<em
+                                        id="productPrice">3.210956</em></span>
+                            </div>
+                            <div class="fl ml10">
+                                <em class="text-muted">总价：</em><span class="text-warning">￥<em
+                                        id="orderTotal">3.210956</em></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detailAdd" id="detailAdd_noPrice" style="display: none">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <a target="_blank" href="http://q.url.cn/ABDLIf?_type=wpa&amp;qidian=true"
+                                            class="detailAdd_ask">立即询价</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="detailPri">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="text-align: right;padding-right: 20px;">数量</th>
+                                    <th style="position: relative;">单价(含税)<em id="rsAc-mark"
+                                            style="display: none;position: absolute;left: 80px;top: 8px;"
+                                            class="m-tipMark">折后价</em></th>
+                                    <th>合计</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: right;padding-right: 20px;"><a href="javascript:void(0);"
+                                            class="text-bold" data-pristep="1">1+</a></td>
+                                    <td>￥3.210956</td>
+                                    <td>￥3.210956</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;padding-right: 20px;"><a href="javascript:void(0);"
+                                            class="text-bold" data-pristep="100">100+</a></td>
+                                    <td>￥1.358234</td>
+                                    <td>￥135.8234</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="text-align: center;">
+                                        <p class="text-mutedEr">整包（请按725的倍数下单）</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;padding-right: 20px;"><a href="javascript:void(0);"
+                                            class="text-bold" data-pristep="725">725+</a></td>
+                                    <td>￥0.8</td>
+                                    <td>￥580</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 呆滞料说明-->
+            </div>
+        </div>
+        <div class="related">
+            <h3 class="secHd--jx"><span class="secHd__cap--jx">相关商品</span></h3>
+            <div class="related-con">
+                <ul class="related-lst clearfix">
+                    <li><a href="/product/846363.html">LEMWS38X80LZ3100.H1X-X3-L14-2</a></li>
+                    <li><a href="/product/846364.html">LEMWS38X80MZ3100.H1X-X1-M14-1</a></li>
+                    <li><a href="/product/846365.html">CFR-25JT-26C560R</a></li>
+                    <li><a href="/product/846366.html">VY1222M37Y5VQ63V0</a></li>
+                    <li><a href="/product/846367.html">C3216C0G2A682JT000N</a></li>
+                    <li><a href="/product/846368.html">LEMWS38X80LZ3100.H1X-X2-L14-1</a></li>
+                    <li><a href="/product/846369.html">MF0204FRE52H100K</a></li>
+                    <li><a href="/product/846370.html">LEMWS38X80MZ3100.H1X-X1-M14-2</a></li>
+                    <li><a href="/product/846371.html">TR1206MR-074K7L</a></li>
+                    <li><a href="/product/846372.html">SPM5015T-2R2M-CA02</a></li>
+                    <li><a href="/product/846373.html">MMZ1608B221CTDH5</a></li>
+                    <li><a href="/product/846374.html">IHLP2525CZER220M5A</a></li>
+                    <li><a href="/product/846375.html">WMCSS2512R001FHEA</a></li>
+                    <li><a href="/product/846376.html">LEMWS38X80MZ3100.H1X-X1-M23-1</a></li>
+                    <li><a href="/product/846377.html">LEMWS38X80LZ3100.H1X-X2-L14-2</a></li>
+                    <li><a href="/product/846378.html">LEMWS38X80MZ3100.H1X-X1-M41-2</a></li>
+                    <li><a href="/product/846379.html">CFR-25JT-26C150R</a></li>
+                    <li><a href="/product/846380.html">VJ0603A470JXBAC31X</a></li>
+                    <li><a href="/product/846381.html">BZD27C12P-HE3-08</a></li>
+                    <li><a href="/product/846382.html">593D107X0020E2TE3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="m-wrap slogan">
+            <ul class="slogan_lst clearfix">
+                <li style="text-align: left;padding-left: 40px;">
+                    <div class="slogan_itm">
+                        <i class="is-bz"></i>
+                        <span>品质保障</span>
+                    </div>
+                </li>
+                <li style="text-align: center;padding-right: 20px;">
+                    <div class="slogan_itm">
+                        <i class="is-cg"></i>
+                        <span>一站采购</span>
+                    </div>
+                </li>
+                <li style="text-align: center;padding-left: 20px;">
+                    <div class="slogan_itm">
+                        <i class="is-wl"></i>
+                        <span>极速物流</span>
+                    </div>
+                </li>
+                <li style="text-align: right;padding-right: 40px;">
+                    <div class="slogan_itm">
+                        <i class="is-qy"></i>
+                        <span>会员权益</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_wrap m-wrap">
+            <div class="footer_logo">
+                <img alt="电子元器件线上授权代理开拓者" src="/img/common/common/logo-761747ed944452a5e2443bdf7e7b0f66.png">
+                <p>电子元器件线上授权代理开拓者</p>
+            </div>
+            <dl class="footer_nav clearfix">
+                <dd>
+                    <h4>商城介绍</h4>
+                    <ul>
+                        <li><a href="/page/comp_about.html" rel="nofollow" target="_blank">关于唯样</a></li>
+                        <li><a href="/page/comp_culture.html" rel="nofollow" target="_blank">企业文化</a></li>
+                        <li><a href="/page/comp_contact.html" rel="nofollow" target="_blank">联系我们</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <h4>新手指南</h4>
+                    <ul>
+                        <li><a href="/help/22.html" rel="nofollow" target="_blank">注册登录</a></li>
+                        <li><a href="/help/12.html" rel="nofollow" target="_blank">隐私协议</a></li>
+                        <li><a href="/help/2.html" rel="nofollow" target="_blank">发票须知</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <h4>支付方式</h4>
+                    <ul>
+                        <li><a href="/help/9.html" rel="nofollow" target="_blank">支付安全</a></li>
+                        <li><a href="/help/10.html" rel="nofollow" target="_blank">银行转账</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <h4>售后服务</h4>
+                    <ul>
+                        <li><a target="_blank" href="http://q.url.cn/ABDLIf?_type=wpa&amp;qidian=true"
+                                rel="nofollow">在线客服</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <div class="footer_contact">
+                <i class="iconfont icon-service"></i>
+                <h2>400-870-9968</h2>
+                <p>服务时间：8:30-17:30</p>
+                <a href="http://q.url.cn/ABDLIf?_type=wpa&amp;qidian=true" target="_blank" class="footer_kfBtn">
+                    <i class="iconfont icon-chat"></i>
+                    <span>在线客服</span>
+                </a>
+                <div class="footer_att">
+                    <img src="/img/common/footer-att-6db8dcbb70e5982ee5bcecce613e1e07.jpg">
+                    <p>关注唯样公众号</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_wrap2">
+            <div class="m-wrap">
+                <div class="footer-lnk">
+                    <span class="footer-lnk__cap"><a href="/microstation/index.html"> 字母索引：</a></span>
+                    <div class="footer-lnk__con clearfix">
+                        <a href="/microstation/productlist/A-1.html">A</a>
+                        <a href="/microstation/productlist/B-1.html">B</a>
+                        <a href="/microstation/productlist/C-1.html">C</a>
+                        <a href="/microstation/productlist/D-1.html">D</a>
+                        <a href="/microstation/productlist/E-1.html">E</a>
+                        <a href="/microstation/productlist/F-1.html">F</a>
+                        <a href="/microstation/productlist/G-1.html">G</a>
+                        <a href="/microstation/productlist/H-1.html">H</a>
+                        <a href="/microstation/productlist/I-1.html">I</a>
+                        <a href="/microstation/productlist/J-1.html">J</a>
+                        <a href="/microstation/productlist/K-1.html">K</a>
+                        <a href="/microstation/productlist/L-1.html">L</a>
+                        <a href="/microstation/productlist/M-1.html">M</a>
+                        <a href="/microstation/productlist/N-1.html">N</a>
+                        <a href="/microstation/productlist/O-1.html">O</a>
+                        <a href="/microstation/productlist/P-1.html">P</a>
+                        <a href="/microstation/productlist/Q-1.html">Q</a>
+                        <a href="/microstation/productlist/R-1.html">R</a>
+                        <a href="/microstation/productlist/S-1.html">S</a>
+                        <a href="/microstation/productlist/T-1.html">T</a>
+                        <a href="/microstation/productlist/U-1.html">U</a>
+                        <a href="/microstation/productlist/V-1.html">V</a>
+                        <a href="/microstation/productlist/W-1.html">W</a>
+                        <a href="/microstation/productlist/X-1.html">X</a>
+                        <a href="/microstation/productlist/Y-1.html">Y</a>
+                        <a href="/microstation/productlist/Z-1.html">Z</a>
+                        <a href="/microstation/productlist/0-1.html">0</a>
+                        <a href="/microstation/productlist/1-1.html">1</a>
+                        <a href="/microstation/productlist/2-1.html">2</a>
+                        <a href="/microstation/productlist/3-1.html">3</a>
+                        <a href="/microstation/productlist/4-1.html">4</a>
+                        <a href="/microstation/productlist/5-1.html">5</a>
+                        <a href="/microstation/productlist/6-1.html">6</a>
+                        <a href="/microstation/productlist/7-1.html">7</a>
+                        <a href="/microstation/productlist/8-1.html">8</a>
+                        <a href="/microstation/productlist/9-1.html">9</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="af-footer">
+        <div class="m-wrap">
+            <div class="footer-btm">
+                <a href="/help/1.html" target="_blank" rel="nofollow">新手上路</a>
+                <em>|</em>
+                <a href="/help/3.html" target="_blank" rel="nofollow">免责声明</a>
+                <em>|</em>
+                <a href="/help/13.html" target="_blank" rel="nofollow">销售条款</a>
+                <em>|</em>
+                <a href="/help/16.html" target="_blank" rel="nofollow">联系我们</a>
+                <em>|</em>
+                <a href="http://tech.oneyac.com" target="_blank">唯样资讯</a>
+                <br>
+                <span class="footer-cpr">Copyright © 2019 厦门唯样科技有限公司&nbsp;&nbsp;闽ICP备17005748号-1</span>
+            </div>
+            <div class="footer-logo">
+                <a>
+                    <img src="img/foot-logo1.png">
+                </a>
+                <a>
+                    <img src="img/footer-logo2.png">
+                </a>
+                <a>
+                    <img src="img/footer-logo3.png">
+                </a>
+                <a>
+                    <img src="img/footer-logo4.png">
+                </a>
+                <a>
+                    <img src="img/footer-logo5.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h5>
+        <i class="iconfont icon-history"></i>
+        &nbsp;我的足迹
+        <a id="zujiClose" href="javascript:;" title="隐藏" class="close">×</a>
+    </h5>
+    <ul class="zuji-ul js-zujiCon"></ul>
+    </div>
+    <div class="toolbox" id="toolBox">
+        <div class="toolbox-fold js-showIcn">
+            <span class="toolbox_showIcn"></span>
+            在<br>线<br>咨<br>询
+        </div>
+        <div class="toolbox-unfold">
+            <span class="js-hideIcn toolbox_hideIcn"></span>
+            <a class="toolbox-qq" id="nav_tool_kf_href" href="#"
+                target="_blank" rel="nofollow">
+                <div class="toolbox-qq_img"></div>
+                <p>客服咨询</p>
+            </a>
+            <div class="toolbox-funs">
+                <a href="/cart.html" class="toolbox-funsItm" rel="nofollow">
+                    <span id="c-catchPnt" common_cart_num=""></span>
+                    <i class="iconfont icon-cart_simple"></i>
+                    <p>购物车</p>
+                </a>
+                <a href="/account/index.html" class="toolbox-funsItm" rel="nofollow">
+                    <em c-unlogin-tip="" class="c-tipPnt"></em>
+                    <i class="iconfont icon-user-ln"></i>
+                    <p>会员中心</p>
+                </a>
+                <a href="/account/product_user_note/favorite_list.html" class="toolbox-funsItm" rel="nofollow">
+                    <i class="iconfont icon-collect"></i>
+                    <p>我的收藏</p>
+                </a>
+                <a href="javascript:void(0);" class="js-showZuji toolbox-funsItm" rel="nofollow">
+                    <i class="iconfont icon-history"></i>
+                    <p>浏览历史</p>
+                </a>
+                <a href="/feedback/suggestion.html" class="toolbox-funsItm" rel="nofollow">
+                    <i class="iconfont icon-edit-ln"></i>
+                    <p>意见反馈</p>
+                </a>
+            </div>
+            <a href="javascript:void(0);" class="toolbox-gTop js-goTop" title="回到顶部" rel="nofollow"></a>
+        </div>
+    </div>
+
+    <!--对比 开始-->
+    <div id="proCompare" class="is-hidden pro-compare">
+        <div class="pro-compare-cap">
+            <h4>对比栏</h4>
+            <a id="closeCompare" class="close" href="javascript:void(0);">X&nbsp;&nbsp;关闭</a>
+        </div>
+        <div class="pro-compare-mian">
+            <ul class="list-inline">
+            </ul>
+            <div class="pro-compare-op">
+                <a id="linkToCompare" class="btn btn-primary" href="javascript:void(0);">对比</a>
+                <br>
+                <a id="clearCompare" class="text-primary mt5" href="javascript:void(0);">清空对比栏</a>
+            </div>
+        </div>
+    </div>
+    <!--对比 结束-->
+</body>
+
+</html>

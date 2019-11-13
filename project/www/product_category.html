@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="css/main-public.css">
+        <link rel="stylesheet" href="css/layer.css">
+
+        <style>
+            .allNav-lv2{
+                top:0
+            }
+        </style>
+        <script src="libs/Utils.js"></script>
+        <script src="libs/compatibility.js"></script>
+        <script src="libs/jquery-3.4.1.min.js"></script>
+        <script src="libs/jquery.goTop-1.0.1.js"></script>
+        <script src="libs/jquery,autoLogin-1.0.1.js"></script>
+        <script src="js/product_category.js"></script>
+    </head>
+    <body>
+        <div class="topBar">
+            <div class="m-wrap clearfix">
+                <div class="topBar_l fl">
+                    <span>您好！欢迎来到唯样商城！</span>
+                    <a href="/login.html?name=91" class="text-primary" top-bar-login-user="" rel="nofollow">登录</a>
+                    <span class="line"></span>
+                    <a href="/register.html" top-bar-register-user="" rel="nofollow">注册</a>
+                    <a class="text-warning" href="#" rel="nofollow">BOM 批量导入型号</a>
+                </div>
+                <div class="topBar_r fr">
+                    <a href="#" rel="nofollow">我的订单</a>
+                    <span class="line"></span>
+                    <a href="#" rel="nofollow">
+                        消息（<em>0</em>）
+                    </a>
+                    <div class="topDBox">
+                        <h2 class="topDBox_hd">
+                            <a href="#">会员中心</a>
+                            <i class="caret"></i>
+                        </h2>
+                        <div class="topDBox_con is-nav" style="width: 172px;">
+                            <ul style="width: 160px;" class="topDBox_nav clearfix">
+                                <li><a href="/account/coupon/list.html">我的优惠券</a></li>
+                                <li><a href="/account/sample/order/list.html">我的样品</a></li>
+                                <li><a href="/account/product_user_note/favorite_list.html">我的收藏</a></li>
+                                <li><a href="/account/product_custom_code/list.html">我的料号</a></li>
+                                <li><a href="/account/bom/list.html">我的BOM</a></li>
+                                <li><a href="/account/point/list.html">我的积分</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="topDBox">
+                        <h2 class="topDBox_hd">
+                            <i class="iconfont icon-qq-fill"></i>
+                            <span>联系客服</span>
+                            <i class="caret"></i>
+                        </h2>
+                        <div class="topDBox_con" style="text-align: left;">
+                            <div>
+                                <em class="fl text-bold">电话：</em>
+                                400-870-9968
+                            </div>
+                            <div class="clearfix">
+                                <em class="fl text-bold">时间：</em>
+                                <div class="fl">
+                                    周一至周六<br>
+                                    <span class="text-primary">8:30-17:30</span>
+                                </div>
+                            </div>
+                            <p><a class="topDBox_qq" target="_blank" href="http://q.url.cn/ABDLIf?_type=wpa&amp;qidian=true"><i class="iconfont icon-qq-fill"></i>在线客服</a></p>
+                        </div>
+                    </div>
+                    <div class="topDBox">
+                        <h2 class="topDBox_hd">
+                            <span>行业QQ群</span>
+                            <i class="caret"></i>
+                        </h2>
+                        <div class="topDBox_con">
+                            <p><img alt="qq群" height="15" width="15" src="https://staticcdn.oneyac.com/static/www/images/qq-group-eb029cfc6259e69c581a201750033faf.png"> 开发板交流qq群：<a href="https://jq.qq.com/?_wv=1027&amp;k=5eI2YV1" target="_blank" rel="nofollow">721857085</a></p>
+                            <p><img alt="qq群" height="15" width="15" src="https://staticcdn.oneyac.com/static/www/images/qq-group-eb029cfc6259e69c581a201750033faf.png"> 元器件交流qq群：<a href="https://jq.qq.com/?_wv=1027&amp;k=5TSiVpk" target="_blank" rel="nofollow">720658185</a></p>
+                            <img alt="小唯君" height="94" width="94" src="https://staticcdn.oneyac.com/static/www/images/wxatt-xwj-b64b672facb63484531cb3c2050d3150.jpg">
+                            <p class="text-muted">关注微信送福利</p>
+                        </div>
+                    </div>
+                    <span class="line"></span>
+                    <a href="http://www.oneyac.net" target="_blank" rel="nofollow">English</a>
+                </div>
+            </div>
+        </div><div id="fixedHeader" class="is-fixTop header is-login"></div>
+        <div class="headerPos" id="header_pos">
+            <div class="headerWrp is-unlogin" id="header">
+                <div class="m-wrap header">
+                    <a href="\index.html" title="唯样商城" class="logo-new"></a>
+                    <div class="searh">
+                        <form id="headSrhFrm" action="/search.html">
+                            <div class="searhFrm">
+                                <div class="searhTip">
+                                    <div class="searhTip_inner">
+                                        您可以试试用参数（例如：<span>0402 100v</span>）组合搜索！
+                                        <i class="iconfont icon-x-bold" title="不再显示"></i>
+                                    </div>
+                                </div>
+                                <input class="searhFrm_inp fl" id="nav-keyword" value="" name="keyword" autocomplete="off" placeholder="请输入型号、参数，搜索全站库存数据" type="text">
+                                <button class="searhFrm_sub" type="submit"><i class="iconfont icon-sou"></i><span>&nbsp;搜索</span></button>
+                                <a class="searh_bomIcn iconfont icon-excel" c-open-bom="" href="javascript:void(0);"></a>
+                                <div id="srhSugges" class="searchSug">
+                                    <div id="c-srhHisHd" class="srhHis_hd" style="display: none;">最近搜过<em id="c-clearSrhHis">清除</em></div>
+                                    <ul id="c-srh_sugges_list"></ul>
+                                    <div class="searchSug_ftr">
+                                        <a class="searchSug_bom" c-open-bom="" href="javascript:void(0);">
+                                            <i class="iconfont icon-excel"></i>点击上传BOM文件进行匹配型号
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="searchKys">
+                                <a style="display: none" href="/coupon/list.html" class="text-warning">优惠券</a>
+                                <a class="text-primary" href="/point_mall/list.html">积分商城</a>
+                                <a class="text-warning" href="/page/mlcc.html">MLCC大集合</a>
+                                <a href="javascript:void(0)" class="searchKeyword" keyword="HCP0805X7R104K500PT">HCP0805X7R104K500PT</a>
+                                <a href="javascript:void(0)" class="searchKeyword" keyword="CGA5L2C0G1H104JT0Y0N">CGA5L2C0G1H104JT0Y0N</a>
+                            </div>
+                        </form>
+                        <div style="display: none">
+                            <form action="/search.html" id="search-log-form">
+                                <input name="keyword">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="lgBtns">
+                        <a class="btn btn-primary" href="/login.html">登录</a>
+                        <a class="btn btn-default" href="/register.html">注册</a>
+                    </div>
+                    <a href="/shopcart.html" class="cart-hd">
+                        <i class="iconfont icon-gouwuche"></i>
+                        <em>我的购物车</em>
+                        <span id="shopCartNum" style="">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="navWrp">
+            <div class="nav m-wrap">
+                <div id="allNav" class="allNav fl">
+                    <h3 class="allNav__cap">
+                        <i class="iconfont icon-menu"></i>
+                        产品分类
+                    </h3>
+                    <div class="allNav__con" style="height: auto;">
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1208" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1208"></i>
+                                    电阻(121361)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                <li><a href="/product?categoryId=1046">压敏电阻</a></li>
+                                                <li><a href="/product?categoryId=1227">可调电阻</a></li>
+                                                <li><a href="/product?categoryId=1232">热敏电阻</a></li>
+                                                <li><a href="/product?categoryId=1247">绕线电阻</a></li>
+                                                <li><a href="/product?categoryId=1327">跳线电阻</a></li>
+                                                <li><a href="/product?categoryId=1228">贴片电阻</a></li>
+                                                <li><a href="/product?categoryId=1564">车规电阻</a></li>
+                                                <li><a href="/product?categoryId=1248">插件电阻</a></li>
+                                                <li><a href="/product?categoryId=1343">排阻</a></li>
+                                                <li><a href="/product?categoryId=1249">其他电阻</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1207" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1207"></i>
+                                    电容(274456)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1223">贴片电容(MLCC)</a></li>
+                                                    <li><a href="/product?categoryId=1219">钽电容</a></li>
+                                                    <li><a href="/product?categoryId=1220">铝电解电容</a></li>
+                                                    <li><a href="/product?categoryId=1221">陶瓷电容</a></li>
+                                                    <li><a href="/product?categoryId=1222">薄膜电容</a></li>
+                                                    <li><a href="/product?categoryId=1225">其他电容</a></li>
+                                                    <li><a href="/product?categoryId=1226">超级电容</a></li>
+                                                    <li><a href="/product?categoryId=1326">超高压电容</a></li>
+                                                    <li><a href="/product?categoryId=1511">铌氧化物电容器</a></li>
+                                                    <li><a href="/product?categoryId=1776">馈通电容</a></li>
+                                                    <li><a href="/product?categoryId=1778">可变电容</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1450" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1450"></i>
+                                    电感/变压器(15646)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1800">变压器</a></li>
+                                                    <li><a href="/product?categoryId=1451">耦合电感</a></li>
+                                                    <li><a href="/product?categoryId=1452">固定电感</a></li>
+                                                    <li><a href="/product?categoryId=1216">贴片电感</a></li>
+                                                    <li><a href="/product?categoryId=1218">其他电感</a></li>
+                                                    <li><a href="/product?categoryId=1781">共模电感</a></li>
+                                                    <li><a href="/product?categoryId=1782">功率电感</a></li>
+                                                    <li><a href="/product?categoryId=1783">车规电感</a></li>
+                                                    <li><a href="/product?categoryId=1784">高频电感</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=954" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-954"></i>
+                                    滤波器(7960)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1206">磁性元件</a></li>
+                                                    <li><a href="/product?categoryId=1295">双工器</a></li>
+                                                    <li><a href="/product?categoryId=1306">车规滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1353">EMI/RFI滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1781">共模电感</a></li>
+                                                    <li><a href="/product?categoryId=1491">EMI滤波连接器</a></li>
+                                                    <li><a href="/product?categoryId=981">陶瓷滤波器</a></li>
+                                                    <li><a href="/product?categoryId=993">滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1776">馈通电容</a></li>
+                                                    <li><a href="/product?categoryId=1514">体声波滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1771">EMI滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1772">RF滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1517">声表面滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1773">低通滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1774">带通滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1775">电抗器与输出滤波器</a></li>
+                                                    <li><a href="/product?categoryId=1801">其他</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1205" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1205"></i>
+                                    分立半导体(55026)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=970">IGBT</a></li>
+                                                    <li><a href="/product?categoryId=1214">MOSFET</a></li>
+                                                    <li><a href="/product?categoryId=1562">二极管</a></li>
+                                                    <li><a href="/product?categoryId=1007">晶闸管</a></li>
+                                                    <li><a href="/product?categoryId=1014">RF晶体管</a></li>
+                                                    <li><a href="/product?categoryId=1210">三极管/双极型晶体管</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1000" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1000"></i>
+                                    集成电路(22021)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1024">IC</a></li>
+                                                    <li><a href="/product?categoryId=1019">放大器IC</a></li>
+                                                    <li><a href="/product?categoryId=1022">电源管理IC</a></li>
+                                                    <li><a href="/product?categoryId=1246">存储器IC</a></li>
+                                                    <li><a href="/product?categoryId=1293">传感器IC</a></li>
+                                                    <li><a href="/product?categoryId=1571">驱动器IC</a></li>
+                                                    <li><a href="/product?categoryId=1829">均衡器</a></li>
+                                                    <li><a href="/product?categoryId=2087">蓝牙芯片</a></li>
+                                                    <li><a href="/product?categoryId=1832">嵌入式处理器和控制器</a></li>
+                                                    <li><a href="/product?categoryId=2088">计数器</a></li>
+                                                    <li><a href="/product?categoryId=2091">通信及网络IC</a></li>
+                                                    <li><a href="/product?categoryId=1839">时钟和计时器IC</a></li>
+                                                    <li><a href="/product?categoryId=2097">逻辑电路IC</a></li>
+                                                    <li><a href="/product?categoryId=1855">WIFI集成电路</a></li>
+                                                    <li><a href="/product?categoryId=1607">其他</a></li>
+                                                    <li><a href="/product?categoryId=1471">开关IC</a></li>
+                                                    <li><a href="/product?categoryId=1474">多媒体IC</a></li>
+                                                    <li><a href="/product?categoryId=1255">MCU</a></li>
+                                                    <li><a href="/product?categoryId=1005">数据转换IC</a></li>
+                                                    <li><a href="/product?categoryId=1271">接口IC</a></li>
+                                                    <li><a href="/product?categoryId=1278">专用IC</a></li>
+                                                    <li><a href="/product?categoryId=1031">LED驱动器</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1209" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1209"></i>
+                                    晶振(136491)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1410">晶体(无源)</a></li>
+                                                    <li><a href="/product?categoryId=1234">振荡器(有源)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1102" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1102"></i>
+                                    连接器(11378)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1298">接插件</a></li>
+                                                    <li><a href="/product?categoryId=1813">I/O连接器</a></li>
+                                                    <li><a href="/product?categoryId=1817">其他</a></li>
+                                                    <li><a href="/product?categoryId=1821">矩形连接器</a></li>
+                                                    <li><a href="/product?categoryId=1567">汽车连接器</a></li>
+                                                    <li><a href="/product?categoryId=1319">以太网连接器</a></li>
+                                                    <li><a href="/product?categoryId=1334">光纤连接器</a></li>
+                                                    <li><a href="/product?categoryId=1338">分路器</a></li>
+                                                    <li><a href="/product?categoryId=1348">卡类连接器</a></li>
+                                                    <li><a href="/product?categoryId=1104">端子及附件</a></li>
+                                                    <li><a href="/product?categoryId=1369">太阳能/光伏连接器</a></li>
+                                                    <li><a href="/product?categoryId=1371">D-Sub连接器</a></li>
+                                                    <li><a href="/product?categoryId=1375">USB连接器</a></li>
+                                                    <li><a href="/product?categoryId=1376">圆形连接器</a></li>
+                                                    <li><a href="/product?categoryId=1378">电源连接器</a></li>
+                                                    <li><a href="/product?categoryId=1383">集管和线壳</a></li>
+                                                    <li><a href="/product?categoryId=1150">接口</a></li>
+                                                    <li><a href="/product?categoryId=1961">PCB连接器</a></li>
+                                                    <li><a href="/product?categoryId=1491">EMI滤波连接器</a></li>
+                                                    <li><a href="/product?categoryId=1493">射频同轴连接器</a></li>
+                                                    <li><a href="/product?categoryId=1260">照明连接器</a></li>
+                                                    <li><a href="/product?categoryId=1519">音频和视频连接器</a></li>
+                                                    <li><a href="/product?categoryId=1103">板对板与夹层连接器</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1097" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1097"></i>
+                                    电路保护(14400)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1796">电涌保护器及配件</a></li>
+                                                    <li><a href="/product?categoryId=1006">TVS二极管/ESD抑制器</a></li>
+                                                    <li><a href="/product?categoryId=1300">放电管</a></li>
+                                                    <li><a href="/product?categoryId=1302">断路器</a></li>
+                                                    <li><a href="/product?categoryId=1309">熔断器</a></li>
+                                                    <li><a href="/product?categoryId=1332">静电防护元件</a></li>
+                                                    <li><a href="/product?categoryId=1099">保险丝</a></li>
+                                                    <li><a href="/product?categoryId=1100">保险丝座</a></li>
+                                                    <li><a href="/product?categoryId=1046">压敏电阻</a></li>
+                                                    <li><a href="/product?categoryId=1232">热敏电阻</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1127" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1127"></i>
+                                    机电产品(292)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=2566">WiFi诊断工具</a></li>
+                                                    <li><a href="/product?categoryId=2567">其它</a></li>
+                                                    <li><a href="/product?categoryId=2568">智能输入控制器</a></li>
+                                                    <li><a href="/product?categoryId=2573">激光扫描仪</a></li>
+                                                    <li><a href="/product?categoryId=1090">压电设备</a></li>
+                                                    <li><a href="/product?categoryId=1350">平衡器</a></li>
+                                                    <li><a href="/product?categoryId=1448">编码器</a></li>
+                                                    <li><a href="/product?categoryId=1735">其他</a></li>
+                                                    <li><a href="/product?categoryId=1495">音频产品</a></li>
+                                                    <li><a href="/product?categoryId=1751">解码器</a></li>
+                                                    <li><a href="/product?categoryId=1252">接触器</a></li>
+                                                    <li><a href="/product?categoryId=998">隔离器</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=958" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-958"></i>
+                                    传感器(1455)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: -64px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1593">其他传感器</a></li>
+                                                    <li><a href="/product?categoryId=1594">压电传感器</a></li>
+                                                    <li><a href="/product?categoryId=1611">角速度传感器/陀螺仪</a></li>
+                                                    <li><a href="/product?categoryId=1107">IR红外线传感器</a></li>
+                                                    <li><a href="/product?categoryId=1109">颜色传感器</a></li>
+                                                    <li><a href="/product?categoryId=1112">光电传感器</a></li>
+                                                    <li><a href="/product?categoryId=1113">灰尘传感器</a></li>
+                                                    <li><a href="/product?categoryId=1115">力传感器</a></li>
+                                                    <li><a href="/product?categoryId=1116">图像传感器</a></li>
+                                                    <li><a href="/product?categoryId=2660">手势感应器</a></li>
+                                                    <li><a href="/product?categoryId=959">温度传感器</a></li>
+                                                    <li><a href="/product?categoryId=960">电流传感器</a></li>
+                                                    <li><a href="/product?categoryId=961">磁性传感器</a></li>
+                                                    <li><a href="/product?categoryId=962">运动与定位传感器</a></li>
+                                                    <li><a href="/product?categoryId=985">配件</a></li>
+                                                    <li><a href="/product?categoryId=1242">热传感器</a></li>
+                                                    <li><a href="/product?categoryId=1253">压力传感器</a></li>
+                                                    <li><a href="/product?categoryId=2026">加速度传感器</a></li>
+                                                    <li><a href="/product?categoryId=2027">接近传感器</a></li>
+                                                    <li><a href="/product?categoryId=2030">角度传感器</a></li>
+                                                    <li><a href="/product?categoryId=1276">音频传感器</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=965" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-965"></i>
+                                    光电子产品(15501)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: 0px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1120">显示器</a></li>
+                                                    <li><a href="/product?categoryId=1537">光耦</a></li>
+                                                    <li><a href="/product?categoryId=1551">其它</a></li>
+                                                    <li><a href="/product?categoryId=1559">驱动器/镇流器</a></li>
+                                                    <li><a href="/product?categoryId=1112">光电传感器</a></li>
+                                                    <li><a href="/product?categoryId=1622">光纤</a></li>
+                                                    <li><a href="/product?categoryId=1629">激光</a></li>
+                                                    <li><a href="/product?categoryId=1632">红外通信</a></li>
+                                                    <li><a href="/product?categoryId=2145">物联网通信模块</a></li>
+                                                    <li><a href="/product?categoryId=2146">net10more系统组件</a></li>
+                                                    <li><a href="/product?categoryId=2416">EL显示</a></li>
+                                                    <li><a href="/product?categoryId=2417">EL panel</a></li>
+                                                    <li><a href="/product?categoryId=2420">LED指示</a></li>
+                                                    <li><a href="/product?categoryId=2421">LED条和阵列</a></li>
+                                                    <li><a href="/product?categoryId=1525">LED发射器</a></li>
+                                                    <li><a href="/product?categoryId=1533">LED照明</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1566" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1566"></i>
+                                    开关/继电器(2383)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: -132px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1030">继电器</a></li>
+                                                    <li><a href="/product?categoryId=1570">工业继电器</a></li>
+                                                    <li><a href="/product?categoryId=1572">键锁开关</a></li>
+                                                    <li><a href="/product?categoryId=1573">固态继电器</a></li>
+                                                    <li><a href="/product?categoryId=1359">DIP开关/SIP开关</a></li>
+                                                    <li><a href="/product?categoryId=1362">基本/快动开关</a></li>
+                                                    <li><a href="/product?categoryId=1364">开关配件</a></li>
+                                                    <li><a href="/product?categoryId=1621">车用继电器</a></li>
+                                                    <li><a href="/product?categoryId=1366">触觉开关</a></li>
+                                                    <li><a href="/product?categoryId=1623">通用继电器</a></li>
+                                                    <li><a href="/product?categoryId=1625">高压直流继电器</a></li>
+                                                    <li><a href="/product?categoryId=1626">编码式波段开关</a></li>
+                                                    <li><a href="/product?categoryId=2207">RF射频开关</a></li>
+                                                    <li><a href="/product?categoryId=1721">信号继电器</a></li>
+                                                    <li><a href="/product?categoryId=1722">其他开关</a></li>
+                                                    <li><a href="/product?categoryId=1723">功率继电器</a></li>
+                                                    <li><a href="/product?categoryId=1727">检测开关</a></li>
+                                                    <li><a href="/product?categoryId=1729">电源开关</a></li>
+                                                    <li><a href="/product?categoryId=1730">继电器配件</a></li>
+                                                    <li><a href="/product?categoryId=1732">高频/射频继电器</a></li>
+                                                    <li><a href="/product?categoryId=1497">微动开关</a></li>
+                                                    <li><a href="/product?categoryId=1498">滑动开关</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1243" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1243"></i>
+                                    开发板/套件(1438)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: -30px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1244">开发板</a></li>
+                                                    <li><a href="/product?categoryId=2310">开源硬件</a></li>
+                                                    <li><a href="/product?categoryId=2311">CAN-BUS Shield V2</a></li>
+                                                    <li><a href="/product?categoryId=2322">树莓派</a></li>
+                                                    <li><a href="/product?categoryId=2323">开发套件</a></li>
+                                                    <li><a href="/product?categoryId=1390">显示开发工具</a></li>
+                                                    <li><a href="/product?categoryId=1486">NB-IoT模块</a></li>
+                                                    <li><a href="/product?categoryId=2261">其它</a></li>
+                                                    <li><a href="/product?categoryId=2262">开发套件</a></li>
+                                                    <li><a href="/product?categoryId=2263">Arduino Engineering Kit</a></li>
+                                                    <li><a href="/product?categoryId=2271">开发平台</a></li>
+                                                    <li><a href="/product?categoryId=2272">AI开发平台</a></li>
+                                                    <li><a href="/product?categoryId=2273">GAPUINO</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1089" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1089"></i>
+                                    电源(786)
+                                    </a>
+                                    <div class="allNav-lv2" style="top: -31px;">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1310">电源模块</a></li>
+                                                    <li><a href="/product?categoryId=1336">电源供应器</a></li>
+                                                    <li><a href="/product?categoryId=1091">电池</a></li>
+                                                    <li><a href="/product?categoryId=1094">电源管理</a></li>
+                                                    <li><a href="/product?categoryId=1096">逆变器及其配件</a></li>
+                                                    <li><a href="/product?categoryId=2638">电源转换器</a></li>
+                                                    <li><a href="/product?categoryId=2639">电源适配器</a></li>
+                                                    <li><a href="/product?categoryId=1147">电池座</a></li>
+                                                    <li><a href="/product?categoryId=1785">电池供应器</a></li>
+                                                    <li><a href="/product?categoryId=1786">电池充电器</a></li>
+                                                    <li><a href="/product?categoryId=1787">电源控制器</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=953" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-953"></i>
+                                    无线射频(1730)
+                                    </a>
+                                    <div class="allNav-lv2">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=2050">RF调制器</a></li>
+                                                    <li><a href="/product?categoryId=2051">倍频器</a></li>
+                                                    <li><a href="/product?categoryId=2052">变频器</a></li>
+                                                    <li><a href="/product?categoryId=2053">射频接收器</a></li>
+                                                    <li><a href="/product?categoryId=2565">RF探测器</a></li>
+                                                    <li><a href="/product?categoryId=2054">射频检测器</a></li>
+                                                    <li><a href="/product?categoryId=2055">射频混合器</a></li>
+                                                    <li><a href="/product?categoryId=2056">数字移相器</a></li>
+                                                    <li><a href="/product?categoryId=1047">天线</a></li>
+                                                    <li><a href="/product?categoryId=2225">RF开关IC</a></li>
+                                                    <li><a href="/product?categoryId=1823">功分器</a></li>
+                                                    <li><a href="/product?categoryId=1824">射频耦合器</a></li>
+                                                    <li><a href="/product?categoryId=1825">射频隔离器</a></li>
+                                                    <li><a href="/product?categoryId=1826">衰减器</a></li>
+                                                    <li><a href="/product?categoryId=1585">RFID应答器</a></li>
+                                                    <li><a href="/product?categoryId=1586">监控 IC</a></li>
+                                                    <li><a href="/product?categoryId=1860">其他</a></li>
+                                                    <li><a href="/product?categoryId=2207">RF射频开关</a></li>
+                                                    <li><a href="/product?categoryId=956">多层混合耦合器</a></li>
+                                                    <li><a href="/product?categoryId=957">RF定向耦合器</a></li>
+                                                    <li><a href="/product?categoryId=1476">锁相环-PLL</a></li>
+                                                    <li><a href="/product?categoryId=1733">RF射频耦合器</a></li>
+                                                    <li><a href="/product?categoryId=966">射频多路复用器</a></li>
+                                                    <li><a href="/product?categoryId=2224">平衡-不平衡变压器</a></li>
+                                                    <li><a href="/product?categoryId=1257">射频开关</a></li>
+                                                    <li><a href="/product?categoryId=1002">射频放大器</a></li>
+                                                    <li><a href="/product?categoryId=1015">射频发射器</a></li>
+                                                    <li><a href="/product?categoryId=1016">射频收发器</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1245" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1245"></i>
+                                    模块(1840)
+                                    </a>
+                                    <div class="allNav-lv2">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1286">PLC模块</a></li>
+                                                    <li><a href="/product?categoryId=2577">传感器模块</a></li>
+                                                    <li><a href="/product?categoryId=2578">IR红外线传感器</a></li>
+                                                    <li><a href="/product?categoryId=2579">人体感应器</a></li>
+                                                    <li><a href="/product?categoryId=2339">执行器模块</a></li>
+                                                    <li><a href="/product?categoryId=2340">speakers</a></li>
+                                                    <li><a href="/product?categoryId=2350">扩充板模块</a></li>
+                                                    <li><a href="/product?categoryId=2351">for Arduino</a></li>
+                                                    <li><a href="/product?categoryId=1328">可变流半导体模块</a></li>
+                                                    <li><a href="/product?categoryId=2359">无线和IoT模块</a></li>
+                                                    <li><a href="/product?categoryId=2360">BlueStack Micro</a></li>
+                                                    <li><a href="/product?categoryId=2616">其他模块</a></li>
+                                                    <li><a href="/product?categoryId=2617">LiPo Rider模块</a></li>
+                                                    <li><a href="/product?categoryId=2387">显示器开发模块</a></li>
+                                                    <li><a href="/product?categoryId=2393">机器人套件</a></li>
+                                                    <li><a href="/product?categoryId=2394">全向轮</a></li>
+                                                    <li><a href="/product?categoryId=2408">飞行控制器模块</a></li>
+                                                    <li><a href="/product?categoryId=2409">Crazyflie</a></li>
+                                                    <li><a href="/product?categoryId=1403">可调电阻模块</a></li>
+                                                    <li><a href="/product?categoryId=2701">核心板</a></li>
+                                                    <li><a href="/product?categoryId=969">GSM模块</a></li>
+                                                    <li><a href="/product?categoryId=1752">LED模块</a></li>
+                                                    <li><a href="/product?categoryId=1753">功能模块</a></li>
+                                                    <li><a href="/product?categoryId=1762">感应器模块</a></li>
+                                                    <li><a href="/product?categoryId=1763">集成电路模块</a></li>
+                                                    <li><a href="/product?categoryId=1764">分立半导体模块</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=1613" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-1613"></i>
+                                    工具/附件(1811)
+                                    </a>
+                                    <div class="allNav-lv2">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=1033">手工工具</a></li>
+                                                    <li><a href="/product?categoryId=1614">识别装置</a></li>
+                                                    <li><a href="/product?categoryId=1117">编程器，仿真器和调试器</a></li>
+                                                    <li><a href="/product?categoryId=1144">工具</a></li>
+                                                    <li><a href="/product?categoryId=1685">TE工具</a></li>
+                                                    <li><a href="/product?categoryId=1687">夹具</a></li>
+                                                    <li><a href="/product?categoryId=1690">开发工具</a></li>
+                                                    <li><a href="/product?categoryId=1697">散热材料</a></li>
+                                                    <li><a href="/product?categoryId=1953">热缩管及附件</a></li>
+                                                    <li><a href="/product?categoryId=1701">测试/测量</a></li>
+                                                    <li><a href="/product?categoryId=1707">线缆/线束</a></li>
+                                                    <li><a href="/product?categoryId=1716">视频工具</a></li>
+                                                    <li><a href="/product?categoryId=1718">附件</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="allNav-lv1">
+                                    <a href="/product?categoryId=967" class="allNav-lv1__cap">
+                                        <i class="proIcn proIcn-967"></i>
+                                    其他(9886)
+                                    </a>
+                                    <div class="allNav-lv2">
+                                        <ul class="allNav-lv2__ul">
+                                                    <li><a href="/product?categoryId=988">样品册</a></li>
+                                                    <li><a href="/product?categoryId=1637">光纤配线盒</a></li>
+                                                    <li><a href="/product?categoryId=1646">热敏打印头</a></li>
+                                                    <li><a href="/product?categoryId=1105">未分类</a></li>
+                                                    <li><a href="/product?categoryId=2643">玩具遥控器</a></li>
+                                                    <li><a href="/product?categoryId=2644">联轴器套件</a></li>
+                                                    <li><a href="/product?categoryId=1663">碳带</a></li>
+                                                    <li><a href="/product?categoryId=1676">麦克风</a></li>
+                                                    <li><a href="/product?categoryId=1087">.....</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        <a class="allNav-more" href="/search/product_category.html">查看全部分类&nbsp;&nbsp;<i class="iconfont icon-triangle--rgtBd"></i></a>
+                    </div>
+                </div>
+                <ul menu-itm-active-class="" class="navList fl">
+                    <li><a class="navItem" href="/">首页</a></li>
+                    <li><a class="navItem is-active" href="#">商品目录</a></li>
+                    <li><a class="navItem" href="#">品牌专区</a></li>
+                    <li><a class="navItem" href="#">开发板</a></li>
+                    <li><a class="navItem" href="#" rel="nofollow">BOM配单<span class="c-hotTag"></span></a></li>
+                    <li><a class="navItem" href="#">授权代理</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="com-diaBg" id="c-bom" style="display: none;">
+            <div class="bomReImDia">
+                <a href="javascript:void(0);" id="c-bom_close" class="com-diaClose icon-close iconfont"></a>
+                <h1>导入BOM<span id="c-bom_dragTip" style="color: #999; font-weight: normal; font-size: 12px;">&nbsp;&nbsp;（<em class="text-warning">可将文件拖拽到此框</em>）</span></h1>
+                <div class="bomReImDia_con" id="c-bom_dragBox">
+                    <form action="/bom/match" method="post" id="c-bom_copyForm">
+                        <div class="bomImCp-dia">
+                            <textarea id="c-bom_copyTxt" name="matchInfo" placeholder="将型号和数量复制到此处，支持多行"></textarea>
+                            <button type="submit">开始处理</button>
+                        </div>
+                    </form>
+                    <div class="bomImDemo-dia">示例：AC0201FR-0710KL&nbsp;&nbsp;2500</div>
+                    <div class="bomImDia_p">或</div>
+                    <form action="/bom/excel_match" id="c-bom_excelFrom" enctype="multipart/form-data" method="post">
+                        <label class="bomImEx-dia" style="cursor: pointer;">
+                            <input id="c-bom_subfile" type="file" name="file" accept=".xls,.xlsx,.csv" class="bomImEx-dia_inp">
+                            <div class="bomImEx-dia_btn"><i class="iconfont icon-export"></i><span>点击上传BOM</span></div>
+                            <p class="text-mutedEr">支持csv/xls/xlsx格式文件, <a href="/static/www/images/BomTemplate.xlsx" class="text-primary">下载BOM模板</a></p>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="bomLoad" style="display: none;">
+                <div class="bomLoad_wrd"><img src="/static/www/images/loading.gif">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>数据加载中...</span>
+                </div>
+            </div>
+        </div><div class="category wraper">
+            <p class="crumb">
+                <a href="/index.html">首页</a>
+                &gt;
+                <span>商品目录</span>
+            </p>
+            <div class="category_srhWrp">
+                <div class="category_srh">
+                    <span>搜索类别</span>
+                    <div class="input-group">
+                        <input id="category_srhKeyword" type="text" class="form-control" placeholder="请输入类别关键字">
+                        <span class="input-group-btn"><button id="category_srhSub" class="btn btn-primary" type="button">搜索</button></span>
+                    </div>
+                </div>
+            </div>
+            <p id="category_totalAll" class="category_total">元器件共计&nbsp;:&nbsp;<span>670,037</span></p>
+            <p id="category_totalSrh" class="category_total" style="display: none;">
+                关于 “ <em class="text-bold" id="category_srhShow"></em> ” 的元器件总数
+                &nbsp;:&nbsp;
+                <span id="category_srhNums"></span>
+                <button id="category_srhClear" type="button" class="ml30 btn btn-default">清除搜索条件</button>
+            </p>
+                <div class="c-catgBar-pg" data-num="121361" data-name="电阻">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1208">电阻</a>
+                        <em data-tag="total">(121,361)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="3565" data-name="压敏电阻">
+                                    <a title="压敏电阻 (3565)" href="/product.html?categoryId=1046">压敏电阻</a>
+                                    <em>(3,565)</em>
+                                </li>
+                                <li data-num="181" data-name="可调电阻">
+                                    <a title="可调电阻 (181)" href="/product.html?categoryId=1227">可调电阻</a>
+                                    <em>(181)</em>
+                                </li>
+                                <li data-num="1545" data-name="热敏电阻">
+                                    <a title="热敏电阻 (1545)" href="/product.html?categoryId=1232">热敏电阻</a>
+                                    <em>(1,545)</em>
+                                </li>
+                                <li data-num="298" data-name="绕线电阻">
+                                    <a title="绕线电阻 (298)" href="/product.html?categoryId=1247">绕线电阻</a>
+                                    <em>(298)</em>
+                                </li>
+                                <li data-num="54" data-name="跳线电阻">
+                                    <a title="跳线电阻 (54)" href="/product.html?categoryId=1327">跳线电阻</a>
+                                    <em>(54)</em>
+                                </li>
+                                <li data-num="55525" data-name="贴片电阻">
+                                    <a title="贴片电阻 (55525)" href="/product.html?categoryId=1228">贴片电阻</a>
+                                    <em>(55,525)</em>
+                                </li>
+                                <li data-num="33929" data-name="车规电阻">
+                                    <a title="车规电阻 (33929)" href="/product.html?categoryId=1564">车规电阻</a>
+                                    <em>(33,929)</em>
+                                </li>
+                                <li data-num="17530" data-name="插件电阻">
+                                    <a title="插件电阻 (17530)" href="/product.html?categoryId=1248">插件电阻</a>
+                                    <em>(17,530)</em>
+                                </li>
+                                <li data-num="3256" data-name="排阻">
+                                    <a title="排阻 (3256)" href="/product.html?categoryId=1343">排阻</a>
+                                    <em>(3,256)</em>
+                                </li>
+                                <li data-num="5330" data-name="其他电阻">
+                                    <a title="其他电阻 (5330)" href="/product.html?categoryId=1249">其他电阻</a>
+                                    <em>(5,330)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="274456" data-name="电容">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1207">电容</a>
+                        <em data-tag="total">(274,456)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="103213" data-name="贴片电容(MLCC)">
+                                    <a title="贴片电容(MLCC) (103213)" href="/product.html?categoryId=1223">贴片电容(MLCC)</a>
+                                    <em>(103,213)</em>
+                                </li>
+                                <li data-num="38726" data-name="钽电容">
+                                    <a title="钽电容 (38726)" href="/product.html?categoryId=1219">钽电容</a>
+                                    <em>(38,726)</em>
+                                </li>
+                                <li data-num="20654" data-name="铝电解电容">
+                                    <a title="铝电解电容 (20654)" href="/product.html?categoryId=1220">铝电解电容</a>
+                                    <em>(20,654)</em>
+                                </li>
+                                <li data-num="37668" data-name="陶瓷电容">
+                                    <a title="陶瓷电容 (37668)" href="/product.html?categoryId=1221">陶瓷电容</a>
+                                    <em>(37,668)</em>
+                                </li>
+                                <li data-num="72402" data-name="薄膜电容">
+                                    <a title="薄膜电容 (72402)" href="/product.html?categoryId=1222">薄膜电容</a>
+                                    <em>(72,402)</em>
+                                </li>
+                                <li data-num="1113" data-name="其他电容">
+                                    <a title="其他电容 (1113)" href="/product.html?categoryId=1225">其他电容</a>
+                                    <em>(1,113)</em>
+                                </li>
+                                <li data-num="575" data-name="超级电容">
+                                    <a title="超级电容 (575)" href="/product.html?categoryId=1226">超级电容</a>
+                                    <em>(575)</em>
+                                </li>
+                                <li data-num="3" data-name="超高压电容">
+                                    <a title="超高压电容 (3)" href="/product.html?categoryId=1326">超高压电容</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="3" data-name="铌氧化物电容器">
+                                    <a title="铌氧化物电容器 (3)" href="/product.html?categoryId=1511">铌氧化物电容器</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="29" data-name="馈通电容">
+                                    <a title="馈通电容 (29)" href="/product.html?categoryId=1776">馈通电容</a>
+                                    <em>(29)</em>
+                                </li>
+                                <li data-num="8" data-name="可变电容">
+                                    <a title="可变电容 (8)" href="/product.html?categoryId=1778">可变电容</a>
+                                    <em>(8)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="15646" data-name="电感/变压器">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1450">电感/变压器</a>
+                        <em data-tag="total">(15,646)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="523" data-name="变压器">
+                                    <a title="变压器 (523)" href="/product.html?categoryId=1800">变压器</a>
+                                    <em>(523)</em>
+                                </li>
+                                <li data-num="3" data-name="耦合电感">
+                                    <a title="耦合电感 (3)" href="/product.html?categoryId=1451">耦合电感</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="1439" data-name="固定电感">
+                                    <a title="固定电感 (1439)" href="/product.html?categoryId=1452">固定电感</a>
+                                    <em>(1,439)</em>
+                                </li>
+                                <li data-num="10540" data-name="贴片电感">
+                                    <a title="贴片电感 (10540)" href="/product.html?categoryId=1216">贴片电感</a>
+                                    <em>(10,540)</em>
+                                </li>
+                                <li data-num="852" data-name="其他电感">
+                                    <a title="其他电感 (852)" href="/product.html?categoryId=1218">其他电感</a>
+                                    <em>(852)</em>
+                                </li>
+                                <li data-num="1527" data-name="共模电感">
+                                    <a title="共模电感 (1527)" href="/product.html?categoryId=1781">共模电感</a>
+                                    <em>(1,527)</em>
+                                </li>
+                                <li data-num="446" data-name="功率电感">
+                                    <a title="功率电感 (446)" href="/product.html?categoryId=1782">功率电感</a>
+                                    <em>(446)</em>
+                                </li>
+                                <li data-num="313" data-name="车规电感">
+                                    <a title="车规电感 (313)" href="/product.html?categoryId=1783">车规电感</a>
+                                    <em>(313)</em>
+                                </li>
+                                <li data-num="3" data-name="高频电感">
+                                    <a title="高频电感 (3)" href="/product.html?categoryId=1784">高频电感</a>
+                                    <em>(3)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="7960" data-name="滤波器">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=954">滤波器</a>
+                        <em data-tag="total">(7,960)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="3784" data-name="磁性元件">
+                                    <a title="磁性元件 (3784)" href="/product.html?categoryId=1206">磁性元件</a>
+                                    <em>(3,784)</em>
+                                </li>
+                                <li data-num="383" data-name="双工器">
+                                    <a title="双工器 (383)" href="/product.html?categoryId=1295">双工器</a>
+                                    <em>(383)</em>
+                                </li>
+                                <li data-num="38" data-name="车规滤波器">
+                                    <a title="车规滤波器 (38)" href="/product.html?categoryId=1306">车规滤波器</a>
+                                    <em>(38)</em>
+                                </li>
+                                <li data-num="1" data-name="EMI/RFI滤波器">
+                                    <a title="EMI/RFI滤波器 (1)" href="/product.html?categoryId=1353">EMI/RFI滤波器</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="1527" data-name="共模电感">
+                                    <a title="共模电感 (1527)" href="/product.html?categoryId=1781">共模电感</a>
+                                    <em>(1,527)</em>
+                                </li>
+                                <li data-num="2" data-name="EMI滤波连接器">
+                                    <a title="EMI滤波连接器 (2)" href="/product.html?categoryId=1491">EMI滤波连接器</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="19" data-name="陶瓷滤波器">
+                                    <a title="陶瓷滤波器 (19)" href="/product.html?categoryId=981">陶瓷滤波器</a>
+                                    <em>(19)</em>
+                                </li>
+                                <li data-num="1" data-name="滤波器">
+                                    <a title="滤波器 (1)" href="/product.html?categoryId=993">滤波器</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="29" data-name="馈通电容">
+                                    <a title="馈通电容 (29)" href="/product.html?categoryId=1776">馈通电容</a>
+                                    <em>(29)</em>
+                                </li>
+                                <li data-num="3" data-name="体声波滤波器">
+                                    <a title="体声波滤波器 (3)" href="/product.html?categoryId=1514">体声波滤波器</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="1107" data-name="EMI滤波器">
+                                    <a title="EMI滤波器 (1107)" href="/product.html?categoryId=1771">EMI滤波器</a>
+                                    <em>(1,107)</em>
+                                </li>
+                                <li data-num="524" data-name="RF滤波器">
+                                    <a title="RF滤波器 (524)" href="/product.html?categoryId=1772">RF滤波器</a>
+                                    <em>(524)</em>
+                                </li>
+                                <li data-num="480" data-name="声表面滤波器">
+                                    <a title="声表面滤波器 (480)" href="/product.html?categoryId=1517">声表面滤波器</a>
+                                    <em>(480)</em>
+                                </li>
+                                <li data-num="19" data-name="低通滤波器">
+                                    <a title="低通滤波器 (19)" href="/product.html?categoryId=1773">低通滤波器</a>
+                                    <em>(19)</em>
+                                </li>
+                                <li data-num="4" data-name="带通滤波器">
+                                    <a title="带通滤波器 (4)" href="/product.html?categoryId=1774">带通滤波器</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="32" data-name="电抗器与输出滤波器">
+                                    <a title="电抗器与输出滤波器 (32)" href="/product.html?categoryId=1775">电抗器与输出滤波器</a>
+                                    <em>(32)</em>
+                                </li>
+                                <li data-num="3" data-name="其他">
+                                    <a title="其他 (3)" href="/product.html?categoryId=1801">其他</a>
+                                    <em>(3)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="55026" data-name="分立半导体">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1205">分立半导体</a>
+                        <em data-tag="total">(55,026)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="2037" data-name="IGBT">
+                                    <a title="IGBT (2037)" href="/product.html?categoryId=970">IGBT</a>
+                                    <em>(2,037)</em>
+                                </li>
+                                <li data-num="9379" data-name="MOSFET">
+                                    <a title="MOSFET (9379)" href="/product.html?categoryId=1214">MOSFET</a>
+                                    <em>(9,379)</em>
+                                </li>
+                                <li data-num="39592" data-name="二极管">
+                                    <a title="二极管 (39592)" href="/product.html?categoryId=1562">二极管</a>
+                                    <em>(39,592)</em>
+                                </li>
+                                <li data-num="626" data-name="晶闸管">
+                                    <a title="晶闸管 (626)" href="/product.html?categoryId=1007">晶闸管</a>
+                                    <em>(626)</em>
+                                </li>
+                                <li data-num="103" data-name="RF晶体管">
+                                    <a title="RF晶体管 (103)" href="/product.html?categoryId=1014">RF晶体管</a>
+                                    <em>(103)</em>
+                                </li>
+                                <li data-num="3254" data-name="三极管/双极型晶体管">
+                                    <a title="三极管/双极型晶体管 (3254)" href="/product.html?categoryId=1210">三极管/双极型晶体管</a>
+                                    <em>(3,254)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="22021" data-name="集成电路">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1000">集成电路</a>
+                        <em data-tag="total">(22,021)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="164" data-name="IC">
+                                    <a title="IC (164)" href="/product.html?categoryId=1024">IC</a>
+                                    <em>(164)</em>
+                                </li>
+                                <li data-num="901" data-name="放大器IC">
+                                    <a title="放大器IC (901)" href="/product.html?categoryId=1019">放大器IC</a>
+                                    <em>(901)</em>
+                                </li>
+                                <li data-num="10653" data-name="电源管理IC">
+                                    <a title="电源管理IC (10653)" href="/product.html?categoryId=1022">电源管理IC</a>
+                                    <em>(10,653)</em>
+                                </li>
+                                <li data-num="1552" data-name="存储器IC">
+                                    <a title="存储器IC (1552)" href="/product.html?categoryId=1246">存储器IC</a>
+                                    <em>(1,552)</em>
+                                </li>
+                                <li data-num="22" data-name="传感器IC">
+                                    <a title="传感器IC (22)" href="/product.html?categoryId=1293">传感器IC</a>
+                                    <em>(22)</em>
+                                </li>
+                                <li data-num="639" data-name="驱动器IC">
+                                    <a title="驱动器IC (639)" href="/product.html?categoryId=1571">驱动器IC</a>
+                                    <em>(639)</em>
+                                </li>
+                                <li data-num="5" data-name="均衡器">
+                                    <a title="均衡器 (5)" href="/product.html?categoryId=1829">均衡器</a>
+                                    <em>(5)</em>
+                                </li>
+                                <li data-num="21" data-name="蓝牙芯片">
+                                    <a title="蓝牙芯片 (21)" href="/product.html?categoryId=2087">蓝牙芯片</a>
+                                    <em>(21)</em>
+                                </li>
+                                <li data-num="2839" data-name="嵌入式处理器和控制器">
+                                    <a title="嵌入式处理器和控制器 (2839)" href="/product.html?categoryId=1832">嵌入式处理器和控制器</a>
+                                    <em>(2,839)</em>
+                                </li>
+                                <li data-num="11" data-name="计数器">
+                                    <a title="计数器 (11)" href="/product.html?categoryId=2088">计数器</a>
+                                    <em>(11)</em>
+                                </li>
+                                <li data-num="73" data-name="通信及网络IC">
+                                    <a title="通信及网络IC (73)" href="/product.html?categoryId=2091">通信及网络IC</a>
+                                    <em>(73)</em>
+                                </li>
+                                <li data-num="48" data-name="时钟和计时器IC">
+                                    <a title="时钟和计时器IC (48)" href="/product.html?categoryId=1839">时钟和计时器IC</a>
+                                    <em>(48)</em>
+                                </li>
+                                <li data-num="124" data-name="逻辑电路IC">
+                                    <a title="逻辑电路IC (124)" href="/product.html?categoryId=2097">逻辑电路IC</a>
+                                    <em>(124)</em>
+                                </li>
+                                <li data-num="18" data-name="WIFI集成电路">
+                                    <a title="WIFI集成电路 (18)" href="/product.html?categoryId=1855">WIFI集成电路</a>
+                                    <em>(18)</em>
+                                </li>
+                                <li data-num="233" data-name="其他">
+                                    <a title="其他 (233)" href="/product.html?categoryId=1607">其他</a>
+                                    <em>(233)</em>
+                                </li>
+                                <li data-num="760" data-name="开关IC">
+                                    <a title="开关IC (760)" href="/product.html?categoryId=1471">开关IC</a>
+                                    <em>(760)</em>
+                                </li>
+                                <li data-num="169" data-name="多媒体IC">
+                                    <a title="多媒体IC (169)" href="/product.html?categoryId=1474">多媒体IC</a>
+                                    <em>(169)</em>
+                                </li>
+                                <li data-num="2708" data-name="MCU">
+                                    <a title="MCU (2708)" href="/product.html?categoryId=1255">MCU</a>
+                                    <em>(2,708)</em>
+                                </li>
+                                <li data-num="62" data-name="数据转换IC">
+                                    <a title="数据转换IC (62)" href="/product.html?categoryId=1005">数据转换IC</a>
+                                    <em>(62)</em>
+                                </li>
+                                <li data-num="391" data-name="接口IC">
+                                    <a title="接口IC (391)" href="/product.html?categoryId=1271">接口IC</a>
+                                    <em>(391)</em>
+                                </li>
+                                <li data-num="18" data-name="专用IC">
+                                    <a title="专用IC (18)" href="/product.html?categoryId=1278">专用IC</a>
+                                    <em>(18)</em>
+                                </li>
+                                <li data-num="610" data-name="LED驱动器">
+                                    <a title="LED驱动器 (610)" href="/product.html?categoryId=1031">LED驱动器</a>
+                                    <em>(610)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="136491" data-name="晶振">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1209">晶振</a>
+                        <em data-tag="total">(136,491)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="2395" data-name="晶体(无源)">
+                                    <a title="晶体(无源) (2395)" href="/product.html?categoryId=1410">晶体(无源)</a>
+                                    <em>(2,395)</em>
+                                </li>
+                                <li data-num="134029" data-name="振荡器(有源)">
+                                    <a title="振荡器(有源) (134029)" href="/product.html?categoryId=1234">振荡器(有源)</a>
+                                    <em>(134,029)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="11378" data-name="连接器">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1102">连接器</a>
+                        <em data-tag="total">(11,378)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="66" data-name="接插件">
+                                    <a title="接插件 (66)" href="/product.html?categoryId=1298">接插件</a>
+                                    <em>(66)</em>
+                                </li>
+                                <li data-num="5" data-name="I/O连接器">
+                                    <a title="I/O连接器 (5)" href="/product.html?categoryId=1813">I/O连接器</a>
+                                    <em>(5)</em>
+                                </li>
+                                <li data-num="305" data-name="其他">
+                                    <a title="其他 (305)" href="/product.html?categoryId=1817">其他</a>
+                                    <em>(305)</em>
+                                </li>
+                                <li data-num="1120" data-name="矩形连接器">
+                                    <a title="矩形连接器 (1120)" href="/product.html?categoryId=1821">矩形连接器</a>
+                                    <em>(1,120)</em>
+                                </li>
+                                <li data-num="360" data-name="汽车连接器">
+                                    <a title="汽车连接器 (360)" href="/product.html?categoryId=1567">汽车连接器</a>
+                                    <em>(360)</em>
+                                </li>
+                                <li data-num="15" data-name="以太网连接器">
+                                    <a title="以太网连接器 (15)" href="/product.html?categoryId=1319">以太网连接器</a>
+                                    <em>(15)</em>
+                                </li>
+                                <li data-num="6" data-name="光纤连接器">
+                                    <a title="光纤连接器 (6)" href="/product.html?categoryId=1334">光纤连接器</a>
+                                    <em>(6)</em>
+                                </li>
+                                <li data-num="3" data-name="分路器">
+                                    <a title="分路器 (3)" href="/product.html?categoryId=1338">分路器</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="16" data-name="卡类连接器">
+                                    <a title="卡类连接器 (16)" href="/product.html?categoryId=1348">卡类连接器</a>
+                                    <em>(16)</em>
+                                </li>
+                                <li data-num="2707" data-name="端子及附件">
+                                    <a title="端子及附件 (2707)" href="/product.html?categoryId=1104">端子及附件</a>
+                                    <em>(2,707)</em>
+                                </li>
+                                <li data-num="64" data-name="太阳能/光伏连接器">
+                                    <a title="太阳能/光伏连接器 (64)" href="/product.html?categoryId=1369">太阳能/光伏连接器</a>
+                                    <em>(64)</em>
+                                </li>
+                                <li data-num="60" data-name="D-Sub连接器">
+                                    <a title="D-Sub连接器 (60)" href="/product.html?categoryId=1371">D-Sub连接器</a>
+                                    <em>(60)</em>
+                                </li>
+                                <li data-num="20" data-name="USB连接器">
+                                    <a title="USB连接器 (20)" href="/product.html?categoryId=1375">USB连接器</a>
+                                    <em>(20)</em>
+                                </li>
+                                <li data-num="1001" data-name="圆形连接器">
+                                    <a title="圆形连接器 (1001)" href="/product.html?categoryId=1376">圆形连接器</a>
+                                    <em>(1,001)</em>
+                                </li>
+                                <li data-num="2145" data-name="电源连接器">
+                                    <a title="电源连接器 (2145)" href="/product.html?categoryId=1378">电源连接器</a>
+                                    <em>(2,145)</em>
+                                </li>
+                                <li data-num="388" data-name="集管和线壳">
+                                    <a title="集管和线壳 (388)" href="/product.html?categoryId=1383">集管和线壳</a>
+                                    <em>(388)</em>
+                                </li>
+                                <li data-num="3" data-name="接口">
+                                    <a title="接口 (3)" href="/product.html?categoryId=1150">接口</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="2915" data-name="PCB连接器">
+                                    <a title="PCB连接器 (2915)" href="/product.html?categoryId=1961">PCB连接器</a>
+                                    <em>(2,915)</em>
+                                </li>
+                                <li data-num="2" data-name="EMI滤波连接器">
+                                    <a title="EMI滤波连接器 (2)" href="/product.html?categoryId=1491">EMI滤波连接器</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="51" data-name="射频同轴连接器">
+                                    <a title="射频同轴连接器 (51)" href="/product.html?categoryId=1493">射频同轴连接器</a>
+                                    <em>(51)</em>
+                                </li>
+                                <li data-num="55" data-name="照明连接器">
+                                    <a title="照明连接器 (55)" href="/product.html?categoryId=1260">照明连接器</a>
+                                    <em>(55)</em>
+                                </li>
+                                <li data-num="1" data-name="音频和视频连接器">
+                                    <a title="音频和视频连接器 (1)" href="/product.html?categoryId=1519">音频和视频连接器</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="68" data-name="板对板与夹层连接器">
+                                    <a title="板对板与夹层连接器 (68)" href="/product.html?categoryId=1103">板对板与夹层连接器</a>
+                                    <em>(68)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="14400" data-name="电路保护">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1097">电路保护</a>
+                        <em data-tag="total">(14,400)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="45" data-name="电涌保护器及配件">
+                                    <a title="电涌保护器及配件 (45)" href="/product.html?categoryId=1796">电涌保护器及配件</a>
+                                    <em>(45)</em>
+                                </li>
+                                <li data-num="6847" data-name="TVS二极管/ESD抑制器">
+                                    <a title="TVS二极管/ESD抑制器 (6847)" href="/product.html?categoryId=1006">TVS二极管/ESD抑制器</a>
+                                    <em>(6,847)</em>
+                                </li>
+                                <li data-num="1370" data-name="放电管">
+                                    <a title="放电管 (1370)" href="/product.html?categoryId=1300">放电管</a>
+                                    <em>(1,370)</em>
+                                </li>
+                                <li data-num="10" data-name="断路器">
+                                    <a title="断路器 (10)" href="/product.html?categoryId=1302">断路器</a>
+                                    <em>(10)</em>
+                                </li>
+                                <li data-num="14" data-name="熔断器">
+                                    <a title="熔断器 (14)" href="/product.html?categoryId=1309">熔断器</a>
+                                    <em>(14)</em>
+                                </li>
+                                <li data-num="1" data-name="静电防护元件">
+                                    <a title="静电防护元件 (1)" href="/product.html?categoryId=1332">静电防护元件</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="978" data-name="保险丝">
+                                    <a title="保险丝 (978)" href="/product.html?categoryId=1099">保险丝</a>
+                                    <em>(978)</em>
+                                </li>
+                                <li data-num="17" data-name="保险丝座">
+                                    <a title="保险丝座 (17)" href="/product.html?categoryId=1100">保险丝座</a>
+                                    <em>(17)</em>
+                                </li>
+                                <li data-num="3565" data-name="压敏电阻">
+                                    <a title="压敏电阻 (3565)" href="/product.html?categoryId=1046">压敏电阻</a>
+                                    <em>(3,565)</em>
+                                </li>
+                                <li data-num="1545" data-name="热敏电阻">
+                                    <a title="热敏电阻 (1545)" href="/product.html?categoryId=1232">热敏电阻</a>
+                                    <em>(1,545)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="292" data-name="机电产品">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1127">机电产品</a>
+                        <em data-tag="total">(292)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="2" data-name="WiFi诊断工具">
+                                    <a title="WiFi诊断工具 (2)" href="/product.html?categoryId=2566">WiFi诊断工具</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="10" data-name="其它">
+                                    <a title="其它 (10)" href="/product.html?categoryId=2567">其它</a>
+                                    <em>(10)</em>
+                                </li>
+                                <li data-num="2" data-name="智能输入控制器">
+                                    <a title="智能输入控制器 (2)" href="/product.html?categoryId=2568">智能输入控制器</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="16" data-name="激光扫描仪">
+                                    <a title="激光扫描仪 (16)" href="/product.html?categoryId=2573">激光扫描仪</a>
+                                    <em>(16)</em>
+                                </li>
+                                <li data-num="76" data-name="压电设备">
+                                    <a title="压电设备 (76)" href="/product.html?categoryId=1090">压电设备</a>
+                                    <em>(76)</em>
+                                </li>
+                                <li data-num="1" data-name="平衡器">
+                                    <a title="平衡器 (1)" href="/product.html?categoryId=1350">平衡器</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="9" data-name="编码器">
+                                    <a title="编码器 (9)" href="/product.html?categoryId=1448">编码器</a>
+                                    <em>(9)</em>
+                                </li>
+                                <li data-num="105" data-name="其他">
+                                    <a title="其他 (105)" href="/product.html?categoryId=1735">其他</a>
+                                    <em>(105)</em>
+                                </li>
+                                <li data-num="47" data-name="音频产品">
+                                    <a title="音频产品 (47)" href="/product.html?categoryId=1495">音频产品</a>
+                                    <em>(47)</em>
+                                </li>
+                                <li data-num="2" data-name="解码器">
+                                    <a title="解码器 (2)" href="/product.html?categoryId=1751">解码器</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="16" data-name="接触器">
+                                    <a title="接触器 (16)" href="/product.html?categoryId=1252">接触器</a>
+                                    <em>(16)</em>
+                                </li>
+                                <li data-num="6" data-name="隔离器">
+                                    <a title="隔离器 (6)" href="/product.html?categoryId=998">隔离器</a>
+                                    <em>(6)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="1455" data-name="传感器">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=958">传感器</a>
+                        <em data-tag="total">(1,455)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="8" data-name="其他传感器">
+                                    <a title="其他传感器 (8)" href="/product.html?categoryId=1593">其他传感器</a>
+                                    <em>(8)</em>
+                                </li>
+                                <li data-num="6" data-name="压电传感器">
+                                    <a title="压电传感器 (6)" href="/product.html?categoryId=1594">压电传感器</a>
+                                    <em>(6)</em>
+                                </li>
+                                <li data-num="13" data-name="角速度传感器/陀螺仪">
+                                    <a title="角速度传感器/陀螺仪 (13)" href="/product.html?categoryId=1611">角速度传感器/陀螺仪</a>
+                                    <em>(13)</em>
+                                </li>
+                                <li data-num="7" data-name="IR红外线传感器">
+                                    <a title="IR红外线传感器 (7)" href="/product.html?categoryId=1107">IR红外线传感器</a>
+                                    <em>(7)</em>
+                                </li>
+                                <li data-num="2" data-name="颜色传感器">
+                                    <a title="颜色传感器 (2)" href="/product.html?categoryId=1109">颜色传感器</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="205" data-name="光电传感器">
+                                    <a title="光电传感器 (205)" href="/product.html?categoryId=1112">光电传感器</a>
+                                    <em>(205)</em>
+                                </li>
+                                <li data-num="1" data-name="灰尘传感器">
+                                    <a title="灰尘传感器 (1)" href="/product.html?categoryId=1113">灰尘传感器</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="16" data-name="力传感器">
+                                    <a title="力传感器 (16)" href="/product.html?categoryId=1115">力传感器</a>
+                                    <em>(16)</em>
+                                </li>
+                                <li data-num="19" data-name="图像传感器">
+                                    <a title="图像传感器 (19)" href="/product.html?categoryId=1116">图像传感器</a>
+                                    <em>(19)</em>
+                                </li>
+                                <li data-num="16" data-name="手势感应器">
+                                    <a title="手势感应器 (16)" href="/product.html?categoryId=2660">手势感应器</a>
+                                    <em>(16)</em>
+                                </li>
+                                <li data-num="228" data-name="温度传感器">
+                                    <a title="温度传感器 (228)" href="/product.html?categoryId=959">温度传感器</a>
+                                    <em>(228)</em>
+                                </li>
+                                <li data-num="47" data-name="电流传感器">
+                                    <a title="电流传感器 (47)" href="/product.html?categoryId=960">电流传感器</a>
+                                    <em>(47)</em>
+                                </li>
+                                <li data-num="392" data-name="磁性传感器">
+                                    <a title="磁性传感器 (392)" href="/product.html?categoryId=961">磁性传感器</a>
+                                    <em>(392)</em>
+                                </li>
+                                <li data-num="113" data-name="运动与定位传感器">
+                                    <a title="运动与定位传感器 (113)" href="/product.html?categoryId=962">运动与定位传感器</a>
+                                    <em>(113)</em>
+                                </li>
+                                <li data-num="1" data-name="配件">
+                                    <a title="配件 (1)" href="/product.html?categoryId=985">配件</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="191" data-name="热传感器">
+                                    <a title="热传感器 (191)" href="/product.html?categoryId=1242">热传感器</a>
+                                    <em>(191)</em>
+                                </li>
+                                <li data-num="160" data-name="压力传感器">
+                                    <a title="压力传感器 (160)" href="/product.html?categoryId=1253">压力传感器</a>
+                                    <em>(160)</em>
+                                </li>
+                                <li data-num="1" data-name="加速度传感器">
+                                    <a title="加速度传感器 (1)" href="/product.html?categoryId=2026">加速度传感器</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="22" data-name="接近传感器">
+                                    <a title="接近传感器 (22)" href="/product.html?categoryId=2027">接近传感器</a>
+                                    <em>(22)</em>
+                                </li>
+                                <li data-num="1" data-name="角度传感器">
+                                    <a title="角度传感器 (1)" href="/product.html?categoryId=2030">角度传感器</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="6" data-name="音频传感器">
+                                    <a title="音频传感器 (6)" href="/product.html?categoryId=1276">音频传感器</a>
+                                    <em>(6)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="15501" data-name="光电子产品">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=965">光电子产品</a>
+                        <em data-tag="total">(15,501)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="147" data-name="显示器">
+                                    <a title="显示器 (147)" href="/product.html?categoryId=1120">显示器</a>
+                                    <em>(147)</em>
+                                </li>
+                                <li data-num="580" data-name="光耦">
+                                    <a title="光耦 (580)" href="/product.html?categoryId=1537">光耦</a>
+                                    <em>(580)</em>
+                                </li>
+                                <li data-num="2" data-name="其它">
+                                    <a title="其它 (2)" href="/product.html?categoryId=1551">其它</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="2726" data-name="驱动器/镇流器">
+                                    <a title="驱动器/镇流器 (2726)" href="/product.html?categoryId=1559">驱动器/镇流器</a>
+                                    <em>(2,726)</em>
+                                </li>
+                                <li data-num="204" data-name="光电传感器">
+                                    <a title="光电传感器 (204)" href="/product.html?categoryId=1112">光电传感器</a>
+                                    <em>(204)</em>
+                                </li>
+                                <li data-num="2" data-name="光纤">
+                                    <a title="光纤 (2)" href="/product.html?categoryId=1622">光纤</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="95" data-name="激光">
+                                    <a title="激光 (95)" href="/product.html?categoryId=1629">激光</a>
+                                    <em>(95)</em>
+                                </li>
+                                <li data-num="92" data-name="红外通信">
+                                    <a title="红外通信 (92)" href="/product.html?categoryId=1632">红外通信</a>
+                                    <em>(92)</em>
+                                </li>
+                                <li data-num="218" data-name="物联网通信模块">
+                                    <a title="物联网通信模块 (218)" href="/product.html?categoryId=2145">物联网通信模块</a>
+                                    <em>(218)</em>
+                                </li>
+                                <li data-num="4" data-name="net10more系统组件">
+                                    <a title="net10more系统组件 (4)" href="/product.html?categoryId=2146">net10more系统组件</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="4" data-name="EL显示">
+                                    <a title="EL显示 (4)" href="/product.html?categoryId=2416">EL显示</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="2" data-name="EL panel">
+                                    <a title="EL panel (2)" href="/product.html?categoryId=2417">EL panel</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="40" data-name="LED指示">
+                                    <a title="LED指示 (40)" href="/product.html?categoryId=2420">LED指示</a>
+                                    <em>(40)</em>
+                                </li>
+                                <li data-num="4" data-name="LED条和阵列">
+                                    <a title="LED条和阵列 (4)" href="/product.html?categoryId=2421">LED条和阵列</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="855" data-name="LED发射器">
+                                    <a title="LED发射器 (855)" href="/product.html?categoryId=1525">LED发射器</a>
+                                    <em>(855)</em>
+                                </li>
+                                <li data-num="10526" data-name="LED照明">
+                                    <a title="LED照明 (10526)" href="/product.html?categoryId=1533">LED照明</a>
+                                    <em>(10,526)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="2383" data-name="开关/继电器">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1566">开关/继电器</a>
+                        <em data-tag="total">(2,383)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="737" data-name="继电器">
+                                    <a title="继电器 (737)" href="/product.html?categoryId=1030">继电器</a>
+                                    <em>(737)</em>
+                                </li>
+                                <li data-num="3" data-name="工业继电器">
+                                    <a title="工业继电器 (3)" href="/product.html?categoryId=1570">工业继电器</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="3" data-name="键锁开关">
+                                    <a title="键锁开关 (3)" href="/product.html?categoryId=1572">键锁开关</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="170" data-name="固态继电器">
+                                    <a title="固态继电器 (170)" href="/product.html?categoryId=1573">固态继电器</a>
+                                    <em>(170)</em>
+                                </li>
+                                <li data-num="108" data-name="DIP开关/SIP开关">
+                                    <a title="DIP开关/SIP开关 (108)" href="/product.html?categoryId=1359">DIP开关/SIP开关</a>
+                                    <em>(108)</em>
+                                </li>
+                                <li data-num="121" data-name="基本/快动开关">
+                                    <a title="基本/快动开关 (121)" href="/product.html?categoryId=1362">基本/快动开关</a>
+                                    <em>(121)</em>
+                                </li>
+                                <li data-num="7" data-name="开关配件">
+                                    <a title="开关配件 (7)" href="/product.html?categoryId=1364">开关配件</a>
+                                    <em>(7)</em>
+                                </li>
+                                <li data-num="3" data-name="车用继电器">
+                                    <a title="车用继电器 (3)" href="/product.html?categoryId=1621">车用继电器</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="293" data-name="触觉开关">
+                                    <a title="触觉开关 (293)" href="/product.html?categoryId=1366">触觉开关</a>
+                                    <em>(293)</em>
+                                </li>
+                                <li data-num="6" data-name="通用继电器">
+                                    <a title="通用继电器 (6)" href="/product.html?categoryId=1623">通用继电器</a>
+                                    <em>(6)</em>
+                                </li>
+                                <li data-num="3" data-name="高压直流继电器">
+                                    <a title="高压直流继电器 (3)" href="/product.html?categoryId=1625">高压直流继电器</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="2" data-name="编码式波段开关">
+                                    <a title="编码式波段开关 (2)" href="/product.html?categoryId=1626">编码式波段开关</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="1" data-name="RF射频开关">
+                                    <a title="RF射频开关 (1)" href="/product.html?categoryId=2207">RF射频开关</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="430" data-name="信号继电器">
+                                    <a title="信号继电器 (430)" href="/product.html?categoryId=1721">信号继电器</a>
+                                    <em>(430)</em>
+                                </li>
+                                <li data-num="97" data-name="其他开关">
+                                    <a title="其他开关 (97)" href="/product.html?categoryId=1722">其他开关</a>
+                                    <em>(97)</em>
+                                </li>
+                                <li data-num="377" data-name="功率继电器">
+                                    <a title="功率继电器 (377)" href="/product.html?categoryId=1723">功率继电器</a>
+                                    <em>(377)</em>
+                                </li>
+                                <li data-num="6" data-name="检测开关">
+                                    <a title="检测开关 (6)" href="/product.html?categoryId=1727">检测开关</a>
+                                    <em>(6)</em>
+                                </li>
+                                <li data-num="3" data-name="电源开关">
+                                    <a title="电源开关 (3)" href="/product.html?categoryId=1729">电源开关</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="3" data-name="继电器配件">
+                                    <a title="继电器配件 (3)" href="/product.html?categoryId=1730">继电器配件</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="5" data-name="高频/射频继电器">
+                                    <a title="高频/射频继电器 (5)" href="/product.html?categoryId=1732">高频/射频继电器</a>
+                                    <em>(5)</em>
+                                </li>
+                                <li data-num="1" data-name="微动开关">
+                                    <a title="微动开关 (1)" href="/product.html?categoryId=1497">微动开关</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="4" data-name="滑动开关">
+                                    <a title="滑动开关 (4)" href="/product.html?categoryId=1498">滑动开关</a>
+                                    <em>(4)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="1438" data-name="开发板/套件">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1243">开发板/套件</a>
+                        <em data-tag="total">(1,438)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="717" data-name="开发板">
+                                    <a title="开发板 (717)" href="/product.html?categoryId=1244">开发板</a>
+                                    <em>(717)</em>
+                                </li>
+                                <li data-num="82" data-name="开源硬件">
+                                    <a title="开源硬件 (82)" href="/product.html?categoryId=2310">开源硬件</a>
+                                    <em>(82)</em>
+                                </li>
+                                <li data-num="2" data-name="CAN-BUS Shield V2">
+                                    <a title="CAN-BUS Shield V2 (2)" href="/product.html?categoryId=2311">CAN-BUS Shield V2</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="110" data-name="树莓派">
+                                    <a title="树莓派 (110)" href="/product.html?categoryId=2322">树莓派</a>
+                                    <em>(110)</em>
+                                </li>
+                                <li data-num="17" data-name="开发套件">
+                                    <a title="开发套件 (17)" href="/product.html?categoryId=2323">开发套件</a>
+                                    <em>(17)</em>
+                                </li>
+                                <li data-num="5" data-name="显示开发工具">
+                                    <a title="显示开发工具 (5)" href="/product.html?categoryId=1390">显示开发工具</a>
+                                    <em>(5)</em>
+                                </li>
+                                <li data-num="4" data-name="NB-IoT模块">
+                                    <a title="NB-IoT模块 (4)" href="/product.html?categoryId=1486">NB-IoT模块</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="26" data-name="其它">
+                                    <a title="其它 (26)" href="/product.html?categoryId=2261">其它</a>
+                                    <em>(26)</em>
+                                </li>
+                                <li data-num="142" data-name="开发套件">
+                                    <a title="开发套件 (142)" href="/product.html?categoryId=2262">开发套件</a>
+                                    <em>(142)</em>
+                                </li>
+                                <li data-num="2" data-name="Arduino Engineering Kit">
+                                    <a title="Arduino Engineering Kit (2)" href="/product.html?categoryId=2263">Arduino Engineering Kit</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="306" data-name="开发平台">
+                                    <a title="开发平台 (306)" href="/product.html?categoryId=2271">开发平台</a>
+                                    <em>(306)</em>
+                                </li>
+                                <li data-num="14" data-name="AI开发平台">
+                                    <a title="AI开发平台 (14)" href="/product.html?categoryId=2272">AI开发平台</a>
+                                    <em>(14)</em>
+                                </li>
+                                <li data-num="2" data-name="GAPUINO">
+                                    <a title="GAPUINO (2)" href="/product.html?categoryId=2273">GAPUINO</a>
+                                    <em>(2)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="786" data-name="电源">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1089">电源</a>
+                        <em data-tag="total">(786)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="50" data-name="电源模块">
+                                    <a title="电源模块 (50)" href="/product.html?categoryId=1310">电源模块</a>
+                                    <em>(50)</em>
+                                </li>
+                                <li data-num="9" data-name="电源供应器">
+                                    <a title="电源供应器 (9)" href="/product.html?categoryId=1336">电源供应器</a>
+                                    <em>(9)</em>
+                                </li>
+                                <li data-num="185" data-name="电池">
+                                    <a title="电池 (185)" href="/product.html?categoryId=1091">电池</a>
+                                    <em>(185)</em>
+                                </li>
+                                <li data-num="438" data-name="电源管理">
+                                    <a title="电源管理 (438)" href="/product.html?categoryId=1094">电源管理</a>
+                                    <em>(438)</em>
+                                </li>
+                                <li data-num="64" data-name="逆变器及其配件">
+                                    <a title="逆变器及其配件 (64)" href="/product.html?categoryId=1096">逆变器及其配件</a>
+                                    <em>(64)</em>
+                                </li>
+                                <li data-num="4" data-name="电源转换器">
+                                    <a title="电源转换器 (4)" href="/product.html?categoryId=2638">电源转换器</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="22" data-name="电源适配器">
+                                    <a title="电源适配器 (22)" href="/product.html?categoryId=2639">电源适配器</a>
+                                    <em>(22)</em>
+                                </li>
+                                <li data-num="4" data-name="电池座">
+                                    <a title="电池座 (4)" href="/product.html?categoryId=1147">电池座</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="1" data-name="电池供应器">
+                                    <a title="电池供应器 (1)" href="/product.html?categoryId=1785">电池供应器</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="8" data-name="电池充电器">
+                                    <a title="电池充电器 (8)" href="/product.html?categoryId=1786">电池充电器</a>
+                                    <em>(8)</em>
+                                </li>
+                                <li data-num="1" data-name="电源控制器">
+                                    <a title="电源控制器 (1)" href="/product.html?categoryId=1787">电源控制器</a>
+                                    <em>(1)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="1730" data-name="无线射频">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=953">无线射频</a>
+                        <em data-tag="total">(1,730)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="4" data-name="RF调制器">
+                                    <a title="RF调制器 (4)" href="/product.html?categoryId=2050">RF调制器</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="6" data-name="倍频器">
+                                    <a title="倍频器 (6)" href="/product.html?categoryId=2051">倍频器</a>
+                                    <em>(6)</em>
+                                </li>
+                                <li data-num="4" data-name="变频器">
+                                    <a title="变频器 (4)" href="/product.html?categoryId=2052">变频器</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="4" data-name="射频接收器">
+                                    <a title="射频接收器 (4)" href="/product.html?categoryId=2053">射频接收器</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="18" data-name="RF探测器">
+                                    <a title="RF探测器 (18)" href="/product.html?categoryId=2565">RF探测器</a>
+                                    <em>(18)</em>
+                                </li>
+                                <li data-num="5" data-name="射频检测器">
+                                    <a title="射频检测器 (5)" href="/product.html?categoryId=2054">射频检测器</a>
+                                    <em>(5)</em>
+                                </li>
+                                <li data-num="40" data-name="射频混合器">
+                                    <a title="射频混合器 (40)" href="/product.html?categoryId=2055">射频混合器</a>
+                                    <em>(40)</em>
+                                </li>
+                                <li data-num="2" data-name="数字移相器">
+                                    <a title="数字移相器 (2)" href="/product.html?categoryId=2056">数字移相器</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="561" data-name="天线">
+                                    <a title="天线 (561)" href="/product.html?categoryId=1047">天线</a>
+                                    <em>(561)</em>
+                                </li>
+                                <li data-num="104" data-name="RF开关IC">
+                                    <a title="RF开关IC (104)" href="/product.html?categoryId=2225">RF开关IC</a>
+                                    <em>(104)</em>
+                                </li>
+                                <li data-num="4" data-name="功分器">
+                                    <a title="功分器 (4)" href="/product.html?categoryId=1823">功分器</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="10" data-name="射频耦合器">
+                                    <a title="射频耦合器 (10)" href="/product.html?categoryId=1824">射频耦合器</a>
+                                    <em>(10)</em>
+                                </li>
+                                <li data-num="33" data-name="射频隔离器">
+                                    <a title="射频隔离器 (33)" href="/product.html?categoryId=1825">射频隔离器</a>
+                                    <em>(33)</em>
+                                </li>
+                                <li data-num="68" data-name="衰减器">
+                                    <a title="衰减器 (68)" href="/product.html?categoryId=1826">衰减器</a>
+                                    <em>(68)</em>
+                                </li>
+                                <li data-num="6" data-name="RFID应答器">
+                                    <a title="RFID应答器 (6)" href="/product.html?categoryId=1585">RFID应答器</a>
+                                    <em>(6)</em>
+                                </li>
+                                <li data-num="4" data-name="监控 IC">
+                                    <a title="监控 IC (4)" href="/product.html?categoryId=1586">监控 IC</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="26" data-name="其他">
+                                    <a title="其他 (26)" href="/product.html?categoryId=1860">其他</a>
+                                    <em>(26)</em>
+                                </li>
+                                <li data-num="1" data-name="RF射频开关">
+                                    <a title="RF射频开关 (1)" href="/product.html?categoryId=2207">RF射频开关</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="3" data-name="多层混合耦合器">
+                                    <a title="多层混合耦合器 (3)" href="/product.html?categoryId=956">多层混合耦合器</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="17" data-name="RF定向耦合器">
+                                    <a title="RF定向耦合器 (17)" href="/product.html?categoryId=957">RF定向耦合器</a>
+                                    <em>(17)</em>
+                                </li>
+                                <li data-num="16" data-name="锁相环-PLL">
+                                    <a title="锁相环-PLL (16)" href="/product.html?categoryId=1476">锁相环-PLL</a>
+                                    <em>(16)</em>
+                                </li>
+                                <li data-num="1" data-name="RF射频耦合器">
+                                    <a title="RF射频耦合器 (1)" href="/product.html?categoryId=1733">RF射频耦合器</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="13" data-name="射频多路复用器">
+                                    <a title="射频多路复用器 (13)" href="/product.html?categoryId=966">射频多路复用器</a>
+                                    <em>(13)</em>
+                                </li>
+                                <li data-num="239" data-name="平衡-不平衡变压器">
+                                    <a title="平衡-不平衡变压器 (239)" href="/product.html?categoryId=2224">平衡-不平衡变压器</a>
+                                    <em>(239)</em>
+                                </li>
+                                <li data-num="105" data-name="射频开关">
+                                    <a title="射频开关 (105)" href="/product.html?categoryId=1257">射频开关</a>
+                                    <em>(105)</em>
+                                </li>
+                                <li data-num="359" data-name="射频放大器">
+                                    <a title="射频放大器 (359)" href="/product.html?categoryId=1002">射频放大器</a>
+                                    <em>(359)</em>
+                                </li>
+                                <li data-num="13" data-name="射频发射器">
+                                    <a title="射频发射器 (13)" href="/product.html?categoryId=1015">射频发射器</a>
+                                    <em>(13)</em>
+                                </li>
+                                <li data-num="64" data-name="射频收发器">
+                                    <a title="射频收发器 (64)" href="/product.html?categoryId=1016">射频收发器</a>
+                                    <em>(64)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="1840" data-name="模块">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1245">模块</a>
+                        <em data-tag="total">(1,840)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="3" data-name="PLC模块">
+                                    <a title="PLC模块 (3)" href="/product.html?categoryId=1286">PLC模块</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="331" data-name="传感器模块">
+                                    <a title="传感器模块 (331)" href="/product.html?categoryId=2577">传感器模块</a>
+                                    <em>(331)</em>
+                                </li>
+                                <li data-num="2" data-name="IR红外线传感器">
+                                    <a title="IR红外线传感器 (2)" href="/product.html?categoryId=2578">IR红外线传感器</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="4" data-name="人体感应器">
+                                    <a title="人体感应器 (4)" href="/product.html?categoryId=2579">人体感应器</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="98" data-name="执行器模块">
+                                    <a title="执行器模块 (98)" href="/product.html?categoryId=2339">执行器模块</a>
+                                    <em>(98)</em>
+                                </li>
+                                <li data-num="4" data-name="speakers">
+                                    <a title="speakers (4)" href="/product.html?categoryId=2340">speakers</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="166" data-name="扩充板模块">
+                                    <a title="扩充板模块 (166)" href="/product.html?categoryId=2350">扩充板模块</a>
+                                    <em>(166)</em>
+                                </li>
+                                <li data-num="47" data-name="for Arduino">
+                                    <a title="for Arduino (47)" href="/product.html?categoryId=2351">for Arduino</a>
+                                    <em>(47)</em>
+                                </li>
+                                <li data-num="11" data-name="可变流半导体模块">
+                                    <a title="可变流半导体模块 (11)" href="/product.html?categoryId=1328">可变流半导体模块</a>
+                                    <em>(11)</em>
+                                </li>
+                                <li data-num="296" data-name="无线和IoT模块">
+                                    <a title="无线和IoT模块 (296)" href="/product.html?categoryId=2359">无线和IoT模块</a>
+                                    <em>(296)</em>
+                                </li>
+                                <li data-num="4" data-name="BlueStack Micro">
+                                    <a title="BlueStack Micro (4)" href="/product.html?categoryId=2360">BlueStack Micro</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="16" data-name="其他模块">
+                                    <a title="其他模块 (16)" href="/product.html?categoryId=2616">其他模块</a>
+                                    <em>(16)</em>
+                                </li>
+                                <li data-num="2" data-name="LiPo Rider模块">
+                                    <a title="LiPo Rider模块 (2)" href="/product.html?categoryId=2617">LiPo Rider模块</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="104" data-name="显示器开发模块">
+                                    <a title="显示器开发模块 (104)" href="/product.html?categoryId=2387">显示器开发模块</a>
+                                    <em>(104)</em>
+                                </li>
+                                <li data-num="48" data-name="机器人套件">
+                                    <a title="机器人套件 (48)" href="/product.html?categoryId=2393">机器人套件</a>
+                                    <em>(48)</em>
+                                </li>
+                                <li data-num="2" data-name="全向轮">
+                                    <a title="全向轮 (2)" href="/product.html?categoryId=2394">全向轮</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="6" data-name="飞行控制器模块">
+                                    <a title="飞行控制器模块 (6)" href="/product.html?categoryId=2408">飞行控制器模块</a>
+                                    <em>(6)</em>
+                                </li>
+                                <li data-num="50" data-name="Crazyflie">
+                                    <a title="Crazyflie (50)" href="/product.html?categoryId=2409">Crazyflie</a>
+                                    <em>(50)</em>
+                                </li>
+                                <li data-num="4" data-name="可调电阻模块">
+                                    <a title="可调电阻模块 (4)" href="/product.html?categoryId=1403">可调电阻模块</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="80" data-name="核心板">
+                                    <a title="核心板 (80)" href="/product.html?categoryId=2701">核心板</a>
+                                    <em>(80)</em>
+                                </li>
+                                <li data-num="2" data-name="GSM模块">
+                                    <a title="GSM模块 (2)" href="/product.html?categoryId=969">GSM模块</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="53" data-name="LED模块">
+                                    <a title="LED模块 (53)" href="/product.html?categoryId=1752">LED模块</a>
+                                    <em>(53)</em>
+                                </li>
+                                <li data-num="278" data-name="功能模块">
+                                    <a title="功能模块 (278)" href="/product.html?categoryId=1753">功能模块</a>
+                                    <em>(278)</em>
+                                </li>
+                                <li data-num="16" data-name="感应器模块">
+                                    <a title="感应器模块 (16)" href="/product.html?categoryId=1762">感应器模块</a>
+                                    <em>(16)</em>
+                                </li>
+                                <li data-num="169" data-name="集成电路模块">
+                                    <a title="集成电路模块 (169)" href="/product.html?categoryId=1763">集成电路模块</a>
+                                    <em>(169)</em>
+                                </li>
+                                <li data-num="7" data-name="分立半导体模块">
+                                    <a title="分立半导体模块 (7)" href="/product.html?categoryId=1764">分立半导体模块</a>
+                                    <em>(7)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="1811" data-name="工具/附件">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=1613">工具/附件</a>
+                        <em data-tag="total">(1,811)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="55" data-name="手工工具">
+                                    <a title="手工工具 (55)" href="/product.html?categoryId=1033">手工工具</a>
+                                    <em>(55)</em>
+                                </li>
+                                <li data-num="40" data-name="识别装置">
+                                    <a title="识别装置 (40)" href="/product.html?categoryId=1614">识别装置</a>
+                                    <em>(40)</em>
+                                </li>
+                                <li data-num="2" data-name="编程器，仿真器和调试器">
+                                    <a title="编程器，仿真器和调试器 (2)" href="/product.html?categoryId=1117">编程器，仿真器和调试器</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="1" data-name="工具">
+                                    <a title="工具 (1)" href="/product.html?categoryId=1144">工具</a>
+                                    <em>(1)</em>
+                                </li>
+                                <li data-num="77" data-name="TE工具">
+                                    <a title="TE工具 (77)" href="/product.html?categoryId=1685">TE工具</a>
+                                    <em>(77)</em>
+                                </li>
+                                <li data-num="23" data-name="夹具">
+                                    <a title="夹具 (23)" href="/product.html?categoryId=1687">夹具</a>
+                                    <em>(23)</em>
+                                </li>
+                                <li data-num="131" data-name="开发工具">
+                                    <a title="开发工具 (131)" href="/product.html?categoryId=1690">开发工具</a>
+                                    <em>(131)</em>
+                                </li>
+                                <li data-num="24" data-name="散热材料">
+                                    <a title="散热材料 (24)" href="/product.html?categoryId=1697">散热材料</a>
+                                    <em>(24)</em>
+                                </li>
+                                <li data-num="1112" data-name="热缩管及附件">
+                                    <a title="热缩管及附件 (1112)" href="/product.html?categoryId=1953">热缩管及附件</a>
+                                    <em>(1,112)</em>
+                                </li>
+                                <li data-num="56" data-name="测试/测量">
+                                    <a title="测试/测量 (56)" href="/product.html?categoryId=1701">测试/测量</a>
+                                    <em>(56)</em>
+                                </li>
+                                <li data-num="139" data-name="线缆/线束">
+                                    <a title="线缆/线束 (139)" href="/product.html?categoryId=1707">线缆/线束</a>
+                                    <em>(139)</em>
+                                </li>
+                                <li data-num="98" data-name="视频工具">
+                                    <a title="视频工具 (98)" href="/product.html?categoryId=1716">视频工具</a>
+                                    <em>(98)</em>
+                                </li>
+                                <li data-num="53" data-name="附件">
+                                    <a title="附件 (53)" href="/product.html?categoryId=1718">附件</a>
+                                    <em>(53)</em>
+                                </li>
+                        </ul>
+                </div>
+                <div class="c-catgBar-pg" data-num="9886" data-name="其他">
+                    <h1 class="clearfix">
+                        <a href="/product.html?categoryId=967">其他</a>
+                        <em data-tag="total">(9,886)</em>
+                    </h1>
+                        <ul class="c-catgBar_list-pg clearfix">
+                                <li data-num="96" data-name="样品册">
+                                    <a title="样品册 (96)" href="/product.html?categoryId=988">样品册</a>
+                                    <em>(96)</em>
+                                </li>
+                                <li data-num="3" data-name="光纤配线盒">
+                                    <a title="光纤配线盒 (3)" href="/product.html?categoryId=1637">光纤配线盒</a>
+                                    <em>(3)</em>
+                                </li>
+                                <li data-num="2" data-name="热敏打印头">
+                                    <a title="热敏打印头 (2)" href="/product.html?categoryId=1646">热敏打印头</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="9281" data-name="未分类">
+                                    <a title="未分类 (9281)" href="/product.html?categoryId=1105">未分类</a>
+                                    <em>(9,281)</em>
+                                </li>
+                                <li data-num="2" data-name="玩具遥控器">
+                                    <a title="玩具遥控器 (2)" href="/product.html?categoryId=2643">玩具遥控器</a>
+                                    <em>(2)</em>
+                                </li>
+                                <li data-num="4" data-name="联轴器套件">
+                                    <a title="联轴器套件 (4)" href="/product.html?categoryId=2644">联轴器套件</a>
+                                    <em>(4)</em>
+                                </li>
+                                <li data-num="27" data-name="碳带">
+                                    <a title="碳带 (27)" href="/product.html?categoryId=1663">碳带</a>
+                                    <em>(27)</em>
+                                </li>
+                                <li data-num="8" data-name="麦克风">
+                                    <a title="麦克风 (8)" href="/product.html?categoryId=1676">麦克风</a>
+                                    <em>(8)</em>
+                                </li>
+                                <li data-num="424" data-name=".....">
+                                    <a title="..... (424)" href="/product.html?categoryId=1087">.....</a>
+                                    <em>(424)</em>
+                                </li>
+                        </ul>
+                </div>
+        </div>
+
+        <div class="footer">
+            <div class="m-wrap slogan">
+                <ul class="slogan_lst clearfix">
+                    <li style="text-align: left;padding-left: 40px;">
+                        <div class="slogan_itm">
+                            <i class="is-bz"></i>
+                            <span>品质保障</span>
+                        </div>
+                    </li>
+                    <li style="text-align: center;padding-right: 20px;">
+                        <div class="slogan_itm">
+                            <i class="is-cg"></i>
+                            <span>一站采购</span>
+                        </div>
+                    </li>
+                    <li style="text-align: center;padding-left: 20px;">
+                        <div class="slogan_itm">
+                            <i class="is-wl"></i>
+                            <span>极速物流</span>
+                        </div>
+                    </li>
+                    <li style="text-align: right;padding-right: 40px;">
+                        <div class="slogan_itm">
+                            <i class="is-qy"></i>
+                            <span>会员权益</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_wrap m-wrap">
+                <div class="footer_logo">
+                    <img alt="电子元器件线上授权代理开拓者" src="https://staticcdn.oneyac.com/static/www/images/common/logo-761747ed944452a5e2443bdf7e7b0f66.png">
+                    <p>电子元器件线上授权代理开拓者</p>
+                </div>
+                <dl class="footer_nav clearfix">
+                    <dd>
+                        <h4>商城介绍</h4>
+                        <ul>
+                            <li><a href="/page/comp_about.html" rel="nofollow" target="_blank">关于唯样</a></li>
+                            <li><a href="/page/comp_culture.html" rel="nofollow" target="_blank">企业文化</a></li>
+                            <li><a href="/page/comp_contact.html" rel="nofollow" target="_blank">联系我们</a></li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <h4>新手指南</h4>
+                        <ul>
+                            <li><a href="/help/22.html" rel="nofollow" target="_blank">注册登录</a></li>
+                            <li><a href="/help/12.html" rel="nofollow" target="_blank">隐私协议</a></li>
+                            <li><a href="/help/2.html" rel="nofollow" target="_blank">发票须知</a></li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <h4>支付方式</h4>
+                        <ul>
+                            <li><a href="/help/9.html" rel="nofollow" target="_blank">支付安全</a></li>
+                            <li><a href="/help/10.html" rel="nofollow" target="_blank">银行转账</a></li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <h4>售后服务</h4>
+                        <ul>
+                            <li><a target="_blank" href="#">在线客服</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <div class="footer_contact">
+                    <i class="iconfont icon-service"></i>
+                    <h2>400-870-9968</h2>
+                    <p>服务时间：8:30-17:30</p>
+                    <a href="#" target="_blank" class="footer_kfBtn">
+                        <i class="iconfont icon-chat"></i>
+                        <span>在线客服</span>
+                    </a>
+                    <div class="footer_att">
+                        <img src="img/common/footer-att-6db8dcbb70e5982ee5bcecce613e1e07.jpg">
+                        <p>关注唯样公众号</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_wrap2">
+                <div class="m-wrap">
+                    <div class="footer-lnk">
+                        <span class="footer-lnk__cap"><a href="#"> 字母索引：</a></span>
+                        <div class="footer-lnk__con clearfix">
+                            <a href="#">A</a>
+                            <a href="#">B</a>
+                            <a href="#">C</a>
+                            <a href="#">D</a>
+                            <a href="#">E</a>
+                            <a href="#">F</a>
+                            <a href="#">G</a>
+                            <a href="#">H</a>
+                            <a href="#">I</a>
+                            <a href="#">J</a>
+                            <a href="#">K</a>
+                            <a href="#">L</a>
+                            <a href="#">M</a>
+                            <a href="#">N</a>
+                            <a href="#">O</a>
+                            <a href="#">P</a>
+                            <a href="#">Q</a>
+                            <a href="#">R</a>
+                            <a href="#">S</a>
+                            <a href="#">T</a>
+                            <a href="#">U</a>
+                            <a href="#">V</a>
+                            <a href="#">W</a>
+                            <a href="#">X</a>
+                            <a href="#">Y</a>
+                            <a href="#">Z</a>
+                            <a href="#">0</a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="af-footer">
+            <div class="m-wrap">
+                <div class="footer-btm">
+                    <a href="#" target="_blank" rel="nofollow">新手上路</a>
+                    <em>|</em>
+                    <a href="#" target="_blank" rel="nofollow">免责声明</a>
+                    <em>|</em>
+                    <a href="#" target="_blank" rel="nofollow">销售条款</a>
+                    <em>|</em>
+                    <a href="#" target="_blank" rel="nofollow">联系我们</a>
+                    <em>|</em>
+                    <a href="#" target="_blank">唯样资讯</a>
+                    <br>
+                    <span class="footer-cpr">Copyright © 2019 厦门唯样科技有限公司&nbsp;&nbsp;闽ICP备17005748号-1</span>
+                </div>
+                <div class="footer-logo">
+                    <a>
+                        <img src="img/foot-logo1.png">
+                    </a>
+                    <a>
+                        <img src="img/footer-logo2.png">
+                    </a>
+                    <a>
+                        <img src="img/footer-logo3.png">
+                    </a>
+                    <a>
+                        <img src="img/footer-logo4.png">
+                    </a>
+                    <a>
+                        <img src="img/footer-logo5.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+            <h5>
+                <i class="iconfont icon-history"></i>
+                &nbsp;我的足迹
+                <a id="zujiClose" href="javascript:;" title="隐藏" class="close">×</a>
+            </h5>
+            <ul class="zuji-ul js-zujiCon"></ul>
+        </div>
+        <div class="toolbox" id="toolBox">
+            <div class="toolbox-fold js-showIcn">
+                <span class="toolbox_showIcn"></span>
+                在<br>线<br>咨<br>询
+            </div>
+            <div class="toolbox-unfold">
+                <span class="js-hideIcn toolbox_hideIcn"></span>
+                <a class="toolbox-qq" id="nav_tool_kf_href" href="#" target="_blank" rel="nofollow">
+                    <div class="toolbox-qq_img"></div>
+                    <p>客服咨询</p>
+                </a>
+                <div class="toolbox-funs">
+                    <a href="#" class="toolbox-funsItm" rel="nofollow">
+                        <span id="c-catchPnt" common_cart_num=""></span>
+                        <i class="iconfont icon-cart_simple"></i>
+                        <p>购物车</p>
+                    </a>
+                    <a href="#" class="toolbox-funsItm" rel="nofollow">
+                        <em c-unlogin-tip="" class="c-tipPnt"></em>
+                        <i class="iconfont icon-user-ln"></i>
+                        <p>会员中心</p>
+                    </a>
+                    <a href="#" class="toolbox-funsItm" rel="nofollow">
+                        <i class="iconfont icon-collect"></i>
+                        <p>我的收藏</p>
+                    </a>
+                    <a href="javascript:void(0);" class="js-showZuji toolbox-funsItm" rel="nofollow">
+                        <i class="iconfont icon-history"></i>
+                        <p>浏览历史</p>
+                    </a>
+                    <a href="#" class="toolbox-funsItm" rel="nofollow">
+                        <i class="iconfont icon-edit-ln"></i>
+                        <p>意见反馈</p>
+                    </a>
+                </div>
+                <a href="javascript:void(0);" class="toolbox-gTop js-goTop" title="回到顶部" rel="nofollow"></a>
+            </div>
+        </div>
+        
+        <!--对比 开始-->
+        <div id="proCompare" class="is-hidden pro-compare">
+            <div class="pro-compare-cap">
+                <h4>对比栏</h4>
+                <a id="closeCompare" class="close" href="javascript:void(0);">X&nbsp;&nbsp;关闭</a>
+            </div>
+            <div class="pro-compare-mian">
+                <ul class="list-inline">
+                </ul>
+                <div class="pro-compare-op">
+                    <a id="linkToCompare" class="btn btn-primary" href="javascript:void(0);">对比</a>
+                    <br>
+                    <a id="clearCompare" class="text-primary mt5" href="javascript:void(0);">清空对比栏</a>
+                </div>
+            </div>
+        </div>
+        <!--对比 结束-->
+        </body>
+
+</html>
