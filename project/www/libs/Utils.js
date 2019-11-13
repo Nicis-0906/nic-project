@@ -178,6 +178,7 @@ var Utils = (function(){
                     path : (WWW)/后面的路径
             } */
         setCookie : function(key,val,options){
+            options = options || {};
             var expires = "";
             if(options.expires){
                 var d = new Date();

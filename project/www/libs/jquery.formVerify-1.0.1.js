@@ -17,6 +17,8 @@
 
         that.agreement = options.agreement || "";
 
+        that.autoLoginBtn = options.autoLoginBtn || "";
+
         that.verifyArr = [false,true,true,false,true];
 
         that.verifyNum = null;
@@ -116,11 +118,75 @@
                 }
             }
         }else if(that.type=="login"){
-            console.log(that.userInp);
-            console.log(that.passInp);
-            console.log(that.submit);
+            that.autoLoginBtn.on("click",function () {  
+                $(this).toggleClass("is-checked");
+                return false;
+            })
+
+            ;(function () {  
+                that.submit.on("click",function(e){
+                    e.preventDefault();
+                    
+                    Utils.ajaxPost(that.url,{
+                        type: "login",
+                        user: that.userInp.val(),
+                        pass: that.passInp.val(),
+                    }).then(function(data){
+                        var data = JSON.parse(data);
+                        that.passInp.val("");
+                        if(data.code==1){
+                            location.pathname = "/index.html";
+                            if(that.autoLoginBtn.hasClass("is-checked")){
+                                Utils.setCookie("autoLogin",JSON.stringify(data.msg),{
+                                    expires:10
+                                });
+                            }
+                        }else if(data.code==2){
+                            logVerify(2);
+                        }else if(data.code==3){
+                            logVerify(3);
+                        }
+                    })
+                })
+
+
+
+
+            })();
+
+
+
+
         }
-        
+
+        function logVerify(code){
+            that.submit.next().remove();
+            var text = "";
+            if(code==2) text = "密码错误";
+            if(code==3) text = "用户名不存在";
+            if(code==2 || code==3){
+                if(!$(that).next().length){
+                    that.warning = $("<span>");
+                    that.warning.html(text);
+                    that.submit.parent().css("position","relative").append(that.warning);
+                    that.warning.css({
+                        position: "absolute",
+                        top: "10px",
+                        margin: "auto 0",
+                        font:"12px/22px ''",
+                        color: "#fff",
+                        padding: "0 10px",
+                        height: "22px",
+                        background: "#d9d",
+                        borderRadius: "5px",
+                        right: -that.warning.width() + "px",
+                    })
+                    if(code==2){
+                        that.warning.css("top","60px");
+                    }
+                }
+            }
+        }
     }
         
 

@@ -4,6 +4,7 @@ var url  = require("url");
 var querystring = require("querystring");
 
 http.createServer( (req,res) => {
+
     if(req.url != "/favicon.ico"){
         var urlObj = url.parse(req.url,true);
         if(urlObj.pathname == "/ajax"){
@@ -21,13 +22,10 @@ http.createServer( (req,res) => {
 let msgArr = [];
 
 function ajax(req,res) {  
-    
     var msg = "";
     req.on("data",s => {
         msg += s;
     });
-
-    console.log(url.parse(req.url));
 
     req.on("end", () => {
         if(msg == ""){
@@ -39,6 +37,9 @@ function ajax(req,res) {
             msg = querystring.parse(msg);
             
         }
+        console.log(msg)
+        console.log(111)
+        console.log(msgArr)
         if( msg.type == "register") {
             var onoff = true;
             for(let i=0;i<msgArr.length;i++){
