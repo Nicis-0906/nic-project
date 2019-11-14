@@ -49,8 +49,6 @@ $(function(){
             $("#productNum").val(num);
             $("#orderTotal").html((num*price).toFixed(5));
         })
-
-        console.log(id)
         
         $("#addToCart").on("click",function(){
             let cart = Utils.getCookie("cart") == "none" ? [] : JSON.parse(Utils.getCookie("cart"));
@@ -72,9 +70,17 @@ $(function(){
             Utils.setCookie("cart",JSON.stringify(cart));
             
         })
+
+        tab(){
+            $("detail_tabSec")
+        }
     }
 })
 
+
+function tab(){
+
+}
 
 function renderData(data,cb,id,loginRE){
     

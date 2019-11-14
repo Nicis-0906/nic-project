@@ -16,7 +16,8 @@
             }
             
             if(location.pathname == "/shopCart.html"){
-                
+                $(".m-wrap .tip-lgin").css("display","none");
+                $(".scMain .scEmpty").css("display","none");
             }
         
             
