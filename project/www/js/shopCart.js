@@ -10,6 +10,12 @@ $(function(){
         }
     });
 
+    $(".m-checkbox-yl").on("click",function(){
+        tick(this);
+        // 取消默认事件
+        return false;
+    })
+
 });
 
 function after(data){
@@ -79,14 +85,7 @@ function addEvent(data){
         }
     })
 
-    $(".m-checkbox-yl").on("click",function(){
-        tick(this);
-        // 取消默认事件
-        return false;
-    })
-
     $(".icon-delete").on("click",function(){
-        console.log(1)
         deleteDom(this);
     })
 }
@@ -131,6 +130,7 @@ function buttonEvent(eTarget,data){
 }
 // 打钩判断
 function tick(that){
+    console.log(that)
     $(that).toggleClass("is-checked");
     if(that == $(".m-checkbox-yl")[0] || that == $(".m-checkbox-yl")[$(".m-checkbox-yl").length-1]){
         if($(that).hasClass("is-checked")){

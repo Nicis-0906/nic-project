@@ -33,8 +33,6 @@ $(function(){
         price = parseFloat($("#productPrice").html())
         $("#orderTotal").html((num*price).toFixed(5));
 
-        
-
         $("#detailAdd_hasPrice .detailAdd_add").on("click",function(){
             num++;
             $("#productNum").val(num);
@@ -71,17 +69,37 @@ $(function(){
             
         })
 
-        tab(){
-            $("detail_tabSec")
-        }
+        tab();
+
+        //放大镜
+        $(".detailImg").glass({
+            smallBox:$(".detailImg"),
+            img:$("#product-img"),
+            parent:$(".detailInfo")
+        })
+
     }
 })
 
 
+// 选项卡
 function tab(){
+    $(".detailHd_cap").on("click",function(){
+        $(".detailTab_itm").css("display","none");
+        $(".detailTab_itm").eq($(this).index()).css("display","block");
 
+        $(".detailHd_cap").css({
+            color: "#333",
+            background: "transparent"
+        })
+        
+        $(this).css({
+            color: "#fff",
+            background: "#585d62"
+        })
+    })
 }
-
+// 渲染json数据 
 function renderData(data,cb,id,loginRE){
     
     for(var i=0;i<data.length;i++){
@@ -471,3 +489,4 @@ function renderData(data,cb,id,loginRE){
     }
     cb();
 }
+ 
