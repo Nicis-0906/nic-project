@@ -19,9 +19,11 @@
 
         that.autoLoginBtn = options.autoLoginBtn || "";
 
-        that.verifyArr = [false,true,true,false,true];
+        that.verifyArr = [false,false,true,false,true];
 
         that.verifyNum = null;
+
+        that.strip = options.strip || "";
         
 
         if(that.type=="register"){
@@ -54,8 +56,34 @@
                     }
                     return false;
                 })
+
+                if(that.strip){
+                    let _this = that;
+                    that.strip.on("mousedown",function(e){
+                        let that = this;
+                        let left = $(that).offset().left;
+                        $(document).on("mousemove",function(e){
+                            _this.moveX = e.pageX - left - $(that).width()/2;
+                            if(_this.moveX < 0) _this.moveX = 0;
+                            if(_this.moveX >= $("#nc_1_n1t").width() - $(that).width()) _this.moveX = $("#nc_1_n1t").width() - $(that).width();
+                
+                            $(that).css("left",_this.moveX);
+                            $("#nc_1__bg").css("width",_this.moveX)
+                        })
+                    })
+                
+                    $(document).on("mouseup",function(){
+                        if(_this.moveX == 366){
+                            _this.verifyArr[1] = true;
+                            $(".nc-lang-cnt").eq(0).html("验证成功")
+                            $(".nc-lang-cnt").eq(0).css("color","#fff");
+                        }
+                        $(document).off("mousemove");
+                    })
+                }
                 
             })();
+
 
             function verify(type,result,that,cText){
                 $(that).next().remove();

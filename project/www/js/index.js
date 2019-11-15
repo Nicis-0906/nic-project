@@ -71,4 +71,11 @@ $(function () {
         delayTime:6666
     })
 
+
+    // 懒加载
+    // 视口外的数据
+    let imgArr = Array.from($(".technology-main img")).concat(Array.from($(".news .main-r img")));
+    $.lazyLoad({imgArr:imgArr});
+
+
 });

@@ -21,13 +21,14 @@ $(function () {
         $(this).removeClass("is-hover");
     })
 
+    // 自动登录
     $.autoLogin();
 
+    // 火箭
     $(".toolbox-unfold").goTop({
         scrollBack:$(".js-goTop")
     })
 
-    
 
     $.get("http://127.0.0.1:81/data/itemList.json",function (res) {
             res = JSON.parse(res);
@@ -41,6 +42,7 @@ $(function () {
 
 })
 
+// 处理数据
 function pressingData(res){
     // 在这里可以获取到这个obj的属性
     var that = window.obj;
@@ -56,6 +58,7 @@ function pressingData(res){
     that.pageNum = Math.ceil(res.length / that.maxNum);
 }
 
+// 渲染数据
 function renderData(res){
     var that = window.obj;
 
@@ -137,16 +140,18 @@ function renderData(res){
     }
     $('#list_tbody_list').html(str);
 
-    console.log(that.nowPage)
-
+    // 清除和页码无关的子元素
     that.pageArr = Array.from($("#list_pagination").children());
     that.pageArr.splice(that.pageNum+2,$("#list_pagination").children().length-that.pageNum+1);
 
+    // 每次渲染之前先清除所有的 is-active
     that.pageArr.forEach(item=>{
         $(item).removeClass("is-active");
     })
 
+    // nowPage那项的页码改变
     $("#list_pagination").children(".pageNum").eq(that.nowPage-1).addClass("is-active");
+    // 判断特殊情况,渲染上一页和下一页的class
     if(that.nowPage == 1){
         $("#list_pagination").children().eq(0).addClass("is-active");
     }else if(that.nowPage == that.pageArr.length-2){
@@ -154,6 +159,7 @@ function renderData(res){
     }
 }
 
+// 渲染页码
 function renderPage(){
     var that = window.obj;
     // 渲染分页导航
@@ -172,6 +178,7 @@ function renderPage(){
     $("#list_pagination").html(str);
 }
 
+// 添加页码事件
 function addEvent(){
     var that = window.obj;
     $("#list_pagination").on("click",function(e){
@@ -182,6 +189,7 @@ function addEvent(){
         }else if($(e.target).hasClass("pageNum")){
             that.nowPage = $(e.target).html();
         }else if(e.target.tagName == "BUTTON"){
+            // 如果当前点击项等于当前页码,则不渲染
             if(that.nowPage == $(e.target).prev().val()) return;
             for(var i=1;i<=that.pageNum;i++){
                 if($(e.target).prev().val() == i){
@@ -189,6 +197,7 @@ function addEvent(){
                 }
             }
         }
+        // 如果超出页码范围则不渲染
         if(that.nowPage < 1){
             that.nowPage = 1;
             return;
@@ -202,3 +211,7 @@ function addEvent(){
 
     
 }
+
+
+
+
