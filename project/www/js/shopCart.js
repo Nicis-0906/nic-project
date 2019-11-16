@@ -7,26 +7,23 @@ $(function(){
         success: function (res) {
             res = JSON.parse(res);
             after(res);
+
+            
         }
     });
 
-    $(".m-checkbox-yl").on("click",function(){
-        tick(this);
-        // 取消默认事件
-        return false;
-    })
+    
 
 });
 
 function after(data){
 
     let cart = Utils.getCookie("cart") == "none" ? [] : JSON.parse(Utils.getCookie("cart"));
-
+    let str  = "";
     for(var j=0;j<cart.length;j++){
         for(var i=0;i<data.length;i++){
             if(data[i].id == cart[j].id){
-                $(".scTable .scTable_tb").html(`
-                    ${$(".scTable .scTable_tb").html()}
+                str +=`
                     <tr cart-proitm="87241" class="is-checked" index="${data[i].id}">
                         <td class="text-left" style="padding-left: 12px;">
                             <label class="m-checkbox-yl is-checked"><input cart-chkitm="289209" data-id="87241" data-proid="289209" cart-zy-chkitm="" type="checkbox">&nbsp;</label>
@@ -70,10 +67,10 @@ function after(data){
                             <a data-id="87241" data-proid="289209" cart-del-pro="" class="iconfont icon-delete" href="javascript:;"></a>
                         </td>
                     </tr>`
-                );
             }
         }
     }
+    $(".scTable .scTable_tb").html(str);
     addEvent(data);
     judgeItem();
 }
@@ -87,6 +84,13 @@ function addEvent(data){
 
     $(".icon-delete").on("click",function(){
         deleteDom(this);
+    })
+
+    $(".m-checkbox-yl").on("click",function(){
+        
+        tick(this);
+        // 取消默认事件
+        return false;
     })
 }
 
@@ -130,8 +134,8 @@ function buttonEvent(eTarget,data){
 }
 // 打钩判断
 function tick(that){
-    console.log(that)
     $(that).toggleClass("is-checked");
+    console.log(1)
     if(that == $(".m-checkbox-yl")[0] || that == $(".m-checkbox-yl")[$(".m-checkbox-yl").length-1]){
         if($(that).hasClass("is-checked")){
             $(".m-checkbox-yl").addClass("is-checked");

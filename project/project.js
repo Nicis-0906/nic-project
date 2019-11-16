@@ -18,7 +18,10 @@ http.createServer( (req,res) => {
     console.log("成功");
 });
 
-let msgArr = [];
+let msgArr = [{
+    user:13519991888,
+    pass:111111
+}];
 
 function ajax(req,res) {  
     var msg = "";
@@ -36,9 +39,7 @@ function ajax(req,res) {
             msg = querystring.parse(msg);
             
         }
-        console.log(msg)
-        console.log(111)
-        console.log(msgArr)
+
         if( msg.type == "register") {
             var onoff = true;
             for(let i=0;i<msgArr.length;i++){

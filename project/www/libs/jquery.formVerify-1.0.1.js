@@ -57,6 +57,7 @@
                     return false;
                 })
 
+                // 验证条
                 if(that.strip){
                     let _this = that;
                     that.strip.on("mousedown",function(e){
@@ -68,7 +69,7 @@
                             if(_this.moveX >= $("#nc_1_n1t").width() - $(that).width()) _this.moveX = $("#nc_1_n1t").width() - $(that).width();
                 
                             $(that).css("left",_this.moveX);
-                            $("#nc_1__bg").css("width",_this.moveX)
+                            $("#nc_1__bg").css("width",_this.moveX);
                         })
                     })
                 
@@ -77,6 +78,13 @@
                             _this.verifyArr[1] = true;
                             $(".nc-lang-cnt").eq(0).html("验证成功")
                             $(".nc-lang-cnt").eq(0).css("color","#fff");
+                        }else{
+                            $(_this.strip).animate({
+                                left:0
+                            },500)
+                            $("#nc_1__bg").animate({
+                                width:0
+                            },500)
                         }
                         $(document).off("mousemove");
                     })
